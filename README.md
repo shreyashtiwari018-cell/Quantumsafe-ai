@@ -56,39 +56,83 @@ QuantumSafe AI adds an intelligence layer to this process.
 
 Safety Report
 
-&#x20;     ↓
+\&#x20;     ↓
 
 AI / NLP Analysis
 
-&#x20;     ↓
+\&#x20;     ↓
 
 SIF Potential Detection
 
-&#x20;     ↓
+\&#x20;     ↓
 
 Risk Assessment
 
-&#x20;     ↓
+\&#x20;     ↓
 
-Hazard \& Activity Extraction
+Hazard \\\& Activity Extraction
 
-&#x20;     ↓
+\&#x20;     ↓
 
 Failed Barrier Identification
 
-&#x20;     ↓
+\&#x20;     ↓
 
 Database Storage
 
-&#x20;     ↓
+\&#x20;     ↓
 
-Dashboard \& Reports
+Dashboard \\\& Reports
 
-&#x20;     ↓
+\&#x20;     ↓
 
 Pattern Intelligence
 
-&#x20;     ↓
+\&#x20;     ↓
 
-Investigation \& Corrective Action
+Investigation \\\& Corrective Action
+
+\----
+
+\## 📸 Application Screenshots
+
+
+
+\### 🔐 Login \& Authentication
+
+
+
+!\[QuantumSafe AI Login](docs/screenshots/02-login.png)
+
+
+
+\### 🏭 QuantumSafe AI Home
+
+
+
+!\[QuantumSafe AI Home](docs/screenshots/03-home-landing.png)
+
+
+
+\### 🧠 AI Safety Report Analysis
+
+
+
+!\[AI Safety Report Analysis](docs/screenshots/04-analyze-report.png)
+
+
+
+\### 📊 HSE Safety Intelligence Dashboard
+
+
+
+!\[QuantumSafe AI Dashboard](docs/screenshots/01-home-dashboard.png)
+
+
+
+\### 📋 Reports \& Investigation
+
+
+
+!\[Reports and Investigation](docs/screenshots/05-reports-investigation.png)
 
