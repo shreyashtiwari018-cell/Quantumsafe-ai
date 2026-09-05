@@ -1292,7 +1292,8 @@ body.qs-auth-required .qs-login-overlay{
 </script>
 
 <script>
-const API = "http://localhost:8000";
+const API = (window.location.protocol === 'http:' || window.location.protocol === 'https:') ? window.location.origin : 'http://localhost:8000';
+if (window.location.protocol === 'file:') { window.location.replace('http://localhost:8000/'); }
 
 const EXAMPLES = {
   confined: "During maintenance, a worker entered a confined space without atmospheric testing. No standby person was present.",
@@ -1367,7 +1368,7 @@ async function checkConnection() {
   const el = document.getElementById('connStatus');
 
   try {
-    const res = await fetch(API + '/', { cache: 'no-store' });
+    const res = await fetch(API + '/api/health', { cache: 'no-store' });
 
     if (res.ok) {
       el.innerHTML = '<span class="conn-dot ok"></span>API connected';
@@ -1542,10 +1543,16 @@ async function uploadCsv() {
   }
 
   const file = fileInput.files[0];
-
   if (!file.name.toLowerCase().endsWith('.csv')) {
     status.className = 'upload-status error';
     status.textContent = 'Please select a .csv file.';
+    return;
+  }
+
+  const token = (window.qsAuth && window.qsAuth.getToken) ? window.qsAuth.getToken() : (sessionStorage.getItem('qs_demo_auth_token') || '');
+  if (!token) {
+    status.className = 'upload-status error';
+    status.textContent = 'Session missing — please sign in again.';
     return;
   }
 
@@ -1558,14 +1565,23 @@ async function uploadCsv() {
   status.textContent = 'Uploading and analyzing CSV...';
 
   try {
-    const data = await apiJson(API + '/api/reports/upload', {
+    const res = await fetch(API + '/api/reports/upload', {
       method: 'POST',
+      headers: { 'Authorization': 'Bearer ' + token },
       body: formData
     });
 
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) {
+      if (res.status === 401) {
+        sessionStorage.removeItem('qs_demo_auth_token');
+        document.body.classList.add('qs-auth-required');
+      }
+      throw new Error(data.detail || `HTTP ${res.status}`);
+    }
+
     status.className = 'upload-status ok';
     status.textContent = `Uploaded — ${data.saved || 0} saved, ${data.duplicates || 0} duplicate(s), ${data.skipped || 0} skipped.`;
-
     fileInput.value = '';
 
     await loadDashboard();

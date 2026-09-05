@@ -22,8 +22,9 @@ from datetime import datetime, timedelta, timezone
 from contextlib import contextmanager
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException, UploadFile, File, Header
+from fastapi import FastAPI, HTTPException, UploadFile, File, Header, Form, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 from app.services.pipeline import analyze_report
@@ -487,8 +488,22 @@ def update_report_status(
 # ---------------------------------------------------------------------------
 
 @app.post("/api/reports/upload")
-async def upload_csv(file: UploadFile = File(...), authorization: Optional[str] = Header(default=None)):
-    get_current_user(authorization)
+async def upload_csv(
+    file: UploadFile = File(...),
+    authorization: Optional[str] = Header(default=None),
+    auth_token: Optional[str] = Form(default=None),
+    auth_token_query: Optional[str] = Query(default=None, alias="auth_token"),
+):
+    # Browsers opening the frontend as file:// can block a custom
+    # Authorization header during multipart uploads because of CORS
+    # preflight. Accept the same session token in the multipart form body
+    # as a compatibility fallback while preserving the normal Bearer header.
+    effective_auth = authorization
+    if not effective_auth and auth_token:
+        effective_auth = "Bearer " + auth_token.strip()
+    if not effective_auth and auth_token_query:
+        effective_auth = "Bearer " + auth_token_query.strip()
+    get_current_user(effective_auth)
     if not file.filename:
         raise HTTPException(status_code=400, detail="No file selected")
 
@@ -766,6 +781,9 @@ def get_patterns(min_reports: int = 3, authorization: Optional[str] = Header(def
 
 @app.get("/")
 def root():
+    frontend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "index.html"))
+    if os.path.exists(frontend_path):
+        return FileResponse(frontend_path, media_type="text/html")
     return {
         "status": "ok",
         "service": "QuantumSafe AI backend"
