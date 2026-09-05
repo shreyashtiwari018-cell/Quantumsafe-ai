@@ -1,0 +1,801 @@
+report_id,report_text,report_type,date,location,activity,hazard,barrier_failure,life_saving_rule,sif_potential,risk_score,risk_level
+R0001,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-05-08,Well Pad 12,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,96,CRITICAL
+R0002,Improper scaffolding was noted with no guardrail installed at elevated platform.,INCIDENT,2026-02-19,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0003,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-04-17,Site A,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0004,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-04-15,Tank Farm 3,Electrical,ELECTRICAL,,Electrical,0,62,HIGH
+R0005,Worker entered confined space without atmospheric testing. No standby person was present.,NEAR_MISS,2026-05-05,Well Pad 12,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0006,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-07-04,Pipeline Section 7,Housekeeping,HOUSEKEEPING,,Permit to Work,0,27,LOW
+R0007,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_ACT,2026-08-18,Site B,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,56,MEDIUM
+R0008,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,NEAR_MISS,2026-06-19,Well Pad 12,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0009,Worker was not wearing safety glasses in the workshop area.,UNSAFE_CONDITION,2026-05-03,Well Pad 12,Ppe,PPE,,Permit to Work,0,28,LOW
+R0010,Worker was observed working at height without a safety harness on the scaffold.,NEAR_MISS,2026-06-06,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0011,Exclusion zone was maintained and no personnel were in line of fire during the lift.,NEAR_MISS,2026-02-20,Site C - Refinery,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,56,MEDIUM
+R0012,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-07-09,Well Pad 12,Electrical,ELECTRICAL,,Electrical,0,54,MEDIUM
+R0013,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_CONDITION,2026-01-26,Pipeline Section 7,Chemical,CHEMICAL,,Chemical Exposure,0,48,MEDIUM
+R0014,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-06-07,Maintenance Yard,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0015,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-05-05,Well Pad 12,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0016,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,NEAR_MISS,2026-07-19,Loading Terminal,Housekeeping,HOUSEKEEPING,,Permit to Work,0,37,MEDIUM
+R0017,Exclusion zone was maintained and no personnel were in line of fire during the lift.,INCIDENT,2026-02-25,Site A,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,48,MEDIUM
+R0018,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-07-20,Site B,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0019,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,NEAR_MISS,2026-05-18,Site A,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0020,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-06-04,Tank Farm 3,Chemical,CHEMICAL,,Chemical Exposure,0,54,MEDIUM
+R0021,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-05-17,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,52,MEDIUM
+R0022,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-04-05,Pipeline Section 7,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0023,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-06-16,Site A,Housekeeping,HOUSEKEEPING,,Permit to Work,0,31,MEDIUM
+R0024,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-01-08,Site B,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0025,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-03-22,Maintenance Yard,Confined Space,CONFINED_SPACE,,Confined Space,0,62,HIGH
+R0026,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-04-18,Well Pad 12,Electrical,ELECTRICAL,,Electrical,0,55,MEDIUM
+R0027,Worker was not wearing safety glasses in the workshop area.,NEAR_MISS,2026-08-17,Maintenance Yard,Ppe,PPE,,Permit to Work,0,37,MEDIUM
+R0028,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-06-01,Well Pad 12,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0029,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-01-08,Site B,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0030,Technician performed vessel entry without gas testing during maintenance shutdown.,INCIDENT,2026-04-09,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0031,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",INCIDENT,2026-08-08,Maintenance Yard,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0032,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-07-12,Loading Terminal,Vehicle,VEHICLE,,Driving,0,47,MEDIUM
+R0033,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-01-13,Pipeline Section 7,Vehicle,VEHICLE,,Driving,0,50,MEDIUM
+R0034,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-08-05,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0035,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_CONDITION,2026-02-15,Site B,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,65,HIGH
+R0036,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-02-25,Well Pad 12,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0037,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-04-28,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,67,HIGH
+R0038,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-07-09,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0039,Hot work permit and fire watch were in place during welding activity.,INCIDENT,2026-03-07,Tank Farm 3,Hot Work,HOT_WORK,,Hot Work,0,63,HIGH
+R0040,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",INCIDENT,2026-01-24,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0041,Technician performed vessel entry without gas testing during maintenance shutdown.,NEAR_MISS,2026-03-02,Site B,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0042,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_ACT,2026-04-13,Site B,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,64,HIGH
+R0043,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-01-20,Site B,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0044,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,NEAR_MISS,2026-05-07,Pipeline Section 7,Vehicle,VEHICLE,,Driving,0,62,HIGH
+R0045,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_CONDITION,2026-05-15,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,64,HIGH
+R0046,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-02-03,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,22,LOW
+R0047,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-02-08,Pipeline Section 7,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0048,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-01-22,Tank Farm 3,Hot Work,HOT_WORK,,Hot Work,0,58,MEDIUM
+R0049,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-02-04,Site C - Refinery,Chemical,CHEMICAL,,Chemical Exposure,0,46,MEDIUM
+R0050,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,UNSAFE_ACT,2026-06-07,Tank Farm 3,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0051,Electrical panel was left open with exposed live wire near walking path.,UNSAFE_ACT,2026-02-21,Loading Terminal,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0052,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,NEAR_MISS,2026-03-21,Tank Farm 3,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0053,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-01-04,Site B,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,69,HIGH
+R0054,Worker was not wearing safety glasses in the workshop area.,UNSAFE_ACT,2026-06-19,Site C - Refinery,Ppe,PPE,,Permit to Work,0,37,MEDIUM
+R0055,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,NEAR_MISS,2026-06-26,Site A,Vehicle,VEHICLE,,Driving,0,45,MEDIUM
+R0056,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_CONDITION,2026-02-12,Loading Terminal,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,56,MEDIUM
+R0057,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_CONDITION,2026-03-14,Site A,Fire,FIRE,,Fire / Explosion,0,59,MEDIUM
+R0058,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_CONDITION,2026-05-06,Site B,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,65,HIGH
+R0059,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-04-27,Maintenance Yard,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0060,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_CONDITION,2026-01-22,Well Pad 12,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,50,MEDIUM
+R0061,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-05-12,Loading Terminal,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0062,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_ACT,2026-02-09,Site C - Refinery,Chemical,CHEMICAL,,Chemical Exposure,0,56,MEDIUM
+R0063,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-07-12,Pipeline Section 7,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0064,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-07-19,Well Pad 12,Vehicle,VEHICLE,,Driving,0,60,MEDIUM
+R0065,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,UNSAFE_ACT,2026-04-12,Loading Terminal,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0066,Confined space entry was performed with atmospheric testing completed and standby person present.,NEAR_MISS,2026-02-24,Tank Farm 3,Confined Space,CONFINED_SPACE,,Confined Space,0,69,HIGH
+R0067,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-06-13,Tank Farm 3,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0068,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-07-22,Site C - Refinery,Electrical,ELECTRICAL,,Electrical,0,54,MEDIUM
+R0069,Minor gas odor was reported and area was isolated with no ignition sources present.,INCIDENT,2026-01-10,Tank Farm 3,Fire,FIRE,,Fire / Explosion,0,67,HIGH
+R0070,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",INCIDENT,2026-06-15,Maintenance Yard,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0071,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-08-26,Site C - Refinery,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0072,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-02-27,Well Pad 12,Chemical,CHEMICAL,,Chemical Exposure,0,48,MEDIUM
+R0073,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_CONDITION,2026-03-01,Site A,Chemical,CHEMICAL,,Chemical Exposure,0,50,MEDIUM
+R0074,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_ACT,2026-08-14,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,70,HIGH
+R0075,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-04-05,Site A,Ppe,PPE,,Permit to Work,0,40,MEDIUM
+R0076,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_CONDITION,2026-03-26,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,28,LOW
+R0077,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-08-05,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0078,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-08-20,Loading Terminal,Chemical,CHEMICAL,,Chemical Exposure,0,59,MEDIUM
+R0079,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-08-09,Well Pad 12,Electrical,ELECTRICAL,,Electrical,0,58,MEDIUM
+R0080,Worker was exposed to chemical spill without wearing respirator or protective equipment.,NEAR_MISS,2026-04-09,Maintenance Yard,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0081,Confined space entry was performed with atmospheric testing completed and standby person present.,NEAR_MISS,2026-06-11,Site B,Confined Space,CONFINED_SPACE,,Confined Space,0,61,HIGH
+R0082,Improper scaffolding was noted with no guardrail installed at elevated platform.,NEAR_MISS,2026-03-23,Well Pad 12,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0083,Confined space entry was performed with atmospheric testing completed and standby person present.,NEAR_MISS,2026-08-14,Site A,Confined Space,CONFINED_SPACE,,Confined Space,0,66,HIGH
+R0084,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",INCIDENT,2026-01-28,Loading Terminal,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0085,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-07-28,Loading Terminal,Lifting,LIFTING,,Lifting Operations,0,54,MEDIUM
+R0086,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_CONDITION,2026-08-08,Tank Farm 3,Electrical,ELECTRICAL,,Electrical,0,66,HIGH
+R0087,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,INCIDENT,2026-06-22,Loading Terminal,Vehicle,VEHICLE,,Driving,0,50,MEDIUM
+R0088,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_CONDITION,2026-01-13,Site A,Housekeeping,HOUSEKEEPING,,Permit to Work,0,30,LOW
+R0089,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-08-06,Site A,Confined Space,CONFINED_SPACE,,Confined Space,0,70,HIGH
+R0090,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,UNSAFE_ACT,2026-08-11,Pipeline Section 7,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0091,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-05-27,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,31,MEDIUM
+R0092,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_ACT,2026-06-08,Site B,Lifting,LIFTING,,Lifting Operations,0,57,MEDIUM
+R0093,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-04-07,Site A,Housekeeping,HOUSEKEEPING,,Permit to Work,0,31,MEDIUM
+R0094,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_CONDITION,2026-08-22,Site B,Fire,FIRE,,Fire / Explosion,0,59,MEDIUM
+R0095,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-05-25,Pipeline Section 7,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0096,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_ACT,2026-03-10,Site B,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,72,HIGH
+R0097,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-07-13,Well Pad 12,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0098,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-02-23,Tank Farm 3,Confined Space,CONFINED_SPACE,,Confined Space,0,73,HIGH
+R0099,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_ACT,2026-06-18,Loading Terminal,Chemical,CHEMICAL,,Chemical Exposure,0,53,MEDIUM
+R0100,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-01-28,Loading Terminal,Chemical,CHEMICAL,,Chemical Exposure,0,49,MEDIUM
+R0101,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-08-23,Site C - Refinery,Lifting,LIFTING,,Lifting Operations,0,56,MEDIUM
+R0102,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,NEAR_MISS,2026-08-15,Loading Terminal,Vehicle,VEHICLE,,Driving,0,53,MEDIUM
+R0103,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,NEAR_MISS,2026-04-27,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,34,MEDIUM
+R0104,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,NEAR_MISS,2026-07-11,Site A,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0105,Lifting operation followed load chart with rigging inspected prior to lift.,INCIDENT,2026-04-12,Tank Farm 3,Lifting,LIFTING,,Lifting Operations,0,56,MEDIUM
+R0106,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",INCIDENT,2026-05-18,Site A,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0107,Electrical panel was left open with exposed live wire near walking path.,UNSAFE_ACT,2026-07-16,Well Pad 12,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0108,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-08-26,Site A,Ppe,PPE,,Permit to Work,0,44,MEDIUM
+R0109,Confined space entry was performed with atmospheric testing completed and standby person present.,INCIDENT,2026-04-10,Pipeline Section 7,Confined Space,CONFINED_SPACE,,Confined Space,0,61,HIGH
+R0110,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-07-24,Pipeline Section 7,Lifting,LIFTING,,Lifting Operations,0,65,HIGH
+R0111,Exclusion zone was maintained and no personnel were in line of fire during the lift.,NEAR_MISS,2026-05-08,Site B,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,54,MEDIUM
+R0112,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-03-07,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,29,LOW
+R0113,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,NEAR_MISS,2026-02-27,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,32,MEDIUM
+R0114,Hot work permit and fire watch were in place during welding activity.,UNSAFE_CONDITION,2026-05-01,Site C - Refinery,Hot Work,HOT_WORK,,Hot Work,0,57,MEDIUM
+R0115,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-05-23,Site C - Refinery,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0116,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-05-16,Maintenance Yard,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0117,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",UNSAFE_ACT,2026-05-28,Maintenance Yard,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0118,Worker was observed working at height without a safety harness on the scaffold.,NEAR_MISS,2026-02-19,Site A,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0119,Improper scaffolding was noted with no guardrail installed at elevated platform.,NEAR_MISS,2026-02-08,Site B,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0120,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_CONDITION,2026-07-15,Maintenance Yard,Electrical,ELECTRICAL,,Electrical,0,64,HIGH
+R0121,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-01-20,Site B,Hot Work,HOT_WORK,,Hot Work,0,64,HIGH
+R0122,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_CONDITION,2026-05-22,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,34,MEDIUM
+R0123,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_ACT,2026-03-01,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,59,MEDIUM
+R0124,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-01-08,Tank Farm 3,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0125,Worker was not wearing safety glasses in the workshop area.,UNSAFE_ACT,2026-04-09,Well Pad 12,Ppe,PPE,,Permit to Work,0,38,MEDIUM
+R0126,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-03-09,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,52,MEDIUM
+R0127,Confined space entry was performed with atmospheric testing completed and standby person present.,NEAR_MISS,2026-05-15,Site B,Confined Space,CONFINED_SPACE,,Confined Space,0,56,MEDIUM
+R0128,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-08-15,Site B,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0129,Minor gas odor was reported and area was isolated with no ignition sources present.,NEAR_MISS,2026-05-01,Site B,Fire,FIRE,,Fire / Explosion,0,60,MEDIUM
+R0130,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_ACT,2026-05-19,Site A,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,73,HIGH
+R0131,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-05-06,Loading Terminal,Housekeeping,HOUSEKEEPING,,Permit to Work,0,30,LOW
+R0132,Worker was exposed to chemical spill without wearing respirator or protective equipment.,NEAR_MISS,2026-06-14,Pipeline Section 7,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0133,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-06-14,Maintenance Yard,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0134,Hot work permit and fire watch were in place during welding activity.,UNSAFE_ACT,2026-08-03,Pipeline Section 7,Hot Work,HOT_WORK,,Hot Work,0,65,HIGH
+R0135,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,NEAR_MISS,2026-01-22,Maintenance Yard,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0136,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,NEAR_MISS,2026-08-21,Maintenance Yard,Vehicle,VEHICLE,,Driving,0,46,MEDIUM
+R0137,Cluttered walkway with minor trip hazard was reported near the warehouse.,NEAR_MISS,2026-03-10,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,24,LOW
+R0138,Worker was not wearing safety glasses in the workshop area.,UNSAFE_ACT,2026-04-23,Site C - Refinery,Ppe,PPE,,Permit to Work,0,35,MEDIUM
+R0139,Hot work permit and fire watch were in place during welding activity.,INCIDENT,2026-02-08,Site B,Hot Work,HOT_WORK,,Hot Work,0,57,MEDIUM
+R0140,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",UNSAFE_ACT,2026-08-23,Tank Farm 3,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0141,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-08-08,Maintenance Yard,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0142,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_CONDITION,2026-03-28,Site B,Electrical,ELECTRICAL,,Electrical,0,57,MEDIUM
+R0143,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-05-27,Site A,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0144,Hot work permit and fire watch were in place during welding activity.,INCIDENT,2026-03-15,Maintenance Yard,Hot Work,HOT_WORK,,Hot Work,0,62,HIGH
+R0145,Exclusion zone was maintained and no personnel were in line of fire during the lift.,INCIDENT,2026-08-11,Well Pad 12,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,56,MEDIUM
+R0146,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-04-28,Loading Terminal,Ppe,PPE,,Permit to Work,0,39,MEDIUM
+R0147,Technician performed vessel entry without gas testing during maintenance shutdown.,INCIDENT,2026-07-13,Site C - Refinery,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0148,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-02-28,Maintenance Yard,Lifting,LIFTING,,Lifting Operations,0,51,MEDIUM
+R0149,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-03-14,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0150,Confined space entry was performed with atmospheric testing completed and standby person present.,NEAR_MISS,2026-07-21,Site B,Confined Space,CONFINED_SPACE,,Confined Space,0,65,HIGH
+R0151,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",NEAR_MISS,2026-06-21,Maintenance Yard,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0152,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_ACT,2026-04-21,Tank Farm 3,Electrical,ELECTRICAL,,Electrical,0,58,MEDIUM
+R0153,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_ACT,2026-02-15,Site C - Refinery,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,61,HIGH
+R0154,Worker was not wearing safety glasses in the workshop area.,UNSAFE_ACT,2026-06-26,Site A,Ppe,PPE,,Permit to Work,0,31,MEDIUM
+R0155,Hot work permit and fire watch were in place during welding activity.,INCIDENT,2026-03-08,Loading Terminal,Hot Work,HOT_WORK,,Hot Work,0,59,MEDIUM
+R0156,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-03-03,Loading Terminal,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0157,Minor gas odor was reported and area was isolated with no ignition sources present.,INCIDENT,2026-03-08,Maintenance Yard,Fire,FIRE,,Fire / Explosion,0,67,HIGH
+R0158,Worker was exposed to chemical spill without wearing respirator or protective equipment.,NEAR_MISS,2026-01-26,Maintenance Yard,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0159,Hot work permit and fire watch were in place during welding activity.,UNSAFE_CONDITION,2026-02-15,Pipeline Section 7,Hot Work,HOT_WORK,,Hot Work,0,67,HIGH
+R0160,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-05-15,Tank Farm 3,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0161,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-04-13,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0162,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-07-09,Site A,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0163,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-08-27,Tank Farm 3,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0164,Cluttered walkway with minor trip hazard was reported near the warehouse.,NEAR_MISS,2026-04-21,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,33,MEDIUM
+R0165,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_CONDITION,2026-02-21,Site A,Fire,FIRE,,Fire / Explosion,0,68,HIGH
+R0166,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-03-03,Tank Farm 3,Hot Work,HOT_WORK,,Hot Work,0,56,MEDIUM
+R0167,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-03-26,Pipeline Section 7,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0168,Electrical panel was left open with exposed live wire near walking path.,UNSAFE_ACT,2026-05-27,Maintenance Yard,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0169,Hot work permit and fire watch were in place during welding activity.,INCIDENT,2026-02-05,Well Pad 12,Hot Work,HOT_WORK,,Hot Work,0,55,MEDIUM
+R0170,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-02-26,Loading Terminal,Chemical,CHEMICAL,,Chemical Exposure,0,59,MEDIUM
+R0171,Worker entered confined space without atmospheric testing. No standby person was present.,UNSAFE_ACT,2026-08-12,Tank Farm 3,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0172,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-02-22,Well Pad 12,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0173,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-04-21,Site B,Lifting,LIFTING,,Lifting Operations,0,58,MEDIUM
+R0174,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-07-04,Site C - Refinery,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0175,Technician performed vessel entry without gas testing during maintenance shutdown.,NEAR_MISS,2026-02-04,Well Pad 12,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0176,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-06-22,Loading Terminal,Electrical,ELECTRICAL,,Electrical,0,57,MEDIUM
+R0177,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-02-27,Maintenance Yard,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0178,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_ACT,2026-06-07,Maintenance Yard,Fire,FIRE,,Fire / Explosion,0,64,HIGH
+R0179,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",UNSAFE_ACT,2026-06-18,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0180,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-02-28,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0181,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_ACT,2026-01-26,Pipeline Section 7,Confined Space,CONFINED_SPACE,,Confined Space,0,67,HIGH
+R0182,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_CONDITION,2026-02-27,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,65,HIGH
+R0183,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-03-26,Site A,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0184,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-05-26,Site C - Refinery,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0185,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-01-12,Well Pad 12,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0186,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-05-02,Site C - Refinery,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0187,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-02-16,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,35,MEDIUM
+R0188,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-08-17,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,34,MEDIUM
+R0189,Minor gas odor was reported and area was isolated with no ignition sources present.,NEAR_MISS,2026-08-21,Site A,Fire,FIRE,,Fire / Explosion,0,64,HIGH
+R0190,Technician performed vessel entry without gas testing during maintenance shutdown.,NEAR_MISS,2026-02-16,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0191,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-02-05,Tank Farm 3,Confined Space,CONFINED_SPACE,,Confined Space,0,60,MEDIUM
+R0192,Minor gas odor was reported and area was isolated with no ignition sources present.,NEAR_MISS,2026-07-20,Tank Farm 3,Fire,FIRE,,Fire / Explosion,0,73,HIGH
+R0193,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-02-26,Site B,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0194,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-04-14,Maintenance Yard,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0195,Maintenance was carried out after proper lockout tagout isolation was verified.,INCIDENT,2026-07-14,Site B,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,65,HIGH
+R0196,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",INCIDENT,2026-05-12,Site C - Refinery,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0197,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_ACT,2026-02-03,Loading Terminal,Chemical,CHEMICAL,,Chemical Exposure,0,51,MEDIUM
+R0198,Worker was observed working at height without a safety harness on the scaffold.,INCIDENT,2026-01-19,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0199,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-07-28,Site A,Chemical,CHEMICAL,,Chemical Exposure,0,50,MEDIUM
+R0200,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-02-19,Well Pad 12,Hot Work,HOT_WORK,,Hot Work,0,62,HIGH
+R0201,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-02-12,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0202,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-07-28,Site A,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0203,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_ACT,2026-03-09,Tank Farm 3,Fire,FIRE,,Fire / Explosion,0,68,HIGH
+R0204,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-03-19,Loading Terminal,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0205,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_ACT,2026-02-24,Well Pad 12,Confined Space,CONFINED_SPACE,,Confined Space,0,66,HIGH
+R0206,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,NEAR_MISS,2026-03-12,Tank Farm 3,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0207,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-01-05,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,35,MEDIUM
+R0208,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-05-15,Loading Terminal,Housekeeping,HOUSEKEEPING,,Permit to Work,0,30,LOW
+R0209,Lifting operation followed load chart with rigging inspected prior to lift.,INCIDENT,2026-05-07,Site B,Lifting,LIFTING,,Lifting Operations,0,65,HIGH
+R0210,Exclusion zone was maintained and no personnel were in line of fire during the lift.,NEAR_MISS,2026-08-17,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,50,MEDIUM
+R0211,Technician performed vessel entry without gas testing during maintenance shutdown.,INCIDENT,2026-01-01,Well Pad 12,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0212,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-05-11,Site B,Hot Work,HOT_WORK,,Hot Work,0,54,MEDIUM
+R0213,Worker entered confined space without atmospheric testing. No standby person was present.,UNSAFE_ACT,2026-03-13,Well Pad 12,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0214,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-02-13,Site A,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0215,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-06-19,Loading Terminal,Vehicle,VEHICLE,,Driving,0,50,MEDIUM
+R0216,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-05-04,Loading Terminal,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0217,Worker entered confined space without atmospheric testing. No standby person was present.,INCIDENT,2026-08-27,Pipeline Section 7,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0218,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-07-19,Loading Terminal,Confined Space,CONFINED_SPACE,,Confined Space,0,61,HIGH
+R0219,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-06-08,Pipeline Section 7,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0220,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-04-25,Pipeline Section 7,Housekeeping,HOUSEKEEPING,,Permit to Work,0,24,LOW
+R0221,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_CONDITION,2026-02-05,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,55,MEDIUM
+R0222,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-02-06,Maintenance Yard,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0223,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-06-28,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0224,Improper scaffolding was noted with no guardrail installed at elevated platform.,NEAR_MISS,2026-08-21,Tank Farm 3,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0225,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,NEAR_MISS,2026-02-10,Maintenance Yard,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0226,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-05-03,Site B,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0227,Minor gas odor was reported and area was isolated with no ignition sources present.,INCIDENT,2026-08-19,Site A,Fire,FIRE,,Fire / Explosion,0,71,HIGH
+R0228,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",UNSAFE_ACT,2026-06-20,Maintenance Yard,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0229,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-02-26,Pipeline Section 7,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0230,Worker was not wearing safety glasses in the workshop area.,UNSAFE_CONDITION,2026-01-08,Maintenance Yard,Ppe,PPE,,Permit to Work,0,36,MEDIUM
+R0231,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-03-12,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0232,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-01-26,Pipeline Section 7,Hot Work,HOT_WORK,,Hot Work,0,61,HIGH
+R0233,Confined space entry was performed with atmospheric testing completed and standby person present.,INCIDENT,2026-05-09,Site C - Refinery,Confined Space,CONFINED_SPACE,,Confined Space,0,60,MEDIUM
+R0234,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",INCIDENT,2026-03-12,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0235,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-02-10,Loading Terminal,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0236,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-02-21,Loading Terminal,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0237,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-05-06,Well Pad 12,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0238,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-03-05,Site B,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0239,Hot work permit and fire watch were in place during welding activity.,UNSAFE_ACT,2026-06-25,Site C - Refinery,Hot Work,HOT_WORK,,Hot Work,0,58,MEDIUM
+R0240,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_CONDITION,2026-03-27,Site C - Refinery,Fire,FIRE,,Fire / Explosion,0,62,HIGH
+R0241,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-06-22,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,28,LOW
+R0242,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-08-08,Well Pad 12,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0243,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-08-15,Tank Farm 3,Hot Work,HOT_WORK,,Hot Work,0,59,MEDIUM
+R0244,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-03-27,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,35,MEDIUM
+R0245,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_ACT,2026-08-28,Pipeline Section 7,Fire,FIRE,,Fire / Explosion,0,60,MEDIUM
+R0246,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_ACT,2026-05-03,Site C - Refinery,Electrical,ELECTRICAL,,Electrical,0,58,MEDIUM
+R0247,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,UNSAFE_ACT,2026-07-03,Well Pad 12,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0248,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-01-13,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0249,Maintenance was carried out after proper lockout tagout isolation was verified.,NEAR_MISS,2026-04-01,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,61,HIGH
+R0250,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-03-02,Tank Farm 3,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0251,Lifting operation followed load chart with rigging inspected prior to lift.,INCIDENT,2026-01-03,Site A,Lifting,LIFTING,,Lifting Operations,0,58,MEDIUM
+R0252,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-07-04,Tank Farm 3,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0253,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_ACT,2026-04-14,Maintenance Yard,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,59,MEDIUM
+R0254,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_ACT,2026-04-23,Site C - Refinery,Confined Space,CONFINED_SPACE,,Confined Space,0,62,HIGH
+R0255,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-04-19,Loading Terminal,Hot Work,HOT_WORK,,Hot Work,0,55,MEDIUM
+R0256,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_ACT,2026-06-03,Site A,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,74,HIGH
+R0257,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-07-12,Tank Farm 3,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0258,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-06-08,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,26,LOW
+R0259,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_CONDITION,2026-01-12,Pipeline Section 7,Housekeeping,HOUSEKEEPING,,Permit to Work,0,35,MEDIUM
+R0260,Worker was exposed to chemical spill without wearing respirator or protective equipment.,NEAR_MISS,2026-08-21,Site C - Refinery,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0261,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-05-07,Site A,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0262,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-07-27,Maintenance Yard,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0263,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,UNSAFE_ACT,2026-05-12,Site A,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0264,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-06-14,Loading Terminal,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0265,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,NEAR_MISS,2026-03-16,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,34,MEDIUM
+R0266,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_ACT,2026-07-03,Loading Terminal,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,55,MEDIUM
+R0267,Minor gas odor was reported and area was isolated with no ignition sources present.,NEAR_MISS,2026-06-04,Site B,Fire,FIRE,,Fire / Explosion,0,64,HIGH
+R0268,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",NEAR_MISS,2026-08-20,Loading Terminal,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0269,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-01-24,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,66,HIGH
+R0270,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_ACT,2026-02-22,Loading Terminal,Fire,FIRE,,Fire / Explosion,0,64,HIGH
+R0271,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_CONDITION,2026-01-05,Maintenance Yard,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,61,HIGH
+R0272,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-06-12,Loading Terminal,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0273,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-08-12,Pipeline Section 7,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0274,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",UNSAFE_ACT,2026-06-13,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0275,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-01-24,Site C - Refinery,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0276,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_ACT,2026-05-25,Tank Farm 3,Lifting,LIFTING,,Lifting Operations,0,63,HIGH
+R0277,Worker was not wearing safety glasses in the workshop area.,NEAR_MISS,2026-08-07,Site B,Ppe,PPE,,Permit to Work,0,37,MEDIUM
+R0278,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-08-03,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0279,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-05-28,Site C - Refinery,Chemical,CHEMICAL,,Chemical Exposure,0,49,MEDIUM
+R0280,Worker was not wearing safety glasses in the workshop area.,NEAR_MISS,2026-04-04,Well Pad 12,Ppe,PPE,,Permit to Work,0,39,MEDIUM
+R0281,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-06-18,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0282,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-02-03,Tank Farm 3,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0283,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,NEAR_MISS,2026-07-27,Site B,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0284,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-08-15,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0285,Improper scaffolding was noted with no guardrail installed at elevated platform.,INCIDENT,2026-03-25,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0286,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-03-10,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,51,MEDIUM
+R0287,Worker was seen working at height with harness properly secured and scaffold inspected.,NEAR_MISS,2026-05-28,Site B,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,62,HIGH
+R0288,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-05-05,Tank Farm 3,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0289,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_CONDITION,2026-03-06,Pipeline Section 7,Fire,FIRE,,Fire / Explosion,0,63,HIGH
+R0290,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-01-21,Tank Farm 3,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0291,Worker was exposed to chemical spill without wearing respirator or protective equipment.,NEAR_MISS,2026-01-16,Tank Farm 3,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0292,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-07-10,Maintenance Yard,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0293,Confined space entry was performed with atmospheric testing completed and standby person present.,INCIDENT,2026-07-16,Maintenance Yard,Confined Space,CONFINED_SPACE,,Confined Space,0,56,MEDIUM
+R0294,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-06-28,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0295,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_CONDITION,2026-06-17,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,32,MEDIUM
+R0296,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-05-15,Well Pad 12,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0297,Improper scaffolding was noted with no guardrail installed at elevated platform.,NEAR_MISS,2026-07-28,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0298,Maintenance was carried out after proper lockout tagout isolation was verified.,NEAR_MISS,2026-04-25,Site C - Refinery,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,61,HIGH
+R0299,Lifting operation followed load chart with rigging inspected prior to lift.,INCIDENT,2026-05-16,Site A,Lifting,LIFTING,,Lifting Operations,0,64,HIGH
+R0300,Confined space entry was performed with atmospheric testing completed and standby person present.,INCIDENT,2026-04-07,Pipeline Section 7,Confined Space,CONFINED_SPACE,,Confined Space,0,68,HIGH
+R0301,Technician performed vessel entry without gas testing during maintenance shutdown.,NEAR_MISS,2026-08-10,Site A,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0302,Worker was observed working at height without a safety harness on the scaffold.,NEAR_MISS,2026-06-25,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0303,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_ACT,2026-04-12,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,49,MEDIUM
+R0304,Confined space entry was performed with atmospheric testing completed and standby person present.,INCIDENT,2026-05-27,Site B,Confined Space,CONFINED_SPACE,,Confined Space,0,68,HIGH
+R0305,Improper scaffolding was noted with no guardrail installed at elevated platform.,NEAR_MISS,2026-06-18,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0306,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-01-02,Site A,Housekeeping,HOUSEKEEPING,,Permit to Work,0,26,LOW
+R0307,Improper scaffolding was noted with no guardrail installed at elevated platform.,INCIDENT,2026-08-05,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0308,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-07-20,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0309,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-08-23,Tank Farm 3,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0310,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-02-14,Tank Farm 3,Lifting,LIFTING,,Lifting Operations,0,54,MEDIUM
+R0311,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-05-21,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,31,MEDIUM
+R0312,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-03-17,Loading Terminal,Housekeeping,HOUSEKEEPING,,Permit to Work,0,30,LOW
+R0313,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-02-07,Site A,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0314,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",UNSAFE_ACT,2026-07-23,Well Pad 12,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0315,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,INCIDENT,2026-01-23,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,60,MEDIUM
+R0316,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-08-17,Loading Terminal,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0317,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",INCIDENT,2026-06-18,Pipeline Section 7,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0318,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-08-07,Well Pad 12,Chemical,CHEMICAL,,Chemical Exposure,0,63,HIGH
+R0319,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,UNSAFE_ACT,2026-05-25,Tank Farm 3,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0320,Worker was not wearing safety glasses in the workshop area.,NEAR_MISS,2026-08-12,Tank Farm 3,Ppe,PPE,,Permit to Work,0,37,MEDIUM
+R0321,Hot work permit and fire watch were in place during welding activity.,INCIDENT,2026-07-27,Pipeline Section 7,Hot Work,HOT_WORK,,Hot Work,0,59,MEDIUM
+R0322,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-05-23,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,27,LOW
+R0323,Exclusion zone was maintained and no personnel were in line of fire during the lift.,NEAR_MISS,2026-08-07,Well Pad 12,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,60,MEDIUM
+R0324,Electrical panel was properly closed and de-energized before inspection.,NEAR_MISS,2026-03-04,Well Pad 12,Electrical,ELECTRICAL,,Electrical,0,61,HIGH
+R0325,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_CONDITION,2026-04-02,Site B,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,64,HIGH
+R0326,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-03-01,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,55,MEDIUM
+R0327,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,INCIDENT,2026-04-25,Tank Farm 3,Vehicle,VEHICLE,,Driving,0,60,MEDIUM
+R0328,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-02-21,Well Pad 12,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0329,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-03-02,Loading Terminal,Electrical,ELECTRICAL,,Electrical,0,51,MEDIUM
+R0330,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_ACT,2026-01-10,Site B,Lifting,LIFTING,,Lifting Operations,0,55,MEDIUM
+R0331,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",INCIDENT,2026-08-05,Maintenance Yard,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0332,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,NEAR_MISS,2026-03-24,Maintenance Yard,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0333,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-06-26,Tank Farm 3,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0334,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-07-27,Loading Terminal,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0335,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-02-06,Site C - Refinery,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0336,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_ACT,2026-05-13,Well Pad 12,Lifting,LIFTING,,Lifting Operations,0,57,MEDIUM
+R0337,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-01-09,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0338,Worker was not wearing safety glasses in the workshop area.,UNSAFE_ACT,2026-08-10,Site C - Refinery,Ppe,PPE,,Permit to Work,0,30,LOW
+R0339,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-05-23,Site B,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0340,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-04-08,Site C - Refinery,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0341,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-07-23,Maintenance Yard,Lifting,LIFTING,,Lifting Operations,0,58,MEDIUM
+R0342,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_CONDITION,2026-04-22,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,39,MEDIUM
+R0343,Electrical panel was left open with exposed live wire near walking path.,INCIDENT,2026-06-03,Site B,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0344,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-03-06,Pipeline Section 7,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0345,Electrical panel was left open with exposed live wire near walking path.,INCIDENT,2026-04-23,Maintenance Yard,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0346,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_ACT,2026-08-05,Loading Terminal,Confined Space,CONFINED_SPACE,,Confined Space,0,69,HIGH
+R0347,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-08-22,Tank Farm 3,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0348,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,NEAR_MISS,2026-01-24,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,27,LOW
+R0349,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-06-23,Site B,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0350,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-01-10,Loading Terminal,Electrical,ELECTRICAL,,Electrical,0,50,MEDIUM
+R0351,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-06-13,Maintenance Yard,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,66,HIGH
+R0352,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-03-21,Pipeline Section 7,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0353,Worker was observed working at height without a safety harness on the scaffold.,NEAR_MISS,2026-03-24,Well Pad 12,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0354,Worker entered confined space without atmospheric testing. No standby person was present.,NEAR_MISS,2026-07-18,Loading Terminal,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0355,Maintenance was carried out after proper lockout tagout isolation was verified.,NEAR_MISS,2026-03-09,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,64,HIGH
+R0356,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-01-08,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,22,LOW
+R0357,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_ACT,2026-08-20,Site A,Confined Space,CONFINED_SPACE,,Confined Space,0,64,HIGH
+R0358,Maintenance was carried out after proper lockout tagout isolation was verified.,INCIDENT,2026-04-18,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,60,MEDIUM
+R0359,Cluttered walkway with minor trip hazard was reported near the warehouse.,NEAR_MISS,2026-04-27,Pipeline Section 7,Housekeeping,HOUSEKEEPING,,Permit to Work,0,23,LOW
+R0360,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-04-10,Site C - Refinery,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0361,Chemical handling was performed with full PPE and respirator worn as required.,INCIDENT,2026-05-09,Site A,Chemical,CHEMICAL,,Chemical Exposure,0,54,MEDIUM
+R0362,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-08-02,Pipeline Section 7,Electrical,ELECTRICAL,,Electrical,0,60,MEDIUM
+R0363,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-06-23,Loading Terminal,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0364,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,INCIDENT,2026-03-25,Maintenance Yard,Vehicle,VEHICLE,,Driving,0,49,MEDIUM
+R0365,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_CONDITION,2026-08-02,Loading Terminal,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,61,HIGH
+R0366,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-07-08,Tank Farm 3,Vehicle,VEHICLE,,Driving,0,59,MEDIUM
+R0367,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-08-28,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0368,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_ACT,2026-05-13,Site A,Confined Space,CONFINED_SPACE,,Confined Space,0,65,HIGH
+R0369,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-08-07,Pipeline Section 7,Confined Space,CONFINED_SPACE,,Confined Space,0,66,HIGH
+R0370,Hot work permit and fire watch were in place during welding activity.,UNSAFE_CONDITION,2026-02-24,Maintenance Yard,Hot Work,HOT_WORK,,Hot Work,0,52,MEDIUM
+R0371,Maintenance was carried out after proper lockout tagout isolation was verified.,INCIDENT,2026-04-18,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,66,HIGH
+R0372,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-06-10,Tank Farm 3,Housekeeping,HOUSEKEEPING,,Permit to Work,0,31,MEDIUM
+R0373,Exclusion zone was maintained and no personnel were in line of fire during the lift.,INCIDENT,2026-02-26,Maintenance Yard,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,58,MEDIUM
+R0374,Cluttered walkway with minor trip hazard was reported near the warehouse.,NEAR_MISS,2026-06-14,Site A,Housekeeping,HOUSEKEEPING,,Permit to Work,0,29,LOW
+R0375,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-05-18,Loading Terminal,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0376,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-04-13,Well Pad 12,Hot Work,HOT_WORK,,Hot Work,0,54,MEDIUM
+R0377,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-05-25,Maintenance Yard,Lifting,LIFTING,,Lifting Operations,0,67,HIGH
+R0378,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-03-24,Pipeline Section 7,Housekeeping,HOUSEKEEPING,,Permit to Work,0,38,MEDIUM
+R0379,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-03-18,Site A,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,64,HIGH
+R0380,Electrical panel was left open with exposed live wire near walking path.,INCIDENT,2026-01-25,Site A,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0381,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-02-23,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,55,MEDIUM
+R0382,Worker entered confined space without atmospheric testing. No standby person was present.,NEAR_MISS,2026-06-02,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0383,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_ACT,2026-07-01,Site A,Chemical,CHEMICAL,,Chemical Exposure,0,50,MEDIUM
+R0384,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-01-17,Loading Terminal,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0385,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_CONDITION,2026-04-07,Tank Farm 3,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,56,MEDIUM
+R0386,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_ACT,2026-06-13,Maintenance Yard,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,53,MEDIUM
+R0387,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-02-21,Site A,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0388,Confined space entry was performed with atmospheric testing completed and standby person present.,INCIDENT,2026-08-02,Site A,Confined Space,CONFINED_SPACE,,Confined Space,0,66,HIGH
+R0389,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-07-21,Pipeline Section 7,Ppe,PPE,,Permit to Work,0,30,LOW
+R0390,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-04-07,Maintenance Yard,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0391,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-05-18,Site A,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0392,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_CONDITION,2026-03-25,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,59,MEDIUM
+R0393,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-07-22,Pipeline Section 7,Confined Space,CONFINED_SPACE,,Confined Space,0,60,MEDIUM
+R0394,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-06-02,Site B,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,98,CRITICAL
+R0395,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,NEAR_MISS,2026-07-25,Pipeline Section 7,Vehicle,VEHICLE,,Driving,0,47,MEDIUM
+R0396,Worker entered confined space without atmospheric testing. No standby person was present.,NEAR_MISS,2026-08-08,Pipeline Section 7,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0397,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_CONDITION,2026-07-03,Tank Farm 3,Electrical,ELECTRICAL,,Electrical,0,61,HIGH
+R0398,Maintenance was carried out after proper lockout tagout isolation was verified.,NEAR_MISS,2026-03-13,Site C - Refinery,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,56,MEDIUM
+R0399,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,NEAR_MISS,2026-02-03,Site A,Housekeeping,HOUSEKEEPING,,Permit to Work,0,32,MEDIUM
+R0400,Hot work permit and fire watch were in place during welding activity.,NEAR_MISS,2026-02-05,Site B,Hot Work,HOT_WORK,,Hot Work,0,61,HIGH
+R0401,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-02-01,Site B,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,67,HIGH
+R0402,Exclusion zone was maintained and no personnel were in line of fire during the lift.,NEAR_MISS,2026-07-01,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,52,MEDIUM
+R0403,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-03-22,Loading Terminal,Vehicle,VEHICLE,,Driving,0,50,MEDIUM
+R0404,Worker was seen working at height with harness properly secured and scaffold inspected.,NEAR_MISS,2026-05-16,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,60,MEDIUM
+R0405,Confined space entry was performed with atmospheric testing completed and standby person present.,NEAR_MISS,2026-07-10,Maintenance Yard,Confined Space,CONFINED_SPACE,,Confined Space,0,62,HIGH
+R0406,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-08-20,Well Pad 12,Confined Space,CONFINED_SPACE,,Confined Space,0,63,HIGH
+R0407,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-01-13,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0408,Minor gas odor was reported and area was isolated with no ignition sources present.,INCIDENT,2026-06-14,Site C - Refinery,Fire,FIRE,,Fire / Explosion,0,65,HIGH
+R0409,Hot work permit and fire watch were in place during welding activity.,UNSAFE_CONDITION,2026-08-11,Site C - Refinery,Hot Work,HOT_WORK,,Hot Work,0,63,HIGH
+R0410,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-08-19,Well Pad 12,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0411,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",NEAR_MISS,2026-06-04,Well Pad 12,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0412,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-01-24,Maintenance Yard,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0413,Worker was not wearing safety glasses in the workshop area.,NEAR_MISS,2026-02-27,Loading Terminal,Ppe,PPE,,Permit to Work,0,37,MEDIUM
+R0414,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-04-09,Site C - Refinery,Chemical,CHEMICAL,,Chemical Exposure,0,52,MEDIUM
+R0415,Worker was not wearing safety glasses in the workshop area.,UNSAFE_ACT,2026-08-20,Maintenance Yard,Ppe,PPE,,Permit to Work,0,39,MEDIUM
+R0416,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-07-18,Site A,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0417,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_ACT,2026-02-25,Well Pad 12,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,60,MEDIUM
+R0418,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_CONDITION,2026-01-19,Loading Terminal,Chemical,CHEMICAL,,Chemical Exposure,0,58,MEDIUM
+R0419,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-01-04,Tank Farm 3,Housekeeping,HOUSEKEEPING,,Permit to Work,0,32,MEDIUM
+R0420,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_CONDITION,2026-08-12,Loading Terminal,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,70,HIGH
+R0421,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-03-12,Site A,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0422,Lifting operation followed load chart with rigging inspected prior to lift.,INCIDENT,2026-02-04,Site C - Refinery,Lifting,LIFTING,,Lifting Operations,0,54,MEDIUM
+R0423,Exclusion zone was maintained and no personnel were in line of fire during the lift.,INCIDENT,2026-04-17,Maintenance Yard,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,52,MEDIUM
+R0424,Exclusion zone was maintained and no personnel were in line of fire during the lift.,INCIDENT,2026-08-11,Site B,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,51,MEDIUM
+R0425,Hot work permit and fire watch were in place during welding activity.,UNSAFE_ACT,2026-06-21,Site B,Hot Work,HOT_WORK,,Hot Work,0,50,MEDIUM
+R0426,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_CONDITION,2026-03-11,Loading Terminal,Chemical,CHEMICAL,,Chemical Exposure,0,48,MEDIUM
+R0427,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-03-06,Loading Terminal,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0428,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-08-19,Loading Terminal,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0429,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-05-25,Site B,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,98,CRITICAL
+R0430,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-06-11,Well Pad 12,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0431,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-08-17,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0432,Minor gas odor was reported and area was isolated with no ignition sources present.,INCIDENT,2026-02-12,Pipeline Section 7,Fire,FIRE,,Fire / Explosion,0,69,HIGH
+R0433,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-05-20,Site B,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0434,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_ACT,2026-04-10,Site B,Chemical,CHEMICAL,,Chemical Exposure,0,50,MEDIUM
+R0435,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-07-20,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,61,HIGH
+R0436,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-08-21,Site C - Refinery,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0437,Electrical panel was properly closed and de-energized before inspection.,NEAR_MISS,2026-03-06,Pipeline Section 7,Electrical,ELECTRICAL,,Electrical,0,58,MEDIUM
+R0438,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-01-16,Site C - Refinery,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0439,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",INCIDENT,2026-08-14,Maintenance Yard,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0440,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-02-19,Site A,Vehicle,VEHICLE,,Driving,0,57,MEDIUM
+R0441,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-05-08,Tank Farm 3,Housekeeping,HOUSEKEEPING,,Permit to Work,0,28,LOW
+R0442,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-02-19,Site B,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,70,HIGH
+R0443,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-01-25,Maintenance Yard,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0444,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_ACT,2026-04-10,Site A,Electrical,ELECTRICAL,,Electrical,0,58,MEDIUM
+R0445,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",UNSAFE_ACT,2026-08-28,Site B,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0446,Cluttered walkway with minor trip hazard was reported near the warehouse.,NEAR_MISS,2026-07-06,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,27,LOW
+R0447,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",INCIDENT,2026-06-18,Tank Farm 3,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0448,Minor gas odor was reported and area was isolated with no ignition sources present.,NEAR_MISS,2026-05-10,Tank Farm 3,Fire,FIRE,,Fire / Explosion,0,64,HIGH
+R0449,Electrical panel was left open with exposed live wire near walking path.,UNSAFE_ACT,2026-07-02,Tank Farm 3,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0450,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-03-23,Pipeline Section 7,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,99,CRITICAL
+R0451,Maintenance was carried out after proper lockout tagout isolation was verified.,INCIDENT,2026-03-19,Tank Farm 3,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,70,HIGH
+R0452,Worker was exposed to chemical spill without wearing respirator or protective equipment.,NEAR_MISS,2026-02-21,Site B,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0453,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-06-15,Maintenance Yard,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0454,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",INCIDENT,2026-02-24,Maintenance Yard,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0455,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-07-07,Loading Terminal,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0456,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-05-11,Site C - Refinery,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0457,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-01-02,Site B,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0458,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-03-15,Maintenance Yard,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0459,Worker entered confined space without atmospheric testing. No standby person was present.,INCIDENT,2026-03-21,Tank Farm 3,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0460,Worker was seen working at height with harness properly secured and scaffold inspected.,NEAR_MISS,2026-05-03,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,59,MEDIUM
+R0461,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_ACT,2026-07-21,Tank Farm 3,Chemical,CHEMICAL,,Chemical Exposure,0,55,MEDIUM
+R0462,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-02-01,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,30,LOW
+R0463,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_CONDITION,2026-08-01,Site A,Lifting,LIFTING,,Lifting Operations,0,52,MEDIUM
+R0464,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-03-16,Site B,Ppe,PPE,,Permit to Work,0,33,MEDIUM
+R0465,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_ACT,2026-02-11,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,61,HIGH
+R0466,Hot work permit and fire watch were in place during welding activity.,UNSAFE_CONDITION,2026-03-03,Site A,Hot Work,HOT_WORK,,Hot Work,0,57,MEDIUM
+R0467,Minor gas odor was reported and area was isolated with no ignition sources present.,INCIDENT,2026-06-24,Well Pad 12,Fire,FIRE,,Fire / Explosion,0,66,HIGH
+R0468,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-08-28,Well Pad 12,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0469,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_ACT,2026-07-12,Loading Terminal,Confined Space,CONFINED_SPACE,,Confined Space,0,57,MEDIUM
+R0470,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",NEAR_MISS,2026-02-08,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0471,Cluttered walkway with minor trip hazard was reported near the warehouse.,NEAR_MISS,2026-04-17,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,31,MEDIUM
+R0472,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-04-16,Loading Terminal,Housekeeping,HOUSEKEEPING,,Permit to Work,0,31,MEDIUM
+R0473,Worker was observed working at height without a safety harness on the scaffold.,INCIDENT,2026-02-17,Site A,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0474,Exclusion zone was maintained and no personnel were in line of fire during the lift.,INCIDENT,2026-07-12,Site C - Refinery,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,50,MEDIUM
+R0475,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-02-01,Tank Farm 3,Housekeeping,HOUSEKEEPING,,Permit to Work,0,29,LOW
+R0476,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-05-21,Loading Terminal,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0477,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-05-03,Tank Farm 3,Vehicle,VEHICLE,,Driving,0,50,MEDIUM
+R0478,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-06-13,Site B,Confined Space,CONFINED_SPACE,,Confined Space,0,65,HIGH
+R0479,Hot work permit and fire watch were in place during welding activity.,UNSAFE_ACT,2026-04-03,Loading Terminal,Hot Work,HOT_WORK,,Hot Work,0,58,MEDIUM
+R0480,Worker was observed working at height without a safety harness on the scaffold.,INCIDENT,2026-01-10,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0481,Worker was observed working at height without a safety harness on the scaffold.,INCIDENT,2026-01-06,Maintenance Yard,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0482,Exclusion zone was maintained and no personnel were in line of fire during the lift.,NEAR_MISS,2026-03-12,Site C - Refinery,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,59,MEDIUM
+R0483,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-06-26,Loading Terminal,Housekeeping,HOUSEKEEPING,,Permit to Work,0,26,LOW
+R0484,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,NEAR_MISS,2026-02-16,Maintenance Yard,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0485,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-03-12,Site C - Refinery,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0486,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-02-08,Site A,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0487,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-08-12,Loading Terminal,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0488,Improper scaffolding was noted with no guardrail installed at elevated platform.,INCIDENT,2026-07-08,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0489,Maintenance was carried out after proper lockout tagout isolation was verified.,NEAR_MISS,2026-02-19,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,65,HIGH
+R0490,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-03-08,Site A,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0491,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,NEAR_MISS,2026-05-11,Site B,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0492,Electrical panel was properly closed and de-energized before inspection.,NEAR_MISS,2026-04-10,Tank Farm 3,Electrical,ELECTRICAL,,Electrical,0,56,MEDIUM
+R0493,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-06-19,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,33,MEDIUM
+R0494,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_CONDITION,2026-03-01,Loading Terminal,Housekeeping,HOUSEKEEPING,,Permit to Work,0,32,MEDIUM
+R0495,Worker entered confined space without atmospheric testing. No standby person was present.,NEAR_MISS,2026-01-11,Site A,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0496,Cluttered walkway with minor trip hazard was reported near the warehouse.,NEAR_MISS,2026-02-07,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,37,MEDIUM
+R0497,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-05-03,Site A,Vehicle,VEHICLE,,Driving,0,50,MEDIUM
+R0498,Maintenance was carried out after proper lockout tagout isolation was verified.,NEAR_MISS,2026-08-24,Site B,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,68,HIGH
+R0499,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-07-03,Site A,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0500,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-05-09,Pipeline Section 7,Vehicle,VEHICLE,,Driving,0,55,MEDIUM
+R0501,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,NEAR_MISS,2026-05-08,Site B,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0502,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-03-04,Site C - Refinery,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0503,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-02-18,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0504,Cluttered walkway with minor trip hazard was reported near the warehouse.,NEAR_MISS,2026-08-09,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,31,MEDIUM
+R0505,Confined space entry was performed with atmospheric testing completed and standby person present.,NEAR_MISS,2026-01-07,Pipeline Section 7,Confined Space,CONFINED_SPACE,,Confined Space,0,66,HIGH
+R0506,Improper scaffolding was noted with no guardrail installed at elevated platform.,NEAR_MISS,2026-07-17,Site A,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0507,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_CONDITION,2026-01-13,Maintenance Yard,Chemical,CHEMICAL,,Chemical Exposure,0,51,MEDIUM
+R0508,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_ACT,2026-08-04,Site C - Refinery,Electrical,ELECTRICAL,,Electrical,0,60,MEDIUM
+R0509,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-03-07,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0510,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_ACT,2026-05-27,Site B,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,63,HIGH
+R0511,Worker entered confined space without atmospheric testing. No standby person was present.,INCIDENT,2026-08-26,Site C - Refinery,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0512,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_ACT,2026-08-02,Site C - Refinery,Confined Space,CONFINED_SPACE,,Confined Space,0,60,MEDIUM
+R0513,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-01-13,Loading Terminal,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0514,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_CONDITION,2026-05-09,Maintenance Yard,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,62,HIGH
+R0515,Improper scaffolding was noted with no guardrail installed at elevated platform.,INCIDENT,2026-04-21,Tank Farm 3,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0516,Lifting operation followed load chart with rigging inspected prior to lift.,INCIDENT,2026-01-03,Tank Farm 3,Lifting,LIFTING,,Lifting Operations,0,63,HIGH
+R0517,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-04-21,Site A,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0518,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-08-12,Pipeline Section 7,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0519,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-06-20,Well Pad 12,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0520,Worker entered confined space without atmospheric testing. No standby person was present.,NEAR_MISS,2026-06-25,Well Pad 12,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0521,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_CONDITION,2026-05-18,Site A,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,58,MEDIUM
+R0522,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-06-27,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,33,MEDIUM
+R0523,Worker was seen working at height with harness properly secured and scaffold inspected.,NEAR_MISS,2026-06-19,Site A,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,66,HIGH
+R0524,Worker was not wearing safety glasses in the workshop area.,UNSAFE_CONDITION,2026-04-27,Maintenance Yard,Ppe,PPE,,Permit to Work,0,41,MEDIUM
+R0525,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-01-03,Site A,Electrical,ELECTRICAL,,Electrical,0,55,MEDIUM
+R0526,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_ACT,2026-08-01,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,66,HIGH
+R0527,Minor gas odor was reported and area was isolated with no ignition sources present.,NEAR_MISS,2026-03-26,Pipeline Section 7,Fire,FIRE,,Fire / Explosion,0,59,MEDIUM
+R0528,Technician performed vessel entry without gas testing during maintenance shutdown.,INCIDENT,2026-03-25,Site B,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0529,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-07-19,Site B,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0530,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-03-24,Loading Terminal,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0531,Worker was exposed to chemical spill without wearing respirator or protective equipment.,NEAR_MISS,2026-03-23,Pipeline Section 7,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0532,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_CONDITION,2026-07-10,Tank Farm 3,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,73,HIGH
+R0533,Improper scaffolding was noted with no guardrail installed at elevated platform.,INCIDENT,2026-07-28,Site A,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0534,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_CONDITION,2026-02-16,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,68,HIGH
+R0535,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",NEAR_MISS,2026-06-06,Site B,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,99,CRITICAL
+R0536,Worker was not wearing safety glasses in the workshop area.,NEAR_MISS,2026-08-01,Tank Farm 3,Ppe,PPE,,Permit to Work,0,47,MEDIUM
+R0537,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-05-26,Site B,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0538,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-08-24,Loading Terminal,Housekeeping,HOUSEKEEPING,,Permit to Work,0,21,LOW
+R0539,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-06-18,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,67,HIGH
+R0540,Worker was observed working at height without a safety harness on the scaffold.,INCIDENT,2026-04-06,Maintenance Yard,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0541,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_ACT,2026-06-09,Site B,Confined Space,CONFINED_SPACE,,Confined Space,0,58,MEDIUM
+R0542,Confined space entry was performed with atmospheric testing completed and standby person present.,INCIDENT,2026-03-24,Site B,Confined Space,CONFINED_SPACE,,Confined Space,0,61,HIGH
+R0543,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-01-14,Site C - Refinery,Electrical,ELECTRICAL,,Electrical,0,55,MEDIUM
+R0544,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_ACT,2026-02-11,Well Pad 12,Fire,FIRE,,Fire / Explosion,0,62,HIGH
+R0545,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",INCIDENT,2026-05-22,Tank Farm 3,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0546,Hot work permit and fire watch were in place during welding activity.,UNSAFE_ACT,2026-07-19,Maintenance Yard,Hot Work,HOT_WORK,,Hot Work,0,53,MEDIUM
+R0547,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-07-03,Tank Farm 3,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0548,Chemical handling was performed with full PPE and respirator worn as required.,INCIDENT,2026-04-04,Site A,Chemical,CHEMICAL,,Chemical Exposure,0,62,HIGH
+R0549,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-02-16,Site B,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0550,Hot work permit and fire watch were in place during welding activity.,INCIDENT,2026-05-03,Loading Terminal,Hot Work,HOT_WORK,,Hot Work,0,62,HIGH
+R0551,Worker was seen working at height with harness properly secured and scaffold inspected.,NEAR_MISS,2026-03-15,Site A,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,65,HIGH
+R0552,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,NEAR_MISS,2026-04-27,Tank Farm 3,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0553,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-02-03,Pipeline Section 7,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0554,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_CONDITION,2026-01-27,Loading Terminal,Electrical,ELECTRICAL,,Electrical,0,64,HIGH
+R0555,Electrical panel was left open with exposed live wire near walking path.,INCIDENT,2026-08-19,Well Pad 12,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0556,Lifting operation followed load chart with rigging inspected prior to lift.,INCIDENT,2026-01-17,Site C - Refinery,Lifting,LIFTING,,Lifting Operations,0,54,MEDIUM
+R0557,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-04-26,Well Pad 12,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0558,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-07-07,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0559,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_ACT,2026-02-13,Loading Terminal,Fire,FIRE,,Fire / Explosion,0,63,HIGH
+R0560,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-01-26,Loading Terminal,Electrical,ELECTRICAL,,Electrical,0,58,MEDIUM
+R0561,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-02-04,Site B,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0562,Hot work permit and fire watch were in place during welding activity.,INCIDENT,2026-05-13,Maintenance Yard,Hot Work,HOT_WORK,,Hot Work,0,62,HIGH
+R0563,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-03-09,Loading Terminal,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0564,Improper scaffolding was noted with no guardrail installed at elevated platform.,INCIDENT,2026-07-02,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0565,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",INCIDENT,2026-08-09,Pipeline Section 7,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,98,CRITICAL
+R0566,Worker entered confined space without atmospheric testing. No standby person was present.,NEAR_MISS,2026-05-27,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0567,Worker was not wearing safety glasses in the workshop area.,UNSAFE_CONDITION,2026-03-10,Maintenance Yard,Ppe,PPE,,Permit to Work,0,38,MEDIUM
+R0568,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-02-07,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,30,LOW
+R0569,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",INCIDENT,2026-06-27,Site A,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0570,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-07-05,Site A,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0571,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_ACT,2026-04-02,Maintenance Yard,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,60,MEDIUM
+R0572,Technician performed vessel entry without gas testing during maintenance shutdown.,NEAR_MISS,2026-06-27,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0573,Electrical panel was left open with exposed live wire near walking path.,UNSAFE_ACT,2026-01-08,Pipeline Section 7,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0574,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_CONDITION,2026-08-19,Pipeline Section 7,Lifting,LIFTING,,Lifting Operations,0,65,HIGH
+R0575,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_ACT,2026-05-01,Loading Terminal,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,49,MEDIUM
+R0576,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-04-21,Well Pad 12,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0577,Chemical handling was performed with full PPE and respirator worn as required.,INCIDENT,2026-01-28,Site A,Chemical,CHEMICAL,,Chemical Exposure,0,50,MEDIUM
+R0578,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_CONDITION,2026-01-08,Tank Farm 3,Lifting,LIFTING,,Lifting Operations,0,61,HIGH
+R0579,Minor gas odor was reported and area was isolated with no ignition sources present.,NEAR_MISS,2026-07-13,Pipeline Section 7,Fire,FIRE,,Fire / Explosion,0,68,HIGH
+R0580,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-05-22,Loading Terminal,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0581,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-06-18,Tank Farm 3,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0582,Hot work permit and fire watch were in place during welding activity.,INCIDENT,2026-02-11,Tank Farm 3,Hot Work,HOT_WORK,,Hot Work,0,60,MEDIUM
+R0583,Worker was exposed to chemical spill without wearing respirator or protective equipment.,NEAR_MISS,2026-05-07,Site C - Refinery,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0584,Electrical panel was left open with exposed live wire near walking path.,INCIDENT,2026-07-22,Pipeline Section 7,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0585,Chemical handling was performed with full PPE and respirator worn as required.,INCIDENT,2026-05-09,Loading Terminal,Chemical,CHEMICAL,,Chemical Exposure,0,45,MEDIUM
+R0586,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-04-11,Well Pad 12,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0587,Chemical handling was performed with full PPE and respirator worn as required.,INCIDENT,2026-06-17,Tank Farm 3,Chemical,CHEMICAL,,Chemical Exposure,0,61,HIGH
+R0588,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_CONDITION,2026-05-04,Maintenance Yard,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,72,HIGH
+R0589,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-06-21,Site B,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0590,Maintenance was carried out after proper lockout tagout isolation was verified.,NEAR_MISS,2026-07-26,Pipeline Section 7,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,62,HIGH
+R0591,Exclusion zone was maintained and no personnel were in line of fire during the lift.,NEAR_MISS,2026-08-28,Site B,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,56,MEDIUM
+R0592,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_ACT,2026-08-07,Site B,Lifting,LIFTING,,Lifting Operations,0,59,MEDIUM
+R0593,Chemical handling was performed with full PPE and respirator worn as required.,NEAR_MISS,2026-07-02,Site C - Refinery,Chemical,CHEMICAL,,Chemical Exposure,0,57,MEDIUM
+R0594,Improper scaffolding was noted with no guardrail installed at elevated platform.,NEAR_MISS,2026-08-05,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0595,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-06-21,Site C - Refinery,Ppe,PPE,,Permit to Work,0,30,LOW
+R0596,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-08-09,Well Pad 12,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0597,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_CONDITION,2026-08-26,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,32,MEDIUM
+R0598,Improper scaffolding was noted with no guardrail installed at elevated platform.,INCIDENT,2026-07-13,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0599,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_ACT,2026-04-24,Pipeline Section 7,Lifting,LIFTING,,Lifting Operations,0,55,MEDIUM
+R0600,Worker entered confined space without atmospheric testing. No standby person was present.,UNSAFE_ACT,2026-01-22,Site A,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0601,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-06-10,Site C - Refinery,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0602,Worker was observed working at height without a safety harness on the scaffold.,INCIDENT,2026-05-06,Site B,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0603,Technician performed vessel entry without gas testing during maintenance shutdown.,NEAR_MISS,2026-06-14,Site C - Refinery,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0604,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-03-26,Loading Terminal,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0605,Worker entered confined space without atmospheric testing. No standby person was present.,INCIDENT,2026-03-07,Site A,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0606,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-06-23,Site A,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0607,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-01-20,Site A,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0608,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_ACT,2026-01-23,Site B,Chemical,CHEMICAL,,Chemical Exposure,0,54,MEDIUM
+R0609,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-05-16,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,56,MEDIUM
+R0610,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-05-14,Site B,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0611,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_CONDITION,2026-07-27,Site B,Chemical,CHEMICAL,,Chemical Exposure,0,55,MEDIUM
+R0612,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-02-26,Site B,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0613,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_CONDITION,2026-05-27,Well Pad 12,Lifting,LIFTING,,Lifting Operations,0,61,HIGH
+R0614,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_CONDITION,2026-01-18,Maintenance Yard,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,53,MEDIUM
+R0615,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-01-01,Site B,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0616,Worker was observed working at height without a safety harness on the scaffold.,NEAR_MISS,2026-03-03,Site B,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0617,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_CONDITION,2026-08-10,Tank Farm 3,Housekeeping,HOUSEKEEPING,,Permit to Work,0,26,LOW
+R0618,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",UNSAFE_ACT,2026-01-28,Tank Farm 3,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0619,Exclusion zone was maintained and no personnel were in line of fire during the lift.,INCIDENT,2026-02-04,Site A,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,58,MEDIUM
+R0620,Worker entered confined space without atmospheric testing. No standby person was present.,INCIDENT,2026-03-11,Pipeline Section 7,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0621,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-02-12,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0622,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-08-09,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,61,HIGH
+R0623,Worker was not wearing safety glasses in the workshop area.,UNSAFE_CONDITION,2026-02-05,Site A,Ppe,PPE,,Permit to Work,0,40,MEDIUM
+R0624,Worker was seen working at height with harness properly secured and scaffold inspected.,INCIDENT,2026-08-06,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,61,HIGH
+R0625,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-03-16,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,35,MEDIUM
+R0626,Worker was observed working at height without a safety harness on the scaffold.,UNSAFE_ACT,2026-02-09,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0627,Worker entered confined space without atmospheric testing. No standby person was present.,INCIDENT,2026-04-22,Pipeline Section 7,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0628,Electrical panel was left open with exposed live wire near walking path.,UNSAFE_ACT,2026-07-22,Well Pad 12,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0629,Lifting operation followed load chart with rigging inspected prior to lift.,INCIDENT,2026-03-27,Site A,Lifting,LIFTING,,Lifting Operations,0,64,HIGH
+R0630,Worker entered confined space without atmospheric testing. No standby person was present.,INCIDENT,2026-08-28,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0631,Worker was seen working at height with harness properly secured and scaffold inspected.,NEAR_MISS,2026-04-11,Tank Farm 3,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,62,HIGH
+R0632,Technician performed vessel entry without gas testing during maintenance shutdown.,INCIDENT,2026-07-13,Well Pad 12,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0633,Confined space entry was performed with atmospheric testing completed and standby person present.,INCIDENT,2026-02-28,Maintenance Yard,Confined Space,CONFINED_SPACE,,Confined Space,0,68,HIGH
+R0634,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-01-04,Loading Terminal,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0635,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-02-26,Tank Farm 3,Vehicle,VEHICLE,,Driving,0,51,MEDIUM
+R0636,Electrical panel was left open with exposed live wire near walking path.,INCIDENT,2026-08-11,Pipeline Section 7,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0637,Technician performed vessel entry without gas testing during maintenance shutdown.,NEAR_MISS,2026-08-23,Pipeline Section 7,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0638,Worker was not wearing safety glasses in the workshop area.,UNSAFE_ACT,2026-04-01,Pipeline Section 7,Ppe,PPE,,Permit to Work,0,35,MEDIUM
+R0639,Exclusion zone was maintained and no personnel were in line of fire during the lift.,NEAR_MISS,2026-02-02,Site C - Refinery,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,57,MEDIUM
+R0640,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_ACT,2026-05-20,Well Pad 12,Lifting,LIFTING,,Lifting Operations,0,57,MEDIUM
+R0641,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-08-27,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0642,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-01-21,Site B,Ppe,PPE,,Permit to Work,0,33,MEDIUM
+R0643,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_CONDITION,2026-08-01,Site A,Housekeeping,HOUSEKEEPING,,Permit to Work,0,35,MEDIUM
+R0644,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-03-23,Site C - Refinery,Electrical,ELECTRICAL,,Electrical,0,64,HIGH
+R0645,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-06-17,Loading Terminal,Housekeeping,HOUSEKEEPING,,Permit to Work,0,24,LOW
+R0646,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,NEAR_MISS,2026-07-11,Tank Farm 3,Vehicle,VEHICLE,,Driving,0,55,MEDIUM
+R0647,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-05-27,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0648,Worker was not wearing safety glasses in the workshop area.,UNSAFE_CONDITION,2026-04-07,Tank Farm 3,Ppe,PPE,,Permit to Work,0,45,MEDIUM
+R0649,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_CONDITION,2026-03-17,Pipeline Section 7,Chemical,CHEMICAL,,Chemical Exposure,0,58,MEDIUM
+R0650,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-07-22,Tank Farm 3,Ppe,PPE,,Permit to Work,0,33,MEDIUM
+R0651,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_ACT,2026-01-13,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,51,MEDIUM
+R0652,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-05-25,Site C - Refinery,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0653,Hot work permit and fire watch were in place during welding activity.,UNSAFE_CONDITION,2026-01-23,Tank Farm 3,Hot Work,HOT_WORK,,Hot Work,0,63,HIGH
+R0654,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-08-04,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0655,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-04-17,Tank Farm 3,Housekeeping,HOUSEKEEPING,,Permit to Work,0,39,MEDIUM
+R0656,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-07-14,Pipeline Section 7,Ppe,PPE,,Permit to Work,0,37,MEDIUM
+R0657,Electrical panel was properly closed and de-energized before inspection.,NEAR_MISS,2026-04-20,Maintenance Yard,Electrical,ELECTRICAL,,Electrical,0,49,MEDIUM
+R0658,Maintenance was carried out after proper lockout tagout isolation was verified.,NEAR_MISS,2026-04-25,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,74,HIGH
+R0659,Hot work permit and fire watch were in place during welding activity.,UNSAFE_ACT,2026-03-06,Site B,Hot Work,HOT_WORK,,Hot Work,0,58,MEDIUM
+R0660,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,NEAR_MISS,2026-05-05,Site C - Refinery,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0661,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-08-23,Site C - Refinery,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0662,Technician performed vessel entry without gas testing during maintenance shutdown.,INCIDENT,2026-01-25,Tank Farm 3,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0663,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-02-26,Pipeline Section 7,Lifting,LIFTING,,Lifting Operations,0,66,HIGH
+R0664,Electrical panel was left open with exposed live wire near walking path.,INCIDENT,2026-02-26,Site C - Refinery,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0665,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,INCIDENT,2026-02-12,Well Pad 12,Vehicle,VEHICLE,,Driving,0,59,MEDIUM
+R0666,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-06-10,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0667,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-01-04,Pipeline Section 7,Housekeeping,HOUSEKEEPING,,Permit to Work,0,38,MEDIUM
+R0668,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-04-02,Pipeline Section 7,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0669,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,NEAR_MISS,2026-05-01,Pipeline Section 7,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0670,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-01-10,Well Pad 12,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0671,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",UNSAFE_ACT,2026-03-25,Site A,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0672,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-04-28,Loading Terminal,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,99,CRITICAL
+R0673,Worker was observed working at height without a safety harness on the scaffold.,INCIDENT,2026-07-21,Site B,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0674,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-08-23,Pipeline Section 7,Housekeeping,HOUSEKEEPING,,Permit to Work,0,33,MEDIUM
+R0675,Technician performed vessel entry without gas testing during maintenance shutdown.,UNSAFE_ACT,2026-03-26,Tank Farm 3,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0676,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_CONDITION,2026-05-14,Loading Terminal,Electrical,ELECTRICAL,,Electrical,0,59,MEDIUM
+R0677,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-06-01,Loading Terminal,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0678,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_ACT,2026-02-25,Site A,Chemical,CHEMICAL,,Chemical Exposure,0,52,MEDIUM
+R0679,Worker was not wearing safety glasses in the workshop area.,UNSAFE_ACT,2026-05-26,Tank Farm 3,Ppe,PPE,,Permit to Work,0,33,MEDIUM
+R0680,Minor gas odor was reported and area was isolated with no ignition sources present.,INCIDENT,2026-07-13,Site A,Fire,FIRE,,Fire / Explosion,0,59,MEDIUM
+R0681,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_CONDITION,2026-03-24,Loading Terminal,Lifting,LIFTING,,Lifting Operations,0,59,MEDIUM
+R0682,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_CONDITION,2026-05-22,Pipeline Section 7,Electrical,ELECTRICAL,,Electrical,0,63,HIGH
+R0683,Worker entered confined space without atmospheric testing. No standby person was present.,UNSAFE_ACT,2026-02-02,Site A,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0684,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-02-10,Well Pad 12,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0685,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-03-06,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,29,LOW
+R0686,Maintenance was carried out after proper lockout tagout isolation was verified.,UNSAFE_CONDITION,2026-02-06,Site A,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,67,HIGH
+R0687,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-05-22,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,36,MEDIUM
+R0688,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-08-11,Pipeline Section 7,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0689,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-02-10,Site B,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0690,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-06-20,Tank Farm 3,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0691,Worker was not wearing safety glasses in the workshop area.,NEAR_MISS,2026-06-14,Site C - Refinery,Ppe,PPE,,Permit to Work,0,38,MEDIUM
+R0692,Worker entered confined space without atmospheric testing. No standby person was present.,UNSAFE_ACT,2026-07-09,Pipeline Section 7,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0693,Improper scaffolding was noted with no guardrail installed at elevated platform.,NEAR_MISS,2026-08-15,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0694,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-03-21,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,32,MEDIUM
+R0695,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,UNSAFE_ACT,2026-05-24,Site B,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0696,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-07-25,Well Pad 12,Housekeeping,HOUSEKEEPING,,Permit to Work,0,22,LOW
+R0697,Technician performed vessel entry without gas testing during maintenance shutdown.,INCIDENT,2026-08-21,Site C - Refinery,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0698,Exclusion zone was maintained and no personnel were in line of fire during the lift.,NEAR_MISS,2026-03-15,Site B,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,52,MEDIUM
+R0699,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-04-28,Site C - Refinery,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0700,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-03-06,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,31,MEDIUM
+R0701,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-04-25,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,33,MEDIUM
+R0702,Maintenance was carried out after proper lockout tagout isolation was verified.,NEAR_MISS,2026-04-02,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,59,MEDIUM
+R0703,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-08-02,Site A,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0704,Worker was exposed to chemical spill without wearing respirator or protective equipment.,INCIDENT,2026-05-27,Tank Farm 3,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0705,Gas leak was detected near an ignition source with flammable material nearby.,UNSAFE_ACT,2026-07-21,Loading Terminal,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0706,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_ACT,2026-05-13,Well Pad 12,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,62,HIGH
+R0707,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-08-26,Maintenance Yard,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0708,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_CONDITION,2026-08-06,Well Pad 12,Fire,FIRE,,Fire / Explosion,0,62,HIGH
+R0709,Confined space entry was performed with atmospheric testing completed and standby person present.,NEAR_MISS,2026-04-05,Site C - Refinery,Confined Space,CONFINED_SPACE,,Confined Space,0,72,HIGH
+R0710,Worker was seen working at height with harness properly secured and scaffold inspected.,UNSAFE_ACT,2026-04-14,Pipeline Section 7,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,68,HIGH
+R0711,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-08-07,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,29,LOW
+R0712,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-01-05,Site C - Refinery,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0713,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-03-02,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0714,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,NEAR_MISS,2026-01-24,Tank Farm 3,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0715,Confined space entry was performed with atmospheric testing completed and standby person present.,INCIDENT,2026-08-06,Well Pad 12,Confined Space,CONFINED_SPACE,,Confined Space,0,64,HIGH
+R0716,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-05-06,Pipeline Section 7,Vehicle,VEHICLE,,Driving,0,54,MEDIUM
+R0717,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",UNSAFE_ACT,2026-04-13,Loading Terminal,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0718,Improper scaffolding was noted with no guardrail installed at elevated platform.,UNSAFE_ACT,2026-07-27,Site C - Refinery,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0719,Minor gas odor was reported and area was isolated with no ignition sources present.,INCIDENT,2026-01-26,Site B,Fire,FIRE,,Fire / Explosion,0,57,MEDIUM
+R0720,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-01-25,Loading Terminal,Confined Space,CONFINED_SPACE,,Confined Space,0,71,HIGH
+R0721,Electrical panel was left open with exposed live wire near walking path.,UNSAFE_ACT,2026-07-08,Maintenance Yard,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0722,Cluttered walkway with minor trip hazard was reported near the warehouse.,UNSAFE_ACT,2026-07-05,Tank Farm 3,Housekeeping,HOUSEKEEPING,,Permit to Work,0,32,MEDIUM
+R0723,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-07-09,Well Pad 12,Lifting,LIFTING,,Lifting Operations,0,53,MEDIUM
+R0724,Worker entered confined space without atmospheric testing. No standby person was present.,INCIDENT,2026-02-17,Site A,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0725,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-06-14,Pipeline Section 7,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0726,Worker was observed working at height without a safety harness on the scaffold.,INCIDENT,2026-05-09,Loading Terminal,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0727,Gas leak was detected near an ignition source with flammable material nearby.,NEAR_MISS,2026-07-25,Well Pad 12,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0728,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,INCIDENT,2026-03-12,Maintenance Yard,Vehicle,VEHICLE,,Driving,0,59,MEDIUM
+R0729,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,NEAR_MISS,2026-07-24,Site C - Refinery,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0730,Chemical handling was performed with full PPE and respirator worn as required.,INCIDENT,2026-03-04,Well Pad 12,Chemical,CHEMICAL,,Chemical Exposure,0,47,MEDIUM
+R0731,Electrical panel was left open with exposed live wire near walking path.,INCIDENT,2026-01-06,Loading Terminal,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0732,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-08-20,Loading Terminal,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,96,CRITICAL
+R0733,Confined space entry was performed with atmospheric testing completed and standby person present.,UNSAFE_CONDITION,2026-06-03,Site A,Confined Space,CONFINED_SPACE,,Confined Space,0,59,MEDIUM
+R0734,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,NEAR_MISS,2026-01-25,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,33,MEDIUM
+R0735,Worker was exposed to chemical spill without wearing respirator or protective equipment.,UNSAFE_ACT,2026-04-28,Tank Farm 3,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0736,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",INCIDENT,2026-04-20,Site C - Refinery,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0737,Chemical handling was performed with full PPE and respirator worn as required.,UNSAFE_CONDITION,2026-01-06,Site B,Chemical,CHEMICAL,,Chemical Exposure,0,48,MEDIUM
+R0738,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-07-13,Well Pad 12,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0739,Electrical panel was left open with exposed live wire near walking path.,UNSAFE_ACT,2026-05-24,Pipeline Section 7,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0740,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_CONDITION,2026-08-13,Site A,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,50,MEDIUM
+R0741,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-02-18,Site B,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0742,Electrical panel was left open with exposed live wire near walking path.,UNSAFE_ACT,2026-05-18,Tank Farm 3,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0743,Worker was not wearing safety glasses in the workshop area.,INCIDENT,2026-04-25,Pipeline Section 7,Ppe,PPE,,Permit to Work,0,40,MEDIUM
+R0744,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-01-16,Site B,Housekeeping,HOUSEKEEPING,,Permit to Work,0,38,MEDIUM
+R0745,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-04-22,Well Pad 12,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0746,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",INCIDENT,2026-01-23,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0747,Maintenance was carried out after proper lockout tagout isolation was verified.,INCIDENT,2026-06-03,Site C - Refinery,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,59,MEDIUM
+R0748,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_CONDITION,2026-05-06,Well Pad 12,Lifting,LIFTING,,Lifting Operations,0,59,MEDIUM
+R0749,Lifting operation followed load chart with rigging inspected prior to lift.,UNSAFE_CONDITION,2026-05-07,Well Pad 12,Lifting,LIFTING,,Lifting Operations,0,55,MEDIUM
+R0750,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-03-25,Site B,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0751,Worker was observed working at height without a safety harness on the scaffold.,INCIDENT,2026-08-20,Site A,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0752,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-06-20,Pipeline Section 7,Housekeeping,HOUSEKEEPING,,Permit to Work,0,29,LOW
+R0753,Lifting operation followed load chart with rigging inspected prior to lift.,INCIDENT,2026-03-25,Tank Farm 3,Lifting,LIFTING,,Lifting Operations,0,62,HIGH
+R0754,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-01-17,Loading Terminal,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0755,Lifting operation followed load chart with rigging inspected prior to lift.,NEAR_MISS,2026-07-28,Site C - Refinery,Lifting,LIFTING,,Lifting Operations,0,57,MEDIUM
+R0756,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",NEAR_MISS,2026-06-23,Site A,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0757,Worker entered confined space without atmospheric testing. No standby person was present.,NEAR_MISS,2026-02-11,Pipeline Section 7,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0758,Minor gas odor was reported and area was isolated with no ignition sources present.,NEAR_MISS,2026-04-09,Maintenance Yard,Fire,FIRE,,Fire / Explosion,0,60,MEDIUM
+R0759,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_CONDITION,2026-08-14,Well Pad 12,Fire,FIRE,,Fire / Explosion,0,64,HIGH
+R0760,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,INCIDENT,2026-05-15,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,53,MEDIUM
+R0761,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-04-27,Site B,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0762,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-07-07,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,28,LOW
+R0763,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-03-14,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,30,LOW
+R0764,Improper scaffolding was noted with no guardrail installed at elevated platform.,INCIDENT,2026-06-26,Maintenance Yard,Working At Height,WORKING_AT_HEIGHT,Fall Protection;Scaffold Inspection,Working at Height,1,100,CRITICAL
+R0765,Hot work permit and fire watch were in place during welding activity.,UNSAFE_ACT,2026-07-04,Site C - Refinery,Hot Work,HOT_WORK,,Hot Work,0,61,HIGH
+R0766,Technician performed vessel entry without gas testing during maintenance shutdown.,NEAR_MISS,2026-02-15,Pipeline Section 7,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0767,Hot work welding was performed without a fire watch permit in a flammable atmosphere area.,INCIDENT,2026-05-12,Site A,Hot Work,HOT_WORK,Fire Watch,Hot Work,1,100,CRITICAL
+R0768,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-03-25,Tank Farm 3,Vehicle,VEHICLE,,Driving,0,49,MEDIUM
+R0769,Exclusion zone was maintained and no personnel were in line of fire during the lift.,INCIDENT,2026-08-03,Loading Terminal,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,58,MEDIUM
+R0770,Minor gas odor was reported and area was isolated with no ignition sources present.,UNSAFE_CONDITION,2026-03-21,Pipeline Section 7,Fire,FIRE,,Fire / Explosion,0,65,HIGH
+R0771,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,INCIDENT,2026-02-03,Site C - Refinery,Vehicle,VEHICLE,,Driving,0,62,HIGH
+R0772,"Worker was standing under a suspended load during lifting operation, no exclusion zone maintained.",NEAR_MISS,2026-05-23,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,Exclusion Zone,Line of Fire,1,100,CRITICAL
+R0773,Minor gas odor was reported and area was isolated with no ignition sources present.,NEAR_MISS,2026-08-25,Pipeline Section 7,Fire,FIRE,,Fire / Explosion,0,70,HIGH
+R0774,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,INCIDENT,2026-07-06,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,38,MEDIUM
+R0775,Worker entered confined space without atmospheric testing. No standby person was present.,INCIDENT,2026-05-24,Site B,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0776,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-02-03,Maintenance Yard,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0777,Electrical panel was properly closed and de-energized before inspection.,INCIDENT,2026-02-04,Tank Farm 3,Electrical,ELECTRICAL,,Electrical,0,49,MEDIUM
+R0778,Minor gas odor was reported and area was isolated with no ignition sources present.,INCIDENT,2026-05-08,Well Pad 12,Fire,FIRE,,Fire / Explosion,0,57,MEDIUM
+R0779,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_CONDITION,2026-03-17,Site C - Refinery,Housekeeping,HOUSEKEEPING,,Permit to Work,0,32,MEDIUM
+R0780,Worker entered confined space without atmospheric testing. No standby person was present.,NEAR_MISS,2026-06-28,Maintenance Yard,Confined Space,CONFINED_SPACE,Atmospheric Testing;Standby Person,Confined Space,1,100,CRITICAL
+R0781,"Crane lifting operation proceeded with a sling that was not inspected, rigging appeared worn.",INCIDENT,2026-08-05,Site C - Refinery,Lifting,LIFTING,Rigging Inspection,Lifting Operations,1,100,CRITICAL
+R0782,Gas leak was detected near an ignition source with flammable material nearby.,INCIDENT,2026-07-17,Tank Farm 3,Fire,FIRE,Ignition Control,Fire / Explosion,1,100,CRITICAL
+R0783,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_CONDITION,2026-02-15,Tank Farm 3,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,58,MEDIUM
+R0784,Exclusion zone was maintained and no personnel were in line of fire during the lift.,UNSAFE_CONDITION,2026-05-01,Site A,Line Of Fire,LINE_OF_FIRE,,Line of Fire,0,53,MEDIUM
+R0785,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-08-18,Site A,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0786,Worker was not wearing safety glasses in the workshop area.,NEAR_MISS,2026-01-25,Loading Terminal,Ppe,PPE,,Permit to Work,0,41,MEDIUM
+R0787,Hot work permit and fire watch were in place during welding activity.,UNSAFE_ACT,2026-06-07,Loading Terminal,Hot Work,HOT_WORK,,Hot Work,0,61,HIGH
+R0788,Electrical panel was properly closed and de-energized before inspection.,UNSAFE_CONDITION,2026-03-23,Loading Terminal,Electrical,ELECTRICAL,,Electrical,0,61,HIGH
+R0789,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,UNSAFE_ACT,2026-07-21,Well Pad 12,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,100,CRITICAL
+R0790,Electrical panel was left open with exposed live wire near walking path.,NEAR_MISS,2026-05-21,Tank Farm 3,Electrical,ELECTRICAL,Insulation / De-energization,Electrical,1,100,CRITICAL
+R0791,Vehicle reversing was conducted with a spotter present and pedestrian path segregated.,UNSAFE_CONDITION,2026-03-10,Site B,Vehicle,VEHICLE,,Driving,0,47,MEDIUM
+R0792,Worker was exposed to chemical spill without wearing respirator or protective equipment.,NEAR_MISS,2026-05-23,Maintenance Yard,Chemical,CHEMICAL,PPE / Respiratory Protection,Chemical Exposure,1,100,CRITICAL
+R0793,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",UNSAFE_ACT,2026-01-18,Site A,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0794,Worker was seen working at height with harness properly secured and scaffold inspected.,NEAR_MISS,2026-03-23,Maintenance Yard,Working At Height,WORKING_AT_HEIGHT,,Working at Height,0,59,MEDIUM
+R0795,Oil spill was observed near the maintenance area. Area was barricaded and cleaned immediately.,UNSAFE_ACT,2026-03-01,Maintenance Yard,Housekeeping,HOUSEKEEPING,,Permit to Work,0,24,LOW
+R0796,"Technician worked on equipment without lockout tagout isolation performed, energized equipment nearby.",NEAR_MISS,2026-08-12,Maintenance Yard,Energy Isolation,ENERGY_ISOLATION,Lockout/Tagout,Energy Isolation,1,100,CRITICAL
+R0797,Worker was not wearing safety glasses in the workshop area.,UNSAFE_ACT,2026-03-02,Tank Farm 3,Ppe,PPE,,Permit to Work,0,32,MEDIUM
+R0798,Cluttered walkway with minor trip hazard was reported near the warehouse.,INCIDENT,2026-03-07,Tank Farm 3,Housekeeping,HOUSEKEEPING,,Permit to Work,0,28,LOW
+R0799,Vehicle reversed near pedestrian walkway without a spotter and narrowly missed a worker.,INCIDENT,2026-04-13,Maintenance Yard,Vehicle,VEHICLE,Traffic Segregation / Spotter,Driving,1,96,CRITICAL
+R0800,Maintenance was carried out after proper lockout tagout isolation was verified.,INCIDENT,2026-02-17,Well Pad 12,Energy Isolation,ENERGY_ISOLATION,,Energy Isolation,0,57,MEDIUM
