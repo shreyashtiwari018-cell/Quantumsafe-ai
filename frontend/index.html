@@ -920,6 +920,4825 @@ body.qs-auth-required .qs-login-overlay{
 .qs-sidebar-logout:hover{background:rgba(150,35,45,.26); border-color:rgba(255,130,140,.5); color:#ffd9dc; transform:translateY(-1px)}
 .qs-sidebar-logout svg{width:15px;height:15px}
 
+/* =========================================================
+   QUANTUMSAFE AI — PROFESSIONAL HSE COMMAND CENTER UI
+   STEP 6A — VISUAL UPGRADE
+   ========================================================= */
+
+:root{
+  --qs-blue:#19bfff;
+  --qs-blue-soft:#0b82b8;
+  --qs-cyan:#5ddcff;
+  --qs-gold:#f5a623;
+  --qs-surface:#111d2b;
+  --qs-surface-2:#182638;
+  --qs-surface-3:#203146;
+  --qs-line:rgba(120,170,205,.16);
+  --qs-glow:rgba(25,191,255,.12);
+}
+
+/* ---------- GLOBAL ---------- */
+
+body{
+  background:
+    radial-gradient(circle at 78% 0%, rgba(0,151,255,.055), transparent 28%),
+    radial-gradient(circle at 20% 100%, rgba(245,166,35,.025), transparent 30%),
+    var(--bg);
+}
+
+.app{
+  background:transparent;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+.sidebar{
+  width:242px;
+  background:
+    linear-gradient(180deg,
+      rgba(18,31,47,.98),
+      rgba(12,22,34,.98));
+  border-right:1px solid rgba(93,220,255,.12);
+  box-shadow:8px 0 35px rgba(0,0,0,.16);
+  position:relative;
+  z-index:20;
+}
+
+.sidebar::after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:-1px;
+  width:1px;
+  height:100%;
+  background:linear-gradient(
+    transparent,
+    rgba(25,191,255,.35),
+    transparent
+  );
+  pointer-events:none;
+}
+
+.brand{
+  padding:22px 22px 24px;
+  background:linear-gradient(
+    180deg,
+    rgba(25,191,255,.045),
+    transparent
+  );
+}
+
+.brand-mark{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  border-color:rgba(93,220,255,.7);
+  background:
+    radial-gradient(circle at 30% 20%,
+      rgba(93,220,255,.20),
+      transparent 55%),
+    rgba(20,120,180,.13);
+  box-shadow:
+    0 0 25px rgba(25,191,255,.10),
+    inset 0 0 18px rgba(25,191,255,.05);
+}
+
+.brand-name{
+  font-size:18px;
+  letter-spacing:-.2px;
+}
+
+.brand-sub{
+  color:#7893aa;
+  letter-spacing:.3px;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.nav-item{
+  margin:3px 10px;
+  padding:12px 13px;
+  border-left:0;
+  border-radius:9px;
+  gap:11px;
+  transition:
+    background .18s ease,
+    color .18s ease,
+    transform .18s ease,
+    box-shadow .18s ease;
+}
+
+.nav-item:hover{
+  background:rgba(25,191,255,.065);
+  color:#eef8ff;
+  transform:translateX(2px);
+}
+
+.nav-item.active{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(25,191,255,.14),
+      rgba(25,191,255,.045)
+    );
+  color:#fff;
+  border-left:0;
+  box-shadow:
+    inset 3px 0 0 var(--qs-blue),
+    0 5px 18px rgba(0,0,0,.10);
+}
+
+.nav-num{
+  color:#60798e;
+}
+
+.nav-item.active .nav-num{
+  color:var(--qs-cyan);
+}
+
+/* ---------- MAIN CONTENT ---------- */
+
+.main{
+  max-width:none;
+  padding:34px 42px 60px;
+}
+
+.page{
+  max-width:1380px;
+  margin:0 auto;
+}
+
+h1{
+  font-size:28px;
+  letter-spacing:-.7px;
+}
+
+.page-sub{
+  color:#8297aa;
+  font-size:13px;
+}
+
+/* ---------- PANELS ---------- */
+
+.panel{
+  background:
+    linear-gradient(
+      145deg,
+      rgba(24,39,57,.96),
+      rgba(16,29,44,.96)
+    );
+  border:1px solid var(--qs-line);
+  border-radius:12px;
+  padding:22px;
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.13),
+    inset 0 1px 0 rgba(255,255,255,.025);
+  transition:
+    border-color .2s ease,
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.panel:hover{
+  border-color:rgba(93,220,255,.18);
+  box-shadow:
+    0 16px 42px rgba(0,0,0,.18),
+    0 0 25px rgba(25,191,255,.025);
+}
+
+.panel-title{
+  color:#9bb0c1;
+  font-size:11px;
+  letter-spacing:.10em;
+}
+
+/* ---------- KPI CARDS ---------- */
+
+.kpi-row{
+  gap:16px;
+  margin-bottom:24px;
+}
+
+.kpi{
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(24,39,57,.98),
+      rgba(14,27,41,.98)
+    );
+  border:1px solid rgba(120,170,205,.15);
+  border-radius:12px;
+  padding:19px 20px;
+  min-height:112px;
+  box-shadow:0 10px 30px rgba(0,0,0,.13);
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.kpi::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:2px;
+  background:linear-gradient(
+    90deg,
+    rgba(25,191,255,.0),
+    rgba(25,191,255,.65),
+    rgba(25,191,255,0)
+  );
+  opacity:.6;
+}
+
+.kpi:hover{
+  transform:translateY(-3px);
+  border-color:rgba(93,220,255,.23);
+  box-shadow:
+    0 16px 35px rgba(0,0,0,.20),
+    0 0 25px rgba(25,191,255,.05);
+}
+
+.kpi-label{
+  color:#8298ab;
+  font-size:10px;
+  letter-spacing:.10em;
+}
+
+.kpi-value{
+  font-size:31px;
+  letter-spacing:-1px;
+  margin-top:9px;
+}
+
+/* ---------- RISK EMPHASIS ---------- */
+
+.kpi.critical{
+  border-color:rgba(232,92,74,.20);
+}
+
+.kpi.critical::before{
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(232,92,74,.8),
+    transparent
+  );
+}
+
+.kpi.high{
+  border-color:rgba(232,136,58,.18);
+}
+
+/* ---------- METRIC CHIPS ---------- */
+
+.metric-chip{
+  background:
+    linear-gradient(
+      145deg,
+      rgba(32,49,70,.92),
+      rgba(24,39,57,.92)
+    );
+  border:1px solid rgba(120,170,205,.12);
+  border-radius:9px;
+  padding:11px 14px;
+  transition:.18s ease;
+}
+
+.metric-chip:hover{
+  border-color:rgba(93,220,255,.20);
+  transform:translateY(-1px);
+}
+
+.metric-chip .m-label{
+  color:#7890a4;
+}
+
+.metric-chip .m-value{
+  font-size:20px;
+}
+
+/* ---------- BAR CHARTS ---------- */
+
+.bar-track{
+  background:#0d1825;
+  height:9px;
+  border:1px solid rgba(120,170,205,.07);
+}
+
+.bar-fill{
+  background:
+    linear-gradient(
+      90deg,
+      #0c8fca,
+      #28c8ff
+    );
+  box-shadow:0 0 12px rgba(25,191,255,.18);
+}
+
+/* ---------- ALERT ---------- */
+
+.alert-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:11px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(232,92,74,.12),
+      rgba(232,92,74,.035)
+    );
+  border:1px solid rgba(232,92,74,.28);
+  padding:16px 18px;
+}
+
+.alert-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:3px;
+  background:#e85c4a;
+}
+
+.alert-title{
+  font-size:12px;
+  letter-spacing:.08em;
+}
+
+/* ---------- BUTTONS ---------- */
+
+button.primary{
+  background:
+    linear-gradient(
+      135deg,
+      #19bfff,
+      #0b9dd5
+    );
+  color:#03121c;
+  border-radius:9px;
+  padding:12px 22px;
+  box-shadow:
+    0 8px 22px rgba(25,191,255,.14);
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    filter .18s ease;
+}
+
+button.primary:hover{
+  background:
+    linear-gradient(
+      135deg,
+      #5ddcff,
+      #19bfff
+    );
+  transform:translateY(-2px);
+  box-shadow:
+    0 12px 28px rgba(25,191,255,.20);
+}
+
+button.secondary{
+  border-radius:9px;
+  background:rgba(255,255,255,.025);
+  transition:.18s ease;
+}
+
+button.secondary:hover{
+  background:rgba(25,191,255,.07);
+}
+
+/* ---------- INPUTS ---------- */
+
+textarea,
+.report-controls input,
+.report-controls select,
+.pattern-controls input,
+.pattern-controls select,
+.file-input{
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25,40,57,.98),
+      rgba(15,28,42,.98)
+    );
+  border-color:rgba(120,170,205,.16);
+  border-radius:9px;
+}
+
+textarea:focus,
+.report-controls input:focus,
+.report-controls select:focus,
+.pattern-controls input:focus,
+.pattern-controls select:focus{
+  border-color:rgba(25,191,255,.55);
+  box-shadow:0 0 0 3px rgba(25,191,255,.06);
+}
+
+/* ---------- REPORT TABLE ---------- */
+
+table{
+  border-spacing:0 4px;
+  border-collapse:separate;
+}
+
+th{
+  color:#71899d;
+  padding:12px;
+  border-bottom:1px solid rgba(120,170,205,.12);
+}
+
+td{
+  padding:13px 12px;
+  border-bottom:1px solid rgba(120,170,205,.07);
+}
+
+tr:hover td{
+  background:rgba(25,191,255,.035);
+}
+
+/* ---------- RISK PILLS ---------- */
+
+.risk-pill{
+  border-radius:999px;
+  padding:4px 10px;
+  letter-spacing:.04em;
+}
+
+.risk-pill.CRITICAL{
+  box-shadow:0 0 12px rgba(232,92,74,.10);
+}
+
+.risk-pill.HIGH{
+  box-shadow:0 0 12px rgba(232,136,58,.08);
+}
+
+/* ---------- PATTERN CARDS ---------- */
+
+.pattern-card{
+  background:
+    linear-gradient(
+      145deg,
+      rgba(28,44,62,.98),
+      rgba(17,30,45,.98)
+    );
+  border:1px solid rgba(120,170,205,.14);
+  border-left:3px solid var(--critical);
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:16px;
+  box-shadow:0 12px 32px rgba(0,0,0,.13);
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.pattern-card:hover{
+  transform:translateY(-2px);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,.20),
+    0 0 25px rgba(25,191,255,.025);
+}
+
+.pattern-title{
+  font-size:17px;
+  letter-spacing:-.2px;
+}
+
+.pattern-meta{
+  color:#8297aa;
+  line-height:1.6;
+}
+
+.pattern-stats{
+  color:#d9e5ee;
+}
+
+.pattern-metric{
+  background:rgba(7,18,29,.38);
+  border-color:rgba(120,170,205,.12);
+  border-radius:9px;
+  padding:12px 13px;
+}
+
+.pattern-metric-value{
+  color:#eaf7ff;
+  font-size:14px;
+}
+
+.pattern-action{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(245,166,35,.065),
+      rgba(245,166,35,.025)
+    );
+  border-color:rgba(245,166,35,.18);
+  border-radius:9px;
+}
+
+/* ---------- MODAL ---------- */
+
+.modal{
+  background:
+    linear-gradient(
+      145deg,
+      #172638,
+      #101c2a
+    );
+  border:1px solid rgba(93,220,255,.18);
+  border-radius:14px;
+  box-shadow:
+    0 30px 100px rgba(0,0,0,.55),
+    0 0 40px rgba(25,191,255,.035);
+}
+
+.modal-backdrop{
+  backdrop-filter:blur(8px);
+  background:rgba(2,8,15,.76);
+}
+
+.detail-box{
+  border-radius:9px;
+  background:rgba(32,49,70,.72);
+  border-color:rgba(120,170,205,.12);
+}
+
+/* ---------- CONNECTION STATUS ---------- */
+
+.conn-status{
+  padding:12px 20px;
+  color:#6f899e;
+}
+
+.conn-dot.ok{
+  box-shadow:0 0 10px rgba(76,175,125,.55);
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+*{
+  scrollbar-width:thin;
+  scrollbar-color:#30465a #0c1621;
+}
+
+*::-webkit-scrollbar{
+  width:8px;
+  height:8px;
+}
+
+*::-webkit-scrollbar-track{
+  background:#0c1621;
+}
+
+*::-webkit-scrollbar-thumb{
+  background:#30465a;
+  border-radius:10px;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+  background:#42647e;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:900px){
+  .sidebar{
+    width:210px;
+  }
+
+  .main{
+    padding:26px 22px 50px;
+  }
+
+  .kpi-row{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:650px){
+  .sidebar{
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+  }
+
+  .main{
+    padding:18px 12px 40px;
+  }
+
+  h1{
+    font-size:23px;
+  }
+
+  .kpi{
+    min-height:96px;
+    padding:15px;
+  }
+
+  .kpi-value{
+    font-size:25px;
+  }
+
+  .panel,
+  .pattern-card{
+    padding:16px;
+    border-radius:10px;
+  }
+
+  .pattern-intelligence{
+    gap:7px;
+  }
+}
+/* =========================================================
+   AI SAFETY INTELLIGENCE — DASHBOARD
+   ========================================================= */
+
+.ai-intelligence-panel{
+  position:relative;
+  overflow:hidden;
+  margin:20px 0;
+  padding:22px;
+  border:1px solid rgba(0,194,255,.22);
+  border-radius:14px;
+  background:
+    radial-gradient(circle at 92% 10%, rgba(0,194,255,.10), transparent 28%),
+    linear-gradient(135deg, rgba(19,39,61,.96), rgba(12,25,40,.96));
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.ai-intelligence-panel::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:4px;
+  background:linear-gradient(180deg,#00c2ff,#18d7a0);
+}
+
+.ai-intelligence-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.ai-intelligence-title-wrap{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.ai-intelligence-icon{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  border:1px solid rgba(0,194,255,.25);
+  background:rgba(0,194,255,.08);
+  color:#00c2ff;
+  font-size:18px;
+}
+
+.ai-intelligence-title{
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.12em;
+  color:#8fdcff;
+  text-transform:uppercase;
+}
+
+.ai-intelligence-subtitle{
+  margin-top:4px;
+  font-size:11px;
+  color:var(--text-dim);
+}
+
+.ai-live-badge{
+  flex-shrink:0;
+  padding:6px 9px;
+  border-radius:999px;
+  border:1px solid rgba(24,215,160,.25);
+  background:rgba(24,215,160,.08);
+  color:#62e8c0;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+
+.ai-intelligence-grid{
+  display:grid;
+  grid-template-columns:1.15fr 1fr;
+  gap:18px;
+}
+
+.ai-concern-card{
+  padding:18px;
+  border-radius:11px;
+  border:1px solid rgba(255,91,76,.20);
+  background:linear-gradient(
+    135deg,
+    rgba(255,91,76,.075),
+    rgba(255,255,255,.018)
+  );
+}
+
+.ai-concern-label{
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.12em;
+  color:#ff7769;
+  text-transform:uppercase;
+  margin-bottom:9px;
+}
+
+.ai-concern-hazard{
+  font-size:20px;
+  font-weight:800;
+  color:var(--text);
+  line-height:1.2;
+}
+
+.ai-concern-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:12px;
+}
+
+.ai-chip{
+  padding:5px 8px;
+  border-radius:6px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.025);
+  color:var(--text-dim);
+  font-family:var(--mono);
+  font-size:9px;
+}
+
+.ai-chip strong{
+  color:var(--text);
+}
+
+.ai-priority{
+  margin-top:15px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.ai-priority-label{
+  font-family:var(--mono);
+  font-size:9px;
+  color:var(--text-dim);
+  letter-spacing:.06em;
+}
+
+.ai-priority-score{
+  font-family:var(--mono);
+  font-size:18px;
+  font-weight:900;
+  color:#ff6859;
+}
+
+.ai-reason-card{
+  display:grid;
+  gap:12px;
+}
+
+.ai-info-block{
+  padding:13px 15px;
+  border:1px solid var(--border);
+  border-radius:9px;
+  background:rgba(255,255,255,.018);
+}
+
+.ai-info-label{
+  margin-bottom:6px;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.1em;
+  color:var(--text-dim);
+  text-transform:uppercase;
+}
+
+.ai-info-text{
+  font-size:12px;
+  line-height:1.65;
+  color:var(--text);
+}
+
+.ai-action-block{
+  border-color:rgba(24,215,160,.20);
+  background:rgba(24,215,160,.045);
+}
+
+.ai-action-block .ai-info-label{
+  color:#62e8c0;
+}
+
+.ai-action-text{
+  font-size:12px;
+  line-height:1.65;
+  color:var(--text);
+}
+
+.ai-intelligence-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:17px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+}
+
+.ai-footer-note{
+  font-size:10px;
+  color:var(--text-dim);
+}
+
+.ai-view-btn{
+  border:1px solid rgba(0,194,255,.28);
+  background:rgba(0,194,255,.08);
+  color:#8fdcff;
+  padding:8px 12px;
+  border-radius:7px;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.05em;
+  cursor:pointer;
+  transition:.2s ease;
+}
+
+.ai-view-btn:hover{
+  background:rgba(0,194,255,.15);
+  border-color:rgba(0,194,255,.5);
+  transform:translateY(-1px);
+}
+
+.ai-empty{
+  padding:18px;
+  text-align:center;
+  color:var(--text-dim);
+  font-size:11px;
+}
+
+@media(max-width:850px){
+  .ai-intelligence-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px){
+  .ai-intelligence-panel{
+    padding:16px;
+  }
+
+  .ai-intelligence-header{
+    align-items:flex-start;
+  }
+
+  .ai-intelligence-footer{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .ai-view-btn{
+    width:100%;
+  }
+}
+/* =========================================================
+   STEP 8 — AI ANALYSIS COMMAND CENTER
+   ========================================================= */
+
+.result{
+  margin-top:22px;
+}
+
+.result.show{
+  animation:resultReveal .35s ease-out;
+}
+
+@keyframes resultReveal{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.result > .panel{
+  position:relative;
+  overflow:hidden;
+  padding:24px;
+  border-radius:15px;
+  border:1px solid rgba(0,194,255,.22);
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(0,194,255,.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(18,38,59,.98),
+      rgba(10,23,37,.98)
+    );
+  box-shadow:
+    0 22px 55px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.result > .panel::before{
+  content:"AI ANALYSIS COMPLETE";
+  position:absolute;
+  top:18px;
+  right:20px;
+  padding:6px 9px;
+  border-radius:999px;
+  border:1px solid rgba(24,215,160,.25);
+  background:rgba(24,215,160,.07);
+  color:#62e8c0;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+
+/* -------------------------
+   TOP ASSESSMENT AREA
+   ------------------------- */
+
+.result-header{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  align-items:center;
+  gap:28px;
+  min-height:165px;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--border);
+}
+
+.risk-dial{
+  position:relative;
+  width:150px;
+  height:150px;
+  margin:auto;
+  filter:drop-shadow(0 0 15px rgba(0,194,255,.08));
+}
+
+.risk-dial svg{
+  width:100%;
+  height:100%;
+  transform:rotate(-90deg);
+}
+
+.risk-dial svg circle:first-child{
+  opacity:.7;
+}
+
+.risk-dial-value{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.risk-dial-num{
+  font-family:var(--mono);
+  font-size:39px;
+  line-height:1;
+  font-weight:900;
+  color:var(--text);
+}
+
+.risk-dial-label{
+  margin-top:8px;
+  font-family:var(--mono);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+
+.verdict-sif{
+  display:inline-flex;
+  align-items:center;
+  padding:9px 13px;
+  border-radius:8px;
+  border:1px solid rgba(255,91,76,.25);
+  background:rgba(255,91,76,.08);
+  font-family:var(--mono);
+  font-size:16px;
+  font-weight:900;
+  letter-spacing:.04em;
+}
+
+.verdict-conf{
+  margin-top:13px;
+  font-size:11px;
+  color:var(--text-dim);
+}
+
+/* -------------------------
+   INTELLIGENCE TAGS
+   ------------------------- */
+
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:18px;
+}
+
+.tag{
+  display:inline-flex;
+  align-items:center;
+  min-height:34px;
+  padding:7px 11px;
+  border-radius:7px;
+  border:1px solid rgba(0,194,255,.18);
+  background:rgba(0,194,255,.045);
+  color:#cceeff;
+  font-family:var(--mono);
+  font-size:10px;
+  font-weight:600;
+}
+
+.tag::first-letter{
+  color:#00c2ff;
+}
+
+.tag.barrier{
+  border-color:rgba(255,176,76,.25);
+  background:rgba(255,176,76,.06);
+  color:#ffd39b;
+}
+
+/* -------------------------
+   SECTION HEADINGS
+   ------------------------- */
+
+.result .panel-title{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-top:24px !important;
+  padding-top:3px;
+  font-family:var(--mono);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.11em;
+  color:#8fdcff;
+}
+
+.result .panel-title::before{
+  content:"";
+  width:3px;
+  height:13px;
+  border-radius:2px;
+  background:#00c2ff;
+}
+
+/* -------------------------
+   WHY FLAGGED
+   ------------------------- */
+
+.why-list{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:9px;
+  margin:12px 0 0;
+  padding:0;
+  list-style:none;
+}
+
+.why-list li{
+  position:relative;
+  padding:12px 13px 12px 34px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  background:rgba(255,255,255,.018);
+  color:var(--text);
+  font-size:11px;
+  line-height:1.6;
+}
+
+.why-list li::before{
+  content:"✓";
+  position:absolute;
+  left:12px;
+  top:11px;
+  color:#00c2ff;
+  font-family:var(--mono);
+  font-weight:900;
+}
+
+/* -------------------------
+   RECOMMENDATION
+   ------------------------- */
+
+.recommendation{
+  position:relative;
+  margin-top:18px;
+  padding:17px 17px 17px 45px;
+  border:1px solid rgba(24,215,160,.25);
+  border-radius:10px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(24,215,160,.075),
+      rgba(24,215,160,.025)
+    );
+  color:var(--text);
+  font-size:12px;
+  line-height:1.7;
+}
+
+.recommendation::before{
+  content:"";
+  position:absolute;
+  left:16px;
+  top:17px;
+  width:19px;
+  height:19px;
+  border-radius:50%;
+  border:1px solid rgba(24,215,160,.35);
+  background:rgba(24,215,160,.08);
+}
+
+.recommendation::after{
+  content:"ACTION";
+  position:absolute;
+  top:-8px;
+  left:12px;
+  padding:0 5px;
+  background:#10283b;
+  color:#62e8c0;
+  font-family:var(--mono);
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.1em;
+}
+
+/* -------------------------
+   SAVE AREA
+   ------------------------- */
+
+.save-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:20px;
+  padding-top:17px;
+  border-top:1px solid var(--border);
+}
+
+.save-row #saveBtn{
+  min-width:145px;
+}
+
+.save-status{
+  font-family:var(--mono);
+  font-size:10px;
+  color:#62e8c0;
+}
+
+/* -------------------------
+   RESPONSIVE
+   ------------------------- */
+
+@media(max-width:700px){
+
+  .result > .panel{
+    padding:17px;
+  }
+
+  .result > .panel::before{
+    position:static;
+    display:inline-block;
+    margin-bottom:15px;
+  }
+
+  .result-header{
+    grid-template-columns:1fr;
+    gap:18px;
+    text-align:center;
+  }
+
+  .risk-dial{
+    width:135px;
+    height:135px;
+  }
+
+  .verdict-sif{
+    justify-content:center;
+  }
+
+  .why-list{
+    grid-template-columns:1fr;
+  }
+
+  .tag-row{
+    justify-content:flex-start;
+  }
+
+  .save-row{
+    align-items:stretch;
+    flex-direction:column;
+  }
+
+  .save-row #saveBtn{
+    width:100%;
+  }
+}
+/* =========================================================
+   STEP 9 — HSE INVESTIGATION COMMAND CENTER
+   ========================================================= */
+
+.modal-backdrop{
+  backdrop-filter:blur(8px);
+  background:rgba(2,8,15,.78);
+}
+
+.modal{
+  width:min(900px,94vw);
+  max-height:92vh;
+  overflow:auto;
+  padding:0;
+  border-radius:16px;
+  border:1px solid rgba(0,194,255,.22);
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(0,194,255,.07),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #102438,
+      #0b1827
+    );
+  box-shadow:
+    0 30px 90px rgba(0,0,0,.55),
+    0 0 40px rgba(0,194,255,.05);
+}
+
+.modal-head{
+  position:sticky;
+  top:0;
+  z-index:5;
+  padding:20px 22px;
+  background:rgba(12,28,44,.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+
+.modal-title{
+  font-family:var(--mono);
+  font-size:17px;
+  font-weight:900;
+  letter-spacing:.02em;
+}
+
+.modal-close{
+  padding:8px 13px;
+  border-radius:7px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.035);
+  color:var(--text-dim);
+  cursor:pointer;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  text-transform:uppercase;
+  transition:.2s ease;
+}
+
+.modal-close:hover{
+  color:var(--text);
+  border-color:rgba(0,194,255,.35);
+  background:rgba(0,194,255,.07);
+}
+
+#modalReportContent{
+  padding:22px;
+}
+
+/* -------------------------
+   Investigation hero
+   ------------------------- */
+
+.investigation-hero{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:20px;
+  align-items:center;
+  padding:18px;
+  margin-bottom:17px;
+  border-radius:11px;
+  border:1px solid rgba(255,91,76,.20);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,91,76,.075),
+      rgba(255,255,255,.015)
+    );
+}
+
+.investigation-eyebrow{
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.12em;
+  color:#ff786b;
+  text-transform:uppercase;
+}
+
+.investigation-headline{
+  margin-top:6px;
+  font-size:20px;
+  font-weight:900;
+  color:var(--text);
+}
+
+.investigation-context{
+  margin-top:6px;
+  color:var(--text-dim);
+  font-size:11px;
+}
+
+.investigation-risk{
+  min-width:105px;
+  text-align:center;
+  padding:13px 15px;
+  border-radius:9px;
+  border:1px solid rgba(255,91,76,.28);
+  background:rgba(255,91,76,.07);
+}
+
+.investigation-risk-score{
+  font-family:var(--mono);
+  font-size:27px;
+  font-weight:900;
+  color:#ff6859;
+}
+
+.investigation-risk-label{
+  margin-top:4px;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.1em;
+  color:#ff8a7e;
+}
+
+/* -------------------------
+   Status strip
+   ------------------------- */
+
+.investigation-status-strip{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:11px 14px;
+  margin-bottom:17px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.018);
+}
+
+.investigation-status-label{
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.08em;
+  color:var(--text-dim);
+}
+
+.investigation-status-value{
+  padding:5px 9px;
+  border-radius:999px;
+  border:1px solid rgba(0,194,255,.22);
+  background:rgba(0,194,255,.06);
+  color:#8fdcff;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+}
+
+/* -------------------------
+   Detail cards
+   ------------------------- */
+
+.detail-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin:0 0 18px;
+}
+
+.detail-box{
+  min-height:68px;
+  padding:13px;
+  border-radius:9px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.018);
+}
+
+.detail-label{
+  color:var(--text-dim);
+  text-transform:uppercase;
+  font-family:var(--mono);
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+
+.detail-value{
+  margin-top:7px;
+  font-size:12px;
+  font-weight:700;
+  line-height:1.4;
+  color:var(--text);
+}
+
+/* -------------------------
+   Investigation sections
+   ------------------------- */
+
+.detail-section{
+  margin-top:16px;
+  padding:16px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:rgba(255,255,255,.014);
+}
+
+.detail-section h3{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 10px;
+  color:#8fdcff;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.detail-section h3::before{
+  content:"";
+  width:3px;
+  height:12px;
+  border-radius:2px;
+  background:#00c2ff;
+}
+
+.report-text-box{
+  padding:13px;
+  border-radius:7px;
+  border:1px solid var(--border);
+  background:#091522;
+  color:#d6e3ed;
+  font-size:11px;
+  line-height:1.75;
+}
+
+/* -------------------------
+   AI intelligence blocks
+   ------------------------- */
+
+.investigation-intelligence{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:16px;
+}
+
+.investigation-intel-box{
+  padding:15px;
+  border-radius:10px;
+  border:1px solid rgba(0,194,255,.16);
+  background:rgba(0,194,255,.035);
+}
+
+.investigation-intel-box.action{
+  border-color:rgba(24,215,160,.20);
+  background:rgba(24,215,160,.035);
+}
+
+.investigation-intel-label{
+  margin-bottom:7px;
+  color:#8fdcff;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.1em;
+}
+
+.investigation-intel-box.action
+.investigation-intel-label{
+  color:#62e8c0;
+}
+
+.investigation-intel-text{
+  color:var(--text);
+  font-size:11px;
+  line-height:1.7;
+}
+
+/* -------------------------
+   Pattern signal
+   ------------------------- */
+
+.pattern-signal{
+  margin-top:16px;
+  padding:15px;
+  border-radius:10px;
+  border:1px solid rgba(255,176,76,.20);
+  background:rgba(255,176,76,.035);
+}
+
+.pattern-signal-label{
+  color:#ffc477;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.pattern-signal-text{
+  margin-top:7px;
+  color:var(--text);
+  font-size:11px;
+  line-height:1.7;
+}
+
+/* -------------------------
+   Review guidance
+   ------------------------- */
+
+.review-guidance{
+  margin-top:16px;
+  padding:14px 15px;
+  border-left:3px solid #00c2ff;
+  border-radius:0 8px 8px 0;
+  background:rgba(0,194,255,.045);
+}
+
+.review-guidance-label{
+  color:#8fdcff;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.review-guidance-text{
+  margin-top:6px;
+  color:var(--text-dim);
+  font-size:10px;
+  line-height:1.65;
+}
+
+/* -------------------------
+   Barrier chips
+   ------------------------- */
+
+.detail-section .tag-row{
+  margin-top:0;
+}
+
+.detail-section .tag.barrier{
+  min-height:32px;
+}
+
+/* -------------------------
+   Mobile
+   ------------------------- */
+
+@media(max-width:700px){
+
+  .modal{
+    width:96vw;
+    max-height:94vh;
+  }
+
+  #modalReportContent{
+    padding:15px;
+  }
+
+  .investigation-hero{
+    grid-template-columns:1fr;
+  }
+
+  .investigation-risk{
+    width:100%;
+  }
+
+  .detail-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .investigation-intelligence{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .detail-grid{
+    grid-template-columns:1fr;
+  }
+
+  .modal-head{
+    padding:15px;
+  }
+
+  .modal-title{
+    font-size:14px;
+  }
+
+}
+/* =========================================================
+   QUANTUMSAFE AI — ENTERPRISE PORTAL THEME
+   STEP 10A
+   ========================================================= */
+
+:root{
+  --qs-navy:#09233d;
+  --qs-navy-2:#0d3153;
+  --qs-blue:#0878d1;
+  --qs-cyan:#08b9ef;
+  --qs-red:#ef3340;
+  --qs-orange:#f59a23;
+  --qs-green:#16a875;
+  --qs-purple:#7b4ce2;
+
+  --qs-bg:#f4f7fb;
+  --qs-surface:#ffffff;
+  --qs-surface-2:#f8fafd;
+
+  --qs-text:#12233b;
+  --qs-text-2:#53657b;
+  --qs-border:#dce5ef;
+
+  --shadow-soft:
+    0 5px 20px rgba(19,48,78,.08);
+
+  --shadow-card:
+    0 8px 28px rgba(19,48,78,.10);
+}
+
+/* -------------------------
+   GLOBAL
+   ------------------------- */
+
+html,
+body{
+  background:
+    linear-gradient(
+      180deg,
+      #f7f9fc 0%,
+      #eef3f8 100%
+    ) !important;
+
+  color:var(--qs-text) !important;
+}
+
+body{
+  font-family:
+    "IBM Plex Sans",
+    "Segoe UI",
+    Arial,
+    sans-serif !important;
+}
+
+/* -------------------------
+   MAIN APP
+   ------------------------- */
+
+.app,
+.app-shell,
+.layout{
+  background:transparent !important;
+}
+
+/* -------------------------
+   SIDEBAR
+   ------------------------- */
+
+.sidebar{
+  width:205px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #09233d 0%,
+      #0b2947 55%,
+      #071b30 100%
+    ) !important;
+
+  border-right:0 !important;
+
+  box-shadow:
+    5px 0 22px rgba(8,31,55,.12);
+}
+
+/* Logo area */
+
+.brand,
+.sidebar-brand{
+  border-bottom:
+    1px solid rgba(255,255,255,.10) !important;
+}
+
+/* Sidebar text */
+
+.sidebar,
+.sidebar *{
+  color:inherit;
+}
+
+.sidebar .nav-item{
+  margin:4px 8px !important;
+  border-radius:8px !important;
+}
+
+.sidebar .nav-item:hover{
+  background:
+    rgba(255,255,255,.08) !important;
+}
+
+.sidebar .nav-item.active{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,150,255,.28),
+      rgba(0,194,255,.08)
+    ) !important;
+
+  border-left:
+    3px solid var(--qs-cyan) !important;
+}
+
+/* -------------------------
+   MAIN CONTENT
+   ------------------------- */
+
+.main,
+.main-content,
+.content{
+  background:transparent !important;
+}
+
+/* -------------------------
+   PAGE HEADINGS
+   ------------------------- */
+
+.page h1{
+  color:var(--qs-text) !important;
+  font-weight:800 !important;
+}
+
+.page-sub{
+  color:var(--qs-text-2) !important;
+}
+
+/* -------------------------
+   PANELS
+   ------------------------- */
+
+.panel,
+.card,
+.pattern-card{
+  background:
+    var(--qs-surface) !important;
+
+  border:
+    1px solid var(--qs-border) !important;
+
+  box-shadow:
+    var(--shadow-soft) !important;
+
+  color:var(--qs-text) !important;
+}
+
+/* -------------------------
+   INPUTS
+   ------------------------- */
+
+input,
+textarea,
+select{
+  background:
+    #ffffff !important;
+
+  border:
+    1px solid #d3deea !important;
+
+  color:
+    var(--qs-text) !important;
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.02) !important;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color:#8292a5 !important;
+}
+
+/* -------------------------
+   BUTTONS
+   ------------------------- */
+
+button,
+.btn{
+  border-radius:7px !important;
+}
+
+.primary,
+.btn-primary{
+  background:
+    linear-gradient(
+      135deg,
+      #078fe0,
+      #0873c7
+    ) !important;
+
+  color:#fff !important;
+
+  border:0 !important;
+
+  box-shadow:
+    0 5px 15px rgba(8,120,209,.20);
+}
+
+/* -------------------------
+   TABLE
+   ------------------------- */
+
+table{
+  color:var(--qs-text) !important;
+}
+
+th{
+  background:#f4f7fb !important;
+  color:#52677f !important;
+  border-bottom:1px solid var(--qs-border) !important;
+}
+
+td{
+  border-bottom:1px solid #e8eef4 !important;
+}
+
+/* -------------------------
+   SCROLLBAR
+   ------------------------- */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#edf2f7;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#b7c5d5;
+  border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#8fa3b8;
+}
+
+/* =========================================================
+   QUANTUMSAFE AI — STEP 10 ENTERPRISE PORTAL REDESIGN
+   Light government/industrial HSE intelligence visual system
+   ========================================================= */
+
+:root{
+  --qs-portal-navy:#092744;
+  --qs-portal-navy-2:#0d3760;
+  --qs-portal-blue:#087bd1;
+  --qs-portal-cyan:#12bff5;
+  --qs-portal-red:#ef3340;
+  --qs-portal-orange:#f59a23;
+  --qs-portal-green:#18a66f;
+  --qs-portal-purple:#7b4ce2;
+  --qs-portal-bg:#f3f7fb;
+  --qs-portal-white:#ffffff;
+  --qs-portal-text:#122845;
+  --qs-portal-muted:#647892;
+  --qs-portal-line:#dbe5ef;
+}
+
+/* authenticated application only */
+.app{
+  background:var(--qs-portal-bg) !important;
+}
+
+.app .sidebar{
+  width:205px !important;
+  min-width:205px !important;
+  background:linear-gradient(180deg,#092744 0%,#0a3155 58%,#071f38 100%) !important;
+  border-right:0 !important;
+  box-shadow:4px 0 24px rgba(7,31,55,.12) !important;
+  padding:0 !important;
+}
+
+.app .brand{
+  padding:18px 20px 22px !important;
+  border-bottom:1px solid rgba(255,255,255,.11) !important;
+  margin-bottom:16px !important;
+}
+
+.app .brand-name{color:#fff !important;font-size:17px !important;}
+.app .brand-sub{color:#8fb0c9 !important;}
+
+.app .nav-item{
+  margin:3px 8px !important;
+  padding:11px 12px !important;
+  border-left:3px solid transparent !important;
+  border-radius:8px !important;
+  color:#a9c3d8 !important;
+}
+
+.app .nav-item:hover{
+  color:#fff !important;
+  background:rgba(40,175,240,.09) !important;
+}
+
+.app .nav-item.active{
+  color:#fff !important;
+  background:linear-gradient(90deg,rgba(0,157,238,.24),rgba(0,157,238,.06)) !important;
+  border-left-color:#18c4ff !important;
+}
+
+.app .nav-icon{
+  color:#8cb5d1 !important;
+}
+
+.app .nav-item.active .nav-icon,
+.app .nav-item:hover .nav-icon{
+  color:#22c8ff !important;
+}
+
+.app .conn-status{
+  color:#82a4bc !important;
+  border-top:1px solid rgba(255,255,255,.09) !important;
+}
+
+.app .main{
+  width:calc(100vw - 205px) !important;
+  max-width:none !important;
+  padding:0 !important;
+  background:var(--qs-portal-bg) !important;
+  color:var(--qs-portal-text) !important;
+  overflow-x:hidden;
+}
+
+.app .page{
+  padding:0 24px 34px !important;
+}
+
+.app .page > h1,
+.app .page > .page-sub{
+  color:var(--qs-portal-text) !important;
+}
+
+.qs-topbar{
+  min-height:78px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  gap:22px;
+  padding:0 28px;
+  background:#fff;
+  border-bottom:1px solid var(--qs-portal-line);
+  box-shadow:0 2px 12px rgba(20,52,82,.06);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.qs-topbar-brand{
+  min-width:245px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#3d65a0;
+  font-size:13px;
+  font-weight:600;
+  line-height:1.25;
+}
+
+.qs-topbar-line{
+  width:3px;
+  height:48px;
+  border-radius:3px;
+  background:linear-gradient(#0a6fc1,#22bff2);
+}
+
+.qs-topnav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+  flex:1;
+}
+
+.qs-topnav-link{
+  appearance:none;
+  border:0;
+  background:transparent;
+  color:#162d4c;
+  cursor:pointer;
+  padding:28px 13px 25px;
+  font:700 13px var(--sans);
+  border-bottom:3px solid transparent;
+  transition:.18s ease;
+}
+
+.qs-topnav-link:hover{
+  color:var(--qs-portal-blue);
+  background:#f7faff;
+}
+
+.qs-topnav-link.active{
+  color:var(--qs-portal-blue);
+  border-bottom-color:#087bd1;
+}
+
+.qs-topbar-right{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.qs-global-search{
+  width:285px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:0 12px;
+  border:1px solid #d6e2ee;
+  border-radius:8px;
+  background:#f8fbfe;
+}
+
+.qs-global-search span{
+  color:#52708f;
+  font-size:22px;
+  line-height:1;
+}
+
+.qs-global-search input{
+  width:100%;
+  border:0 !important;
+  outline:0 !important;
+  box-shadow:none !important;
+  padding:0 !important;
+  background:transparent !important;
+  color:#17304e !important;
+  font-size:11px !important;
+}
+
+.qs-icon-btn,
+.qs-avatar-btn{
+  border:0;
+  cursor:pointer;
+}
+
+.qs-icon-btn{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:#f3f7fb;
+  color:#e12f3d;
+  font-size:14px;
+}
+
+.qs-avatar-btn{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:linear-gradient(145deg,#7b91a7,#394d61);
+  color:#fff;
+  font:800 10px var(--mono);
+  box-shadow:0 2px 8px rgba(0,0,0,.16);
+}
+
+/* Hero */
+.qs-command-hero{
+  min-height:205px;
+  margin:0 -24px 18px;
+  padding:34px 42px;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:
+    linear-gradient(90deg,rgba(5,42,113,.96) 0%,rgba(11,75,167,.84) 43%,rgba(10,80,157,.42) 72%,rgba(4,40,94,.75) 100%),
+    url("https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=2400&q=88") center/cover no-repeat;
+}
+
+.qs-command-hero::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:3px;
+  background:linear-gradient(90deg,#12bff5,#fff,#12bff5);
+  opacity:.7;
+}
+
+.qs-hero-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 65% 40%,rgba(255,153,55,.20),transparent 28%),
+    linear-gradient(180deg,rgba(255,255,255,.03),rgba(0,0,0,.14));
+  pointer-events:none;
+}
+
+.qs-hero-content{
+  position:relative;
+  z-index:2;
+  max-width:850px;
+}
+
+.qs-hero-status{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border:1px solid rgba(90,222,255,.6);
+  background:rgba(0,70,135,.30);
+  border-radius:999px;
+  padding:7px 12px;
+  color:#a5ecff;
+  font:700 9px var(--mono);
+  letter-spacing:1.3px;
+}
+
+.qs-hero-status span{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#32e28c;
+  box-shadow:0 0 10px #32e28c;
+}
+
+.qs-command-hero h1{
+  margin:14px 0 5px !important;
+  color:#fff !important;
+  font-size:34px !important;
+  line-height:1.02 !important;
+  letter-spacing:-.8px;
+}
+
+.qs-command-hero h1 strong{
+  color:#b9ecff;
+}
+
+.qs-command-hero p{
+  max-width:710px;
+  margin:9px 0 15px;
+  color:#d9ecff;
+  font-size:13px;
+  line-height:1.55;
+}
+
+.qs-hero-points{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  color:#eaf7ff;
+  font-size:10px;
+  font-weight:600;
+}
+
+.qs-hero-points span:nth-child(1){color:#78dcff}
+.qs-hero-points span:nth-child(2){color:#9ee8ff}
+.qs-hero-points span:nth-child(3){color:#fff}
+.qs-hero-points span:nth-child(4){color:#62e6a4}
+
+.qs-hero-side{
+  position:relative;
+  z-index:2;
+  min-width:250px;
+  padding:18px 0 18px 28px;
+  border-left:2px solid rgba(255,255,255,.28);
+}
+
+.qs-hero-side-title{
+  color:#7bdcff;
+  font:700 10px var(--mono);
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+
+.qs-hero-side-main{
+  color:#fff;
+  font-size:20px;
+  line-height:1.3;
+  font-weight:700;
+}
+
+.qs-hero-side-main em{
+  color:#cfe9ff;
+  font-weight:500;
+}
+
+.qs-page-intro{
+  padding:5px 4px 0;
+}
+
+.qs-page-intro h1{
+  color:var(--qs-portal-text) !important;
+  font-size:23px !important;
+  margin:0 0 4px !important;
+}
+
+.qs-page-intro .page-sub{
+  margin-bottom:18px !important;
+  color:var(--qs-portal-muted) !important;
+}
+
+/* Dashboard/KPI */
+.app .kpi-row{
+  gap:12px !important;
+  margin-bottom:20px !important;
+}
+
+.app .kpi{
+  position:relative;
+  overflow:hidden;
+  background:#fff !important;
+  border:1px solid var(--qs-portal-line) !important;
+  border-radius:10px !important;
+  padding:17px 18px !important;
+  box-shadow:0 4px 15px rgba(18,48,78,.06) !important;
+}
+
+.app .kpi::before{
+  content:"";
+  position:absolute;
+  left:0;top:0;bottom:0;
+  width:4px;
+  background:#168bd8;
+}
+
+.app .kpi.sif::before{background:var(--qs-portal-purple)}
+.app .kpi.critical::before{background:var(--qs-portal-red)}
+.app .kpi.high::before{background:var(--qs-portal-orange)}
+
+.app .kpi-label{
+  color:#71839a !important;
+  font-size:9px !important;
+  font-weight:700;
+}
+
+.app .kpi-value{
+  color:var(--qs-portal-text) !important;
+  font-size:27px !important;
+}
+
+.app .panel{
+  background:#fff !important;
+  border:1px solid var(--qs-portal-line) !important;
+  border-radius:10px !important;
+  box-shadow:0 4px 16px rgba(18,48,78,.055) !important;
+  color:var(--qs-portal-text) !important;
+}
+
+.app .panel-title{
+  color:#536d89 !important;
+}
+
+.app .bar-track{
+  background:#eaf1f7 !important;
+}
+
+.app .bar-fill{
+  background:linear-gradient(90deg,#0c86d8,#4cc8f4) !important;
+}
+
+.app .metric-chip{
+  background:#f7fafd !important;
+  border-color:#dce6ef !important;
+}
+
+/* Patterns */
+.qs-pattern-hero{
+  min-height:205px;
+}
+
+.qs-pattern-intro{
+  display:none;
+}
+
+.qs-pattern-kpis{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin:0 0 14px;
+}
+
+.qs-pattern-kpi{
+  min-height:91px;
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding:14px 15px;
+  border:1px solid var(--qs-portal-line);
+  border-radius:10px;
+  background:#fff;
+  box-shadow:0 4px 16px rgba(18,48,78,.055);
+}
+
+.qs-pattern-kpi.blue{background:linear-gradient(135deg,#eef8ff,#fff)}
+.qs-pattern-kpi.red{background:linear-gradient(135deg,#fff2f3,#fff)}
+.qs-pattern-kpi.orange{background:linear-gradient(135deg,#fff8ed,#fff)}
+.qs-pattern-kpi.purple{background:linear-gradient(135deg,#f7f1ff,#fff)}
+
+.qs-kpi-icon{
+  width:50px;
+  height:50px;
+  flex:0 0 50px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  font:800 23px var(--mono);
+}
+
+.qs-pattern-kpi.blue .qs-kpi-icon{color:#087bd1;background:#e0f1ff}
+.qs-pattern-kpi.red .qs-kpi-icon{color:#ef3340;background:#ffe0e3}
+.qs-pattern-kpi.orange .qs-kpi-icon{color:#ed8b12;background:#ffedd4}
+.qs-pattern-kpi.purple .qs-kpi-icon{color:#7b4ce2;background:#eee3ff}
+
+.qs-pattern-kpi span{
+  display:block;
+  color:#58708d;
+  font:700 9px var(--mono);
+  letter-spacing:1px;
+}
+
+.qs-pattern-kpi.red span{color:#d83342}
+.qs-pattern-kpi.orange span{color:#d57c0c}
+.qs-pattern-kpi.purple span{color:#6d45b9}
+
+.qs-pattern-kpi strong{
+  display:block;
+  color:#132d4c;
+  font:700 25px var(--mono);
+  margin-top:3px;
+}
+
+.qs-pattern-kpi small{
+  display:block;
+  color:#7d8fa4;
+  font-size:9px;
+  margin-top:2px;
+}
+
+.qs-pattern-controls{
+  display:grid !important;
+  grid-template-columns:1fr 210px 105px !important;
+  gap:10px !important;
+  margin:0 0 16px !important;
+}
+
+.qs-search-control{
+  height:42px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:0 12px;
+  background:#fff;
+  border:1px solid #d6e2ee;
+  border-radius:8px;
+}
+
+.qs-search-control span{
+  color:#53728f;
+  font-size:20px;
+}
+
+.qs-search-control input{
+  width:100%;
+  border:0 !important;
+  outline:0 !important;
+  box-shadow:none !important;
+  background:transparent !important;
+  padding:0 !important;
+  color:#17304e !important;
+  font-size:11px !important;
+}
+
+.qs-pattern-controls select{
+  background:#fff !important;
+  border:1px solid #d6e2ee !important;
+  color:#29425e !important;
+  border-radius:8px !important;
+  font-family:var(--sans) !important;
+  font-size:11px !important;
+}
+
+.qs-pattern-controls .pattern-count{
+  background:#eaf4ff !important;
+  border:1px solid #d6e8f8 !important;
+  color:#0d65a9 !important;
+  border-radius:8px !important;
+  font-weight:700;
+}
+
+.qs-pattern-card{
+  margin-bottom:16px !important;
+  padding:19px 21px 16px !important;
+  background:#fff !important;
+  border:1px solid #d7e2ec !important;
+  border-left:4px solid var(--qs-portal-red) !important;
+  border-radius:11px !important;
+  box-shadow:0 5px 20px rgba(18,48,78,.075) !important;
+}
+
+.qs-pattern-card.HIGH{border-left-color:var(--qs-portal-orange) !important}
+.qs-pattern-card.MEDIUM{border-left-color:#d4b638 !important}
+.qs-pattern-card.LOW{border-left-color:var(--qs-portal-green) !important}
+
+.qs-pattern-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.qs-pattern-heading{
+  display:flex;
+  align-items:center;
+  gap:13px;
+}
+
+.qs-pattern-icon{
+  width:45px;
+  height:45px;
+  flex:0 0 45px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  background:#ffe3e6;
+  color:#ef3340;
+  font:900 23px var(--mono);
+}
+
+.qs-pattern-card.HIGH .qs-pattern-icon{background:#fff0dc;color:#e98b16}
+.qs-pattern-card.MEDIUM .qs-pattern-icon{background:#fff8d8;color:#aa8c16}
+.qs-pattern-card.LOW .qs-pattern-icon{background:#e1f7ee;color:#159466}
+
+.qs-pattern-heading h2{
+  margin:0;
+  color:#132b4a;
+  font-size:18px;
+  font-weight:800;
+}
+
+.qs-pattern-heading .pattern-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  color:#637a92;
+  margin-top:6px;
+  font-size:10px;
+}
+
+.qs-risk-badge{
+  border-radius:999px !important;
+  padding:5px 11px !important;
+  font-weight:800 !important;
+}
+
+.qs-pattern-summary{
+  margin:12px 0 11px !important;
+  color:#38536e !important;
+}
+
+.qs-pattern-summary strong{
+  color:#172f4e;
+}
+
+.qs-pattern-summary span{
+  color:#9aaabd;
+  margin:0 5px;
+}
+
+.qs-pattern-metrics{
+  gap:10px !important;
+}
+
+.qs-pattern-metrics .pattern-metric{
+  background:#f9fbfd !important;
+  border:1px solid #dce6ef !important;
+  border-radius:8px !important;
+  padding:11px 12px !important;
+}
+
+.qs-pattern-metrics .pattern-metric-label{
+  color:#657c94 !important;
+}
+
+.qs-pattern-metrics .pattern-metric-value{
+  color:#15304f !important;
+  font-size:16px !important;
+}
+
+.qs-pattern-metrics .qs-metric-priority .pattern-metric-value{color:#ef3340 !important}
+.qs-pattern-metrics .qs-metric-recurrence .pattern-metric-value{color:#e98b16 !important}
+.qs-pattern-metrics .qs-metric-sif .pattern-metric-value{color:#7145d6 !important}
+
+.qs-progress{
+  height:5px;
+  margin-top:8px;
+  overflow:hidden;
+  border-radius:999px;
+  background:#e5edf5;
+}
+
+.qs-progress i{
+  display:block;
+  height:100%;
+  border-radius:999px;
+  background:#158bd8;
+}
+
+.qs-metric-priority .qs-progress i{background:#ef3340}
+.qs-metric-recurrence .qs-progress i{background:#f59a23}
+.qs-metric-sif .qs-progress i{background:#7b4ce2}
+
+.qs-info-strip,
+.qs-action-strip{
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  margin-top:11px !important;
+  padding:11px 13px !important;
+  border-radius:8px;
+}
+
+.qs-info-strip{
+  background:#eff7ff;
+  border:1px solid #d4e8f8;
+}
+
+.qs-action-strip{
+  background:#effaf5;
+  border:1px solid #cfeee0;
+}
+
+.qs-info-icon{
+  width:25px;
+  height:25px;
+  flex:0 0 25px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#d9efff;
+  color:#087bd1;
+  font-weight:800;
+}
+
+.qs-action-strip .qs-info-icon{
+  background:#d8f4e7;
+  color:#159466;
+}
+
+.qs-info-strip .pattern-section-title,
+.qs-action-strip .pattern-section-title{
+  margin-bottom:4px !important;
+}
+
+.qs-info-strip .pattern-explanation,
+.qs-action-strip .pattern-action-text{
+  color:#29445f !important;
+  line-height:1.5 !important;
+}
+
+.qs-related{
+  margin-top:13px !important;
+}
+
+.qs-related .pattern-section-title{
+  color:#58718d !important;
+}
+
+.qs-report-chip{
+  background:#f4f8fd !important;
+  border:1px solid #d4e4f2 !important;
+  color:#0874c5 !important;
+  border-radius:6px !important;
+}
+
+.qs-report-chip:hover{
+  background:#e8f4ff !important;
+  border-color:#8bc9ef !important;
+  color:#075f9f !important;
+}
+
+.qs-empty-pattern{
+  background:#fff;
+  border:1px solid var(--qs-portal-line);
+  border-radius:10px;
+}
+
+/* Forms / reports / modal on light application */
+.app input,
+.app textarea,
+.app select{
+  background:#fff !important;
+  color:#19324e !important;
+  border-color:#d3dfeb !important;
+}
+
+.app .report-controls input,
+.app .report-controls select,
+.app .file-input{
+  background:#fff !important;
+  color:#19324e !important;
+}
+
+.app .secondary{
+  background:#fff !important;
+  color:#23415f !important;
+  border-color:#cddce9 !important;
+}
+
+.app .secondary:hover{
+  border-color:#087bd1 !important;
+  color:#087bd1 !important;
+}
+
+.app button.primary{
+  background:linear-gradient(135deg,#09a9e9,#087bd1) !important;
+  color:#fff !important;
+  box-shadow:0 6px 16px rgba(8,123,209,.18) !important;
+}
+
+.app table{
+  background:#fff;
+}
+
+.app th{
+  background:#f4f8fc !important;
+  color:#617892 !important;
+}
+
+.app td{
+  color:#263f5b !important;
+}
+
+.app tr:hover td{
+  background:#f7fbff !important;
+}
+
+/* keep investigation modal readable */
+.app .modal{
+  background:#fff !important;
+  color:#19324e !important;
+  border-color:#d7e2ec !important;
+  box-shadow:0 24px 70px rgba(4,27,50,.22) !important;
+}
+
+.app .modal-title{
+  color:#132d4c !important;
+}
+
+.app .detail-box,
+.app .report-text-box{
+  background:#f7fafd !important;
+  border-color:#dce6ef !important;
+  color:#29445f !important;
+}
+
+/* logout */
+.app .qs-sidebar-logout{
+  color:#ff9da5 !important;
+  background:rgba(120,25,35,.18) !important;
+}
+
+/* Responsive */
+@media(max-width:1100px){
+  .qs-topbar-brand{min-width:190px}
+  .qs-global-search{width:210px}
+  .qs-pattern-kpis{grid-template-columns:repeat(2,1fr)}
+  .qs-command-hero{padding:30px}
+}
+
+@media(max-width:800px){
+  .app .sidebar{width:175px !important;min-width:175px !important}
+  .app .main{width:calc(100vw - 175px) !important}
+  .qs-topbar{padding:0 15px;gap:10px}
+  .qs-topbar-brand{display:none}
+  .qs-topnav{justify-content:flex-start;overflow:auto}
+  .qs-topnav-link{padding:25px 9px 22px;font-size:11px}
+  .qs-global-search{display:none}
+  .qs-command-hero{margin:0 -18px 15px;padding:28px 25px}
+  .qs-hero-side{display:none}
+  .qs-pattern-controls{grid-template-columns:1fr 160px 90px !important}
+}
+
+@media(max-width:650px){
+  .app{display:block !important}
+  .app .sidebar{
+    width:100% !important;
+    min-width:0 !important;
+    min-height:auto !important;
+    position:relative;
+  }
+  .app .main{
+    width:100% !important;
+  }
+  .app .nav-item{display:inline-flex}
+  .app .brand{padding-bottom:12px !important}
+  .qs-topbar{
+    position:relative;
+    min-height:58px;
+  }
+  .qs-topnav-link{
+    padding:18px 8px 15px;
+    font-size:10px;
+  }
+  .qs-topbar-right{margin-left:auto}
+  .qs-command-hero{
+    min-height:220px;
+    margin:0 -12px 12px;
+    padding:25px 18px;
+  }
+  .qs-command-hero h1{font-size:28px !important}
+  .qs-hero-points{gap:9px;font-size:9px}
+  .qs-pattern-kpis{grid-template-columns:1fr 1fr}
+  .qs-pattern-controls{grid-template-columns:1fr !important}
+  .qs-pattern-card{padding:15px !important}
+  .qs-pattern-head{flex-direction:column}
+  .qs-pattern-metrics{grid-template-columns:1fr 1fr !important}
+  .app .page{padding:0 12px 25px !important}
+}
+
+
+
+.qs-app-footer{
+  margin-left:205px;
+  min-height:58px;
+  padding:12px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  background:#092744;
+  color:#b7d0e3;
+  font-size:9px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.qs-footer-pillars{
+  display:flex;
+  gap:22px;
+  color:#b9d9ec;
+}
+
+.qs-footer-pillars span:nth-child(1){color:#7fdcff}
+.qs-footer-pillars span:nth-child(2){color:#9ac9e8}
+.qs-footer-pillars span:nth-child(3){color:#5fe2a1}
+
+.qs-app-footer strong{
+  color:#fff;
+  font-size:11px;
+}
+
+@media(max-width:650px){
+  .qs-app-footer{
+    margin-left:0;
+    flex-direction:column;
+    text-align:center;
+  }
+  .qs-footer-pillars{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+  }
+}
+
+
+/* STEP 10A — FIX FULL-WIDTH APP LAYOUT
+   Footer is a sibling of sidebar/main, so the app must wrap it
+   onto a second row. Main then occupies the complete remaining width. */
+.app{
+  width:100vw !important;
+  max-width:none !important;
+  min-width:0 !important;
+  display:flex !important;
+  flex-wrap:wrap !important;
+  align-content:flex-start !important;
+  overflow-x:hidden !important;
+}
+
+.app .sidebar{
+  flex:0 0 205px !important;
+}
+
+.app .main{
+  flex:1 1 calc(100vw - 205px) !important;
+  width:auto !important;
+  min-width:0 !important;
+  max-width:none !important;
+}
+
+.qs-app-footer{
+  flex:0 0 calc(100% - 205px) !important;
+  width:calc(100% - 205px) !important;
+  margin-left:205px !important;
+}
+
+@media(max-width:800px){
+  .app .sidebar{
+    flex-basis:175px !important;
+  }
+  .app .main{
+    flex:1 1 calc(100% - 175px) !important;
+  }
+  .qs-app-footer{
+    flex-basis:calc(100% - 175px) !important;
+    width:calc(100% - 175px) !important;
+    margin-left:175px !important;
+  }
+}
+
+@media(max-width:650px){
+  .app{
+    display:block !important;
+    width:100vw !important;
+  }
+  .app .sidebar{
+    width:100% !important;
+    min-width:0 !important;
+  }
+  .app .main{
+    width:100% !important;
+    min-width:0 !important;
+  }
+  .qs-app-footer{
+    width:100% !important;
+    margin-left:0 !important;
+  }
+}
+
+
+
+/* =========================================================
+   STEP 11 — FINAL UI SCALE + LOGIN + CONTENT CONTRAST
+   ========================================================= */
+
+html, body{
+  width:100% !important;
+  max-width:100% !important;
+  overflow-x:hidden !important;
+}
+
+/* ---------- APP GEOMETRY ---------- */
+.app{
+  width:100% !important;
+  max-width:none !important;
+  min-width:0 !important;
+  box-sizing:border-box !important;
+  overflow-x:hidden !important;
+}
+.app .sidebar{
+  flex:0 0 205px !important;
+  width:205px !important;
+  min-width:205px !important;
+  box-sizing:border-box !important;
+}
+.app .main{
+  flex:1 1 0 !important;
+  width:auto !important;
+  min-width:0 !important;
+  max-width:none !important;
+  box-sizing:border-box !important;
+  overflow-x:hidden !important;
+}
+.app .page{
+  width:100% !important;
+  max-width:none !important;
+  box-sizing:border-box !important;
+  padding-left:32px !important;
+  padding-right:32px !important;
+}
+.qs-app-footer{
+  flex:0 0 calc(100% - 205px) !important;
+  width:calc(100% - 205px) !important;
+  margin-left:205px !important;
+  box-sizing:border-box !important;
+}
+
+/* ---------- GLOBAL READABILITY ---------- */
+.app{
+  font-size:15px !important;
+}
+.app .page > h1{
+  font-size:30px !important;
+  line-height:1.15 !important;
+  letter-spacing:-.5px !important;
+  margin-bottom:7px !important;
+}
+.app .page > .page-sub{
+  font-size:14px !important;
+  line-height:1.55 !important;
+  margin-bottom:24px !important;
+}
+.app .panel-title{
+  font-size:13px !important;
+  letter-spacing:1.4px !important;
+}
+.app .section-title,
+.app .upload-title,
+.app .detail-section h3{
+  font-size:14px !important;
+}
+
+/* ---------- TOP BAR ---------- */
+.qs-topbar{
+  min-height:82px !important;
+  padding:0 32px !important;
+}
+.qs-topbar-brand{
+  min-width:250px !important;
+  font-size:14px !important;
+}
+.qs-topnav-link{
+  padding:29px 16px 26px !important;
+  font-size:14px !important;
+}
+.qs-global-search{
+  width:330px !important;
+  height:44px !important;
+}
+.qs-global-search input{
+  font-size:13px !important;
+}
+
+/* ---------- SIDEBAR ---------- */
+.app .brand-name{font-size:19px !important}
+.app .brand-sub{font-size:12px !important}
+.app .brand{padding:20px 20px 24px !important}
+.app .nav-item{
+  min-height:46px !important;
+  padding:12px 14px !important;
+  font-size:14px !important;
+}
+.app .nav-icon{
+  font-size:16px !important;
+}
+.app .conn-status{
+  font-size:12px !important;
+  padding:12px 20px !important;
+}
+.app .qs-sidebar-logout{
+  min-height:48px !important;
+  font-size:13px !important;
+  margin:0 12px 14px !important;
+}
+
+/* ---------- KPI CARDS ---------- */
+.app .kpi-row{
+  gap:16px !important;
+  margin-bottom:22px !important;
+}
+.app .kpi{
+  min-height:112px !important;
+  padding:20px !important;
+  border-radius:12px !important;
+}
+.app .kpi-label{
+  font-size:11px !important;
+  letter-spacing:1px !important;
+}
+.app .kpi-value{
+  font-size:32px !important;
+  margin-top:9px !important;
+}
+
+/* ---------- DASHBOARD PANELS ---------- */
+.app .panel{
+  border-radius:12px !important;
+  padding:22px !important;
+}
+.app .bar-row{
+  min-height:34px !important;
+  font-size:13px !important;
+}
+.app .bar-label{font-size:13px !important}
+.app .bar-count{font-size:13px !important}
+.app .recent-list{gap:8px !important}
+.app .recent-row{
+  min-height:52px !important;
+  padding:12px 14px !important;
+  grid-template-columns:125px 1fr 115px 85px !important;
+  font-size:14px !important;
+  border:1px solid #dbe5ef !important;
+  background:#f5f8fb !important;
+  color:#18324e !important;
+  border-radius:8px !important;
+}
+.app .recent-id{
+  font-size:13px !important;
+  color:#2f628f !important;
+}
+.app .recent-row > div:nth-child(2){
+  color:#173653 !important;
+  font-size:14px !important;
+}
+.app .recent-row > div:nth-child(4){
+  color:#48637b !important;
+  font-size:13px !important;
+}
+.app .recent-risk{font-size:14px !important}
+
+/* ---------- TABLE / REPORTS ---------- */
+.app table{font-size:14px !important}
+.app th{
+  font-size:12px !important;
+  padding:14px !important;
+}
+.app td{
+  font-size:14px !important;
+  padding:15px 14px !important;
+  color:#173653 !important;
+}
+.app td[style*="font-family"]{font-size:13px !important}
+.app .report-controls input,
+.app .report-controls select,
+.app .pattern-controls input,
+.app .pattern-controls select,
+.app .file-input{
+  min-height:44px !important;
+  font-size:13px !important;
+}
+.app button.primary,
+.app button.secondary{
+  min-height:44px !important;
+  font-size:13px !important;
+}
+
+/* ---------- PATTERN PAGE ---------- */
+.qs-command-hero{
+  min-height:250px !important;
+  padding:34px !important;
+  border-radius:0 0 14px 14px !important;
+}
+.qs-command-hero h1{font-size:34px !important;line-height:1.12 !important}
+.qs-command-hero p{font-size:14px !important}
+.qs-hero-points{font-size:11px !important}
+.qs-pattern-kpis{gap:14px !important}
+.qs-pattern-kpi{min-height:108px !important;padding:18px !important}
+.qs-pattern-kpi-value{font-size:29px !important}
+.qs-pattern-kpi-label{font-size:11px !important}
+.qs-pattern-controls input,
+.qs-pattern-controls select{
+  min-height:46px !important;
+  font-size:13px !important;
+}
+.app .pattern-card{
+  padding:22px !important;
+  border-radius:12px !important;
+}
+.app .pattern-title{font-size:20px !important}
+.app .pattern-meta{font-size:13px !important}
+.app .pattern-stats{font-size:14px !important}
+.app .pattern-section-title{font-size:11px !important}
+.app .pattern-explanation,
+.app .pattern-action-text{font-size:13px !important;line-height:1.65 !important}
+.app .pattern-report-id{font-size:11px !important;padding:7px 9px !important}
+
+/* ---------- INVESTIGATION MODAL ---------- */
+.app .modal{
+  max-width:920px !important;
+  font-size:14px !important;
+}
+.app .modal-title{font-size:22px !important}
+.app .detail-label{font-size:11px !important}
+.app .detail-value{font-size:14px !important}
+.app .detail-box,
+.app .report-text-box{font-size:14px !important;line-height:1.7 !important}
+
+/* ---------- LOGIN: CLEAN LIGHT ENTERPRISE DESIGN ---------- */
+.qs-login-overlay{
+  background:
+    radial-gradient(circle at 50% 30%, rgba(16,145,214,.16), transparent 35%),
+    rgba(3,20,37,.72) !important;
+  backdrop-filter:blur(14px) !important;
+  -webkit-backdrop-filter:blur(14px) !important;
+}
+.qs-login-modal{
+  width:min(560px,92vw) !important;
+  border:1px solid #d8e5f0 !important;
+  border-radius:18px !important;
+  background:#fff !important;
+  box-shadow:0 32px 90px rgba(0,24,48,.35),0 8px 28px rgba(0,50,90,.14) !important;
+  color:#102a46 !important;
+}
+.qs-login-top{
+  height:6px !important;
+  background:linear-gradient(90deg,#087bd1,#12bff5,#087bd1) !important;
+}
+.qs-login-body{padding:38px 40px 34px !important}
+.qs-login-brand{
+  gap:15px !important;
+  margin-bottom:22px !important;
+}
+.qs-login-logo{
+  width:58px !important;height:58px !important;flex-basis:58px !important;
+  border:1px solid #b8d7ea !important;
+  border-radius:14px !important;
+  background:#edf7fd !important;
+  box-shadow:none !important;
+}
+.qs-login-logo svg{width:40px !important;height:40px !important}
+.qs-login-kicker{
+  color:#087bd1 !important;
+  font-size:11px !important;
+  letter-spacing:2.2px !important;
+}
+.qs-login-brand h2{
+  color:#102d4b !important;
+  font-size:27px !important;
+  margin-top:5px !important;
+}
+.qs-login-close{
+  top:14px !important;right:14px !important;
+  width:36px !important;height:36px !important;
+  border:1px solid #d5e1eb !important;
+  background:#f6f9fc !important;
+  color:#52708a !important;
+  font-size:20px !important;
+}
+.qs-login-subtitle{
+  color:#60768b !important;
+  font-size:14px !important;
+  line-height:1.6 !important;
+  margin:0 0 25px !important;
+}
+.qs-login-field{margin-bottom:19px !important}
+.qs-login-field label{
+  color:#28435d !important;
+  margin-bottom:8px !important;
+  font-size:11px !important;
+  letter-spacing:.9px !important;
+}
+.qs-login-input{
+  min-height:52px !important;
+  padding:13px 46px 13px 15px !important;
+  border:1px solid #cddce8 !important;
+  border-radius:9px !important;
+  background:#f8fbfd !important;
+  color:#152f49 !important;
+  font-size:15px !important;
+}
+.qs-login-input::placeholder{color:#8295a6 !important}
+.qs-login-input:focus{
+  border-color:#159ed8 !important;
+  background:#fff !important;
+  box-shadow:0 0 0 3px rgba(18,170,231,.10) !important;
+}
+.qs-login-eye{color:#628198 !important}
+.qs-login-row{margin:7px 0 22px !important}
+.qs-login-remember{color:#61788d !important;font-size:13px !important}
+.qs-login-link{color:#087bd1 !important;font-size:13px !important}
+.qs-login-submit{
+  min-height:53px !important;
+  border:0 !important;
+  border-radius:9px !important;
+  background:linear-gradient(135deg,#087bd1,#10afe8) !important;
+  color:#fff !important;
+  font-size:13px !important;
+  letter-spacing:1.1px !important;
+  box-shadow:0 10px 24px rgba(8,123,209,.22) !important;
+}
+.qs-login-status{font-size:12px !important;color:#60798f !important}
+.qs-login-demo-note{
+  margin-top:23px !important;
+  padding:14px 15px !important;
+  border:1px solid #dce7ef !important;
+  border-radius:9px !important;
+  background:#f5f9fc !important;
+  color:#61798d !important;
+  font-size:11px !important;
+  line-height:1.6 !important;
+}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:1100px){
+  .app .page{padding-left:24px !important;padding-right:24px !important}
+  .qs-global-search{width:260px !important}
+}
+@media(max-width:800px){
+  .app .sidebar{flex-basis:175px !important;width:175px !important;min-width:175px !important}
+  .app .main{flex:1 1 0 !important;width:auto !important}
+  .qs-app-footer{flex-basis:calc(100% - 175px) !important;width:calc(100% - 175px) !important;margin-left:175px !important}
+  .app .page{padding-left:20px !important;padding-right:20px !important}
+  .app .page > h1{font-size:26px !important}
+  .qs-topbar{padding:0 18px !important}
+  .qs-topnav-link{padding-left:11px !important;padding-right:11px !important;font-size:12px !important}
+  .app .recent-row{grid-template-columns:110px 1fr 100px 70px !important}
+}
+@media(max-width:650px){
+  .app{display:block !important;width:100% !important}
+  .app .sidebar{width:100% !important;min-width:0 !important}
+  .app .main{width:100% !important}
+  .qs-app-footer{width:100% !important;margin-left:0 !important}
+  .app .page{padding:16px 14px 28px !important}
+  .app .page > h1{font-size:24px !important}
+  .app .kpi-row{grid-template-columns:1fr 1fr !important}
+  .app .recent-row{grid-template-columns:1fr 90px !important;font-size:13px !important}
+  .app .recent-row > div:nth-child(2){display:none}
+  .qs-login-modal{width:min(94vw,520px) !important}
+  .qs-login-body{padding:30px 24px 25px !important}
+  .qs-login-brand h2{font-size:23px !important}
+}
+
+
+/* =========================================================
+   STEP 12 — LARGE LAPTOP-READABLE TYPOGRAPHY
+   Global readability pass
+   ========================================================= */
+
+/* Base scale */
+body{
+  font-size:16px !important;
+  line-height:1.55 !important;
+}
+
+/* Sidebar */
+.app .sidebar .brand-name{
+  font-size:19px !important;
+}
+.app .sidebar .brand-sub{
+  font-size:12px !important;
+}
+.app .sidebar .nav-item{
+  font-size:15px !important;
+  min-height:46px !important;
+}
+.app .sidebar .nav-num,
+.app .sidebar .nav-icon{
+  font-size:13px !important;
+}
+.app .conn-status{
+  font-size:12px !important;
+}
+.app .qs-sidebar-logout{
+  font-size:13px !important;
+}
+
+/* Top navigation */
+.qs-topbar{
+  min-height:82px !important;
+}
+.qs-topnav-link{
+  font-size:14px !important;
+  padding:28px 15px 25px !important;
+}
+.qs-topbar-brand{
+  font-size:14px !important;
+}
+.qs-global-search{
+  height:44px !important;
+}
+.qs-global-search input{
+  font-size:13px !important;
+}
+.qs-avatar-btn{
+  font-size:11px !important;
+}
+
+/* Page typography */
+.app .page > h1,
+.app .qs-page-intro h1{
+  font-size:27px !important;
+  line-height:1.2 !important;
+  letter-spacing:-.2px !important;
+}
+.app .page-sub{
+  font-size:15px !important;
+  line-height:1.6 !important;
+}
+
+/* Hero */
+.qs-command-hero h1{
+  font-size:39px !important;
+}
+.qs-command-hero p{
+  font-size:15px !important;
+  line-height:1.6 !important;
+}
+.qs-hero-points{
+  font-size:12px !important;
+}
+.qs-hero-status{
+  font-size:10px !important;
+}
+.qs-hero-side-title{
+  font-size:11px !important;
+}
+.qs-hero-side-main{
+  font-size:22px !important;
+}
+
+/* Dashboard KPI */
+.app .kpi{
+  padding:20px 21px !important;
+}
+.app .kpi-label{
+  font-size:11px !important;
+}
+.app .kpi-value{
+  font-size:33px !important;
+  line-height:1.15 !important;
+}
+
+/* Panels */
+.app .panel{
+  padding:22px !important;
+}
+.app .panel-title{
+  font-size:13px !important;
+}
+.app .bar-row{
+  font-size:14px !important;
+  margin-bottom:11px !important;
+}
+.app .bar-label{
+  width:175px !important;
+  font-size:13px !important;
+}
+.app .bar-count{
+  font-size:13px !important;
+}
+.app .metric-chip .m-label{
+  font-size:11px !important;
+}
+.app .metric-chip .m-value{
+  font-size:20px !important;
+}
+
+/* Alert */
+.app .alert-title{
+  font-size:14px !important;
+}
+.app .alert-sub{
+  font-size:13px !important;
+  line-height:1.6 !important;
+}
+
+/* Recent safety activity */
+.app .recent-row{
+  min-height:54px !important;
+  padding:12px 13px !important;
+  font-size:14px !important;
+}
+.app .recent-id{
+  font-size:13px !important;
+}
+.app .recent-risk{
+  font-size:13px !important;
+}
+
+/* Analyze */
+.app textarea{
+  font-size:15px !important;
+  line-height:1.65 !important;
+  min-height:145px !important;
+}
+.app .example-chip{
+  font-size:12px !important;
+  padding:7px 12px !important;
+}
+.app button.primary{
+  font-size:14px !important;
+  min-height:44px !important;
+}
+.app button.secondary{
+  font-size:13px !important;
+  min-height:42px !important;
+}
+
+/* Analysis result */
+.app .risk-dial-num{
+  font-size:31px !important;
+}
+.app .risk-dial-label{
+  font-size:10px !important;
+}
+.app .verdict-sif{
+  font-size:22px !important;
+}
+.app .verdict-conf{
+  font-size:13px !important;
+}
+.app .tag{
+  font-size:12px !important;
+  min-height:36px !important;
+  padding:7px 12px !important;
+}
+.app .why-list li{
+  font-size:14px !important;
+  line-height:1.65 !important;
+}
+.app .recommendation{
+  font-size:14px !important;
+  line-height:1.65 !important;
+}
+
+/* Reports */
+.app .report-controls input,
+.app .report-controls select{
+  min-height:43px !important;
+  font-size:13px !important;
+}
+.app .report-count{
+  font-size:12px !important;
+}
+.app table{
+  font-size:14px !important;
+}
+.app th{
+  font-size:11px !important;
+  padding:11px 12px !important;
+}
+.app td{
+  font-size:13px !important;
+  padding:12px !important;
+}
+.app .risk-pill{
+  font-size:12px !important;
+  padding:5px 9px !important;
+}
+.app .click-hint{
+  font-size:12px !important;
+}
+
+/* Patterns */
+.qs-pattern-kpi span{
+  font-size:10px !important;
+}
+.qs-pattern-kpi strong{
+  font-size:29px !important;
+}
+.qs-pattern-kpi small{
+  font-size:10px !important;
+}
+.qs-kpi-icon{
+  width:54px !important;
+  height:54px !important;
+  flex-basis:54px !important;
+  font-size:25px !important;
+}
+.qs-pattern-controls{
+  min-height:48px !important;
+}
+.qs-search-control{
+  height:46px !important;
+}
+.qs-search-control input{
+  font-size:13px !important;
+}
+.qs-pattern-controls select{
+  font-size:13px !important;
+}
+.qs-pattern-controls .pattern-count{
+  font-size:12px !important;
+}
+.qs-pattern-heading h2{
+  font-size:21px !important;
+}
+.qs-pattern-heading .pattern-meta{
+  font-size:12px !important;
+}
+.qs-risk-badge{
+  font-size:11px !important;
+}
+.qs-pattern-summary{
+  font-size:14px !important;
+}
+.qs-pattern-metrics .pattern-metric-label{
+  font-size:10px !important;
+}
+.qs-pattern-metrics .pattern-metric-value{
+  font-size:18px !important;
+}
+.qs-pattern-card .pattern-explanation,
+.qs-pattern-card .pattern-action-text{
+  font-size:13px !important;
+  line-height:1.65 !important;
+}
+.qs-pattern-card .pattern-section-title{
+  font-size:10px !important;
+}
+.qs-report-chip{
+  font-size:11px !important;
+  padding:7px 10px !important;
+}
+
+/* AI Safety Intelligence dashboard */
+.ai-intelligence-title{
+  font-size:13px !important;
+}
+.ai-intelligence-subtitle{
+  font-size:12px !important;
+}
+.ai-concern-hazard{
+  font-size:23px !important;
+}
+.ai-chip{
+  font-size:10px !important;
+}
+.ai-priority-label{
+  font-size:10px !important;
+}
+.ai-info-text,
+.ai-action-text{
+  font-size:13px !important;
+  line-height:1.7 !important;
+}
+.ai-footer-note{
+  font-size:11px !important;
+}
+.ai-view-btn{
+  font-size:10px !important;
+}
+
+/* Investigation modal */
+.app .modal-title{
+  font-size:20px !important;
+}
+.app #modalReportSubtitle{
+  font-size:13px !important;
+}
+.app .investigation-headline{
+  font-size:23px !important;
+}
+.app .investigation-context{
+  font-size:12px !important;
+}
+.app .investigation-risk-score{
+  font-size:31px !important;
+}
+.app .investigation-risk-label{
+  font-size:10px !important;
+}
+.app .investigation-status-label{
+  font-size:10px !important;
+}
+.app .investigation-status-value{
+  font-size:10px !important;
+}
+.app .detail-label{
+  font-size:10px !important;
+}
+.app .detail-value{
+  font-size:14px !important;
+}
+.app .detail-section h3{
+  font-size:10px !important;
+}
+.app .report-text-box{
+  font-size:14px !important;
+  line-height:1.7 !important;
+}
+.app .investigation-intel-label,
+.app .pattern-signal-label,
+.app .review-guidance-label{
+  font-size:10px !important;
+}
+.app .investigation-intel-text,
+.app .pattern-signal-text{
+  font-size:13px !important;
+  line-height:1.7 !important;
+}
+.app .review-guidance-text{
+  font-size:12px !important;
+  line-height:1.7 !important;
+}
+
+/* Login — larger and easier to read */
+.qs-login-modal{
+  width:min(500px,94vw) !important;
+}
+.qs-login-body{
+  padding:34px !important;
+}
+.qs-login-brand h2{
+  font-size:25px !important;
+}
+.qs-login-kicker{
+  font-size:11px !important;
+}
+.qs-login-subtitle{
+  font-size:14px !important;
+  line-height:1.65 !important;
+}
+.qs-login-field label{
+  font-size:11px !important;
+}
+.qs-login-input{
+  min-height:50px !important;
+  font-size:14px !important;
+}
+.qs-login-row,
+.qs-login-remember,
+.qs-login-link{
+  font-size:12px !important;
+}
+.qs-login-submit{
+  min-height:51px !important;
+  font-size:12px !important;
+}
+.qs-login-demo-note{
+  font-size:11px !important;
+  line-height:1.6 !important;
+}
+
+/* Profile menu */
+.qs-profile-head strong{
+  font-size:15px !important;
+}
+.qs-profile-head span{
+  font-size:11px !important;
+}
+.qs-profile-item{
+  font-size:13px !important;
+}
+.qs-profile-badge{
+  font-size:11px !important;
+}
+
+/* Footer */
+.qs-app-footer{
+  font-size:11px !important;
+}
+.qs-footer-pillars{
+  font-size:11px !important;
+}
+.qs-app-footer strong{
+  font-size:13px !important;
+}
+
+/* Laptop-specific comfort: don't compress content */
+@media(min-width:1000px){
+  .app .page{
+    padding-left:32px !important;
+    padding-right:32px !important;
+  }
+}
+
+@media(max-width:850px){
+  .app .page > h1,
+  .app .qs-page-intro h1{
+    font-size:24px !important;
+  }
+  .qs-command-hero h1{
+    font-size:32px !important;
+  }
+}
+
+@media(max-width:650px){
+  body{
+    font-size:15px !important;
+  }
+  .app .sidebar .nav-item{
+    font-size:14px !important;
+  }
+  .app .page > h1,
+  .app .qs-page-intro h1{
+    font-size:23px !important;
+  }
+  .qs-command-hero h1{
+    font-size:29px !important;
+  }
+}
+
+
+
+/* =========================================================
+   STEP 13 — DESKTOP FULLSCREEN / HEADER / PROFILE FIX
+   ========================================================= */
+
+/* 1. Never let the authenticated app be narrower than the viewport */
+.app{
+  width:100% !important;
+  min-width:0 !important;
+}
+
+.app .main{
+  min-width:0 !important;
+  width:calc(100% - 205px) !important;
+  max-width:none !important;
+}
+
+/* 2. Header must fit at 100% laptop zoom */
+.qs-topbar{
+  width:100% !important;
+  min-width:0 !important;
+  box-sizing:border-box !important;
+  display:grid !important;
+  grid-template-columns:minmax(205px,240px) minmax(300px,1fr) minmax(285px,365px) !important;
+  align-items:center !important;
+  gap:16px !important;
+  padding:0 18px !important;
+}
+
+.qs-topbar-brand{
+  min-width:0 !important;
+  width:auto !important;
+}
+
+.qs-topnav{
+  min-width:0 !important;
+  width:100% !important;
+  overflow:hidden !important;
+  gap:0 !important;
+}
+
+.qs-topnav-link{
+  flex:1 1 auto !important;
+  white-space:nowrap !important;
+  padding-left:9px !important;
+  padding-right:9px !important;
+  font-size:13px !important;
+}
+
+.qs-topbar-right{
+  min-width:0 !important;
+  width:100% !important;
+  justify-content:flex-end !important;
+  gap:9px !important;
+}
+
+.qs-global-search{
+  min-width:0 !important;
+  width:min(290px,100%) !important;
+  flex:1 1 220px !important;
+}
+
+.qs-icon-btn{
+  flex:0 0 38px !important;
+}
+
+.qs-avatar-btn{
+  flex:0 0 40px !important;
+}
+
+/* 3. The home/back control belongs inside content, not floating awkwardly */
+.app .home-back{
+  margin-top:14px !important;
+  margin-bottom:14px !important;
+}
+
+/* 4. Profile menu: opaque enterprise dropdown, never transparent */
+.qs-profile-menu{
+  position:fixed !important;
+  top:88px !important;
+  right:18px !important;
+  width:285px !important;
+  max-width:calc(100vw - 36px) !important;
+  background:#ffffff !important;
+  border:1px solid #cfdae6 !important;
+  border-radius:12px !important;
+  box-shadow:0 18px 45px rgba(7,31,55,.20) !important;
+  color:#17314e !important;
+  padding:10px !important;
+  z-index:10000 !important;
+}
+
+.qs-profile-head{
+  padding:11px 12px 13px !important;
+  border-bottom:1px solid #e1e9f1 !important;
+}
+
+.qs-profile-head strong{
+  color:#17314e !important;
+}
+
+.qs-profile-head span{
+  color:#6a8097 !important;
+}
+
+.qs-profile-item{
+  color:#29435e !important;
+}
+
+.qs-profile-item:hover{
+  background:#edf7ff !important;
+  color:#087bd1 !important;
+}
+
+.qs-profile-item.danger{
+  color:#d83948 !important;
+}
+
+/* While profile menu is open, leave a clean white band below the topbar.
+   This prevents the dropdown from visually merging with hero imagery. */
+body.qs-profile-open .app .main{
+  padding-top:0 !important;
+}
+
+body.qs-profile-open .qs-command-hero{
+  /* creates an intentional visual gap beneath the header */
+  margin-top:72px !important;
+}
+
+/* 5. Hero should use the full content width and have stable proportions */
+.qs-command-hero{
+  width:auto !important;
+  min-height:250px !important;
+  margin-left:-24px !important;
+  margin-right:-24px !important;
+  border-radius:0 0 12px 12px !important;
+  background-position:center center !important;
+}
+
+.qs-hero-content{
+  max-width:900px !important;
+}
+
+.qs-command-hero h1{
+  font-size:42px !important;
+}
+
+.qs-command-hero p{
+  font-size:16px !important;
+  max-width:820px !important;
+}
+
+/* 6. Improve content width at common laptop resolutions */
+@media(min-width:1200px){
+  .app .page{
+    padding-left:34px !important;
+    padding-right:34px !important;
+  }
+  .qs-topbar{
+    grid-template-columns:235px minmax(340px,1fr) 365px !important;
+  }
+  .qs-topnav-link{
+    font-size:14px !important;
+  }
+}
+
+@media(min-width:1500px){
+  .app .page{
+    padding-left:42px !important;
+    padding-right:42px !important;
+  }
+  .qs-command-hero{
+    min-height:275px !important;
+  }
+}
+
+/* 7. Laptop 100% zoom: prevent clipping at ~1366–1536 widths */
+@media(max-width:1399px) and (min-width:901px){
+  .qs-topbar{
+    grid-template-columns:195px minmax(250px,1fr) 310px !important;
+    gap:10px !important;
+    padding:0 12px !important;
+  }
+
+  .qs-topnav-link{
+    font-size:12px !important;
+    padding-left:7px !important;
+    padding-right:7px !important;
+  }
+
+  .qs-global-search{
+    width:205px !important;
+  }
+
+  .qs-hero-side{
+    min-width:215px !important;
+    padding-left:20px !important;
+  }
+}
+
+/* 8. If width gets tight, compact header before it clips */
+@media(max-width:1120px) and (min-width:801px){
+  .qs-topbar{
+    grid-template-columns:170px minmax(220px,1fr) 255px !important;
+  }
+
+  .qs-topbar-brand{
+    font-size:11px !important;
+  }
+
+  .qs-topnav-link{
+    font-size:11px !important;
+    padding:26px 5px 23px !important;
+  }
+
+  .qs-global-search{
+    width:175px !important;
+  }
+
+  .qs-command-hero h1{
+    font-size:34px !important;
+  }
+
+  .qs-hero-points{
+    gap:10px !important;
+    font-size:10px !important;
+  }
+}
+
+/* 9. Mobile stays usable */
+@media(max-width:800px){
+  .app .main{
+    width:calc(100% - 175px) !important;
+  }
+}
+
+@media(max-width:650px){
+  .app .main{
+    width:100% !important;
+  }
+
+  .qs-topbar{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    min-height:64px !important;
+    padding:8px 12px !important;
+  }
+
+  .qs-topnav{
+    order:2;
+    flex-basis:100%;
+    overflow-x:auto !important;
+  }
+
+  .qs-topnav-link{
+    flex:0 0 auto !important;
+    font-size:11px !important;
+  }
+
+  .qs-topbar-right{
+    width:auto !important;
+    margin-left:auto !important;
+  }
+
+  body.qs-profile-open .qs-command-hero{
+    margin-top:80px !important;
+  }
+}
+
+/* 10. Make page content readable without huge empty gutters */
+@media(min-width:901px){
+  .app .page{
+    max-width:1600px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+}
+
+
+
+/* =========================================================
+   STEP 14 — ALERTS + ACCOUNT & ACCESS
+   ========================================================= */
+
+/* Header action buttons */
+.qs-alert-trigger{
+  position:relative !important;
+  flex:0 0 38px !important;
+  width:38px !important;
+  height:38px !important;
+  display:grid !important;
+  place-items:center !important;
+  padding:0 !important;
+  background:#f3f7fb !important;
+  border:1px solid #e0e8f0 !important;
+  color:#d93845 !important;
+}
+
+.qs-alert-bell{
+  display:block;
+  font-size:13px;
+  line-height:1;
+  color:#e23643;
+}
+
+.qs-alert-badge{
+  position:absolute;
+  right:-4px;
+  top:-5px;
+  min-width:18px;
+  height:18px;
+  display:none;
+  place-items:center;
+  padding:0 4px;
+  border-radius:999px;
+  background:#ef3340;
+  color:#fff;
+  border:2px solid #fff;
+  font:800 8px/1 var(--mono);
+}
+
+.qs-alert-badge.visible{
+  display:grid;
+}
+
+.qs-alert-trigger:hover{
+  background:#fff0f1 !important;
+  border-color:#f3c4c8 !important;
+}
+
+/* Profile button */
+.qs-avatar-btn{
+  cursor:pointer !important;
+  border:1px solid #cbd9e6 !important;
+}
+
+.qs-avatar-btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 4px 12px rgba(9,39,68,.16);
+}
+
+/* Profile dropdown */
+.qs-profile-menu{
+  width:300px !important;
+  padding:12px !important;
+}
+
+.qs-account-kicker{
+  color:#087bd1;
+  font:800 9px var(--mono);
+  letter-spacing:1.3px;
+  margin-bottom:7px;
+}
+
+.qs-access-status{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin:8px 0;
+  padding:10px 11px;
+  border-radius:8px;
+  border:1px solid #d8ece3;
+  background:#f2fbf6;
+}
+
+.qs-access-dot{
+  width:9px;
+  height:9px;
+  flex:0 0 9px;
+  border-radius:50%;
+  background:#19a66f;
+  box-shadow:0 0 8px rgba(25,166,111,.35);
+}
+
+.qs-access-status strong{
+  display:block;
+  color:#1d3b56;
+  font-size:12px;
+}
+
+.qs-access-status small{
+  display:block;
+  color:#6b8399;
+  font-size:10px;
+  margin-top:2px;
+}
+
+.qs-profile-item{
+  min-height:48px !important;
+  padding:8px 9px !important;
+}
+
+.qs-profile-item > span:last-child{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  align-items:flex-start;
+}
+
+.qs-profile-item strong{
+  color:inherit;
+  font-size:12px;
+}
+
+.qs-profile-item small{
+  color:#7b91a5;
+  font-size:10px;
+}
+
+.qs-profile-item.danger small{
+  color:#c68187;
+}
+
+/* Alert panel */
+.qs-alert-panel{
+  position:fixed;
+  top:88px;
+  right:64px;
+  width:370px;
+  max-width:calc(100vw - 28px);
+  display:none;
+  z-index:10001;
+  padding:14px;
+  border:1px solid #d1dce6;
+  border-radius:13px;
+  background:#fff;
+  box-shadow:0 20px 55px rgba(5,30,52,.22);
+}
+
+.qs-alert-panel.open{
+  display:block;
+  animation:qsAlertIn .16s ease-out;
+}
+
+@keyframes qsAlertIn{
+  from{opacity:0;transform:translateY(-5px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.qs-alert-panel-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  padding:2px 2px 12px;
+  border-bottom:1px solid #e3ebf2;
+}
+
+.qs-alert-kicker{
+  color:#ef3340;
+  font:800 9px var(--mono);
+  letter-spacing:1.3px;
+}
+
+.qs-alert-panel-head strong{
+  display:block;
+  margin-top:4px;
+  color:#17324e;
+  font-size:15px;
+}
+
+.qs-alert-close{
+  width:30px;
+  height:30px;
+  border:1px solid #d9e3ec;
+  border-radius:50%;
+  background:#f8fafc;
+  color:#56718b;
+  cursor:pointer;
+  font-size:18px;
+}
+
+.qs-alert-main{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:15px 2px;
+}
+
+.qs-alert-big{
+  min-width:64px;
+  height:64px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:#fff0f1;
+  color:#ef3340;
+  font:900 25px var(--mono);
+}
+
+.qs-alert-main-title{
+  color:#233e5a;
+  font-size:12px;
+  font-weight:800;
+}
+
+.qs-alert-main-sub{
+  margin-top:4px;
+  color:#71869b;
+  font-size:10px;
+  line-height:1.55;
+}
+
+.qs-alert-info{
+  padding:11px 12px;
+  border-radius:8px;
+  border:1px solid #d7e7f2;
+  background:#f4f9fd;
+}
+
+.qs-alert-info-title{
+  color:#0a6fb8;
+  font:800 9px var(--mono);
+  letter-spacing:.9px;
+}
+
+.qs-alert-info-text{
+  margin-top:5px;
+  color:#5d7389;
+  font-size:10px;
+  line-height:1.6;
+}
+
+.qs-alert-action{
+  width:100%;
+  min-height:40px;
+  margin-top:10px;
+  border:1px solid #087bd1;
+  border-radius:8px;
+  background:#087bd1;
+  color:#fff;
+  cursor:pointer;
+  font:800 10px var(--mono);
+  letter-spacing:.4px;
+}
+
+.qs-alert-action:hover{
+  background:#076ebc;
+}
+
+/* Don't let either dropdown overlap the hero visually */
+.qs-alert-panel,
+.qs-profile-menu{
+  box-sizing:border-box;
+}
+
+/* Responsive */
+@media(max-width:800px){
+  .qs-alert-panel{
+    right:15px;
+    top:74px;
+  }
+}
+
+@media(max-width:650px){
+  .qs-topbar-right{
+    gap:7px !important;
+  }
+  .qs-alert-panel{
+    top:128px;
+    right:12px;
+    width:calc(100vw - 24px);
+  }
+}
+
+
+
+/* =========================================================
+   STEP 15 — HOME PAGE ENTERPRISE ENHANCEMENT
+   ========================================================= */
+
+.home-page{
+  background:
+    linear-gradient(110deg,rgba(2,14,29,.95) 0%,rgba(5,37,78,.84) 42%,rgba(10,58,111,.58) 72%,rgba(3,16,31,.86) 100%),
+    url("https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=2600&q=90") center/cover fixed no-repeat !important;
+}
+
+.home-nav{
+  min-height:82px !important;
+  padding:0 4% !important;
+  background:rgba(3,16,31,.86) !important;
+  border-bottom:1px solid rgba(63,199,255,.25) !important;
+}
+
+.home-nav-wordmark{
+  font-size:22px !important;
+}
+
+.home-nav-sub{
+  font-size:10px !important;
+  letter-spacing:2px !important;
+}
+
+.home-nav-links{
+  gap:4px !important;
+}
+
+.home-nav-link{
+  font-size:13px !important;
+  padding:12px 15px !important;
+}
+
+.home-nav-link.active{
+  box-shadow:inset 0 -3px 0 #18c5ff !important;
+}
+
+.home-hero{
+  min-height:570px !important;
+  padding:68px 5.4% 46px !important;
+}
+
+.home-hero-inner{
+  width:min(1440px,100%) !important;
+  grid-template-columns:minmax(0,1.17fr) minmax(380px,.83fr) !important;
+  gap:46px !important;
+}
+
+.home-kicker{
+  padding:8px 13px !important;
+  font-size:10px !important;
+  letter-spacing:1.7px !important;
+}
+
+.home-title{
+  font-size:clamp(50px,5.8vw,84px) !important;
+  line-height:.94 !important;
+  letter-spacing:-3px !important;
+}
+
+.home-platform{
+  font-size:19px !important;
+  letter-spacing:4px !important;
+}
+
+.home-description{
+  max-width:780px !important;
+  font-size:15px !important;
+  line-height:1.75 !important;
+  color:#c9d9e7 !important;
+}
+
+.home-tagline{
+  font-size:12px !important;
+  gap:14px !important;
+}
+
+.home-cta{
+  min-height:48px !important;
+  padding:14px 24px !important;
+  border-radius:9px !important;
+}
+
+.home-cta.primary{
+  box-shadow:0 9px 30px rgba(0,188,255,.24) !important;
+}
+
+.home-visual{
+  min-height:420px !important;
+}
+
+.home-hud{
+  top:9px !important;
+  right:-2px !important;
+  width:235px !important;
+  padding:15px !important;
+  border-radius:14px !important;
+}
+
+.home-hud-title{
+  font-size:10px !important;
+}
+
+.home-check{
+  font-size:11px !important;
+}
+
+.home-alert{
+  width:260px !important;
+  right:-10px !important;
+  bottom:0 !important;
+}
+
+.home-alert-text{
+  font-size:12px !important;
+}
+
+.home-risk{
+  font-size:10px !important;
+}
+
+/* New four-step ribbon */
+.qs-home-ribbon{
+  position:relative;
+  z-index:4;
+  padding:0 4% 28px;
+  background:transparent;
+}
+
+.qs-home-ribbon-inner{
+  width:min(1180px,100%);
+  margin:-18px auto 0;
+  min-height:100px;
+  display:grid;
+  grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;
+  align-items:center;
+  gap:14px;
+  padding:16px 20px;
+  border:1px solid rgba(54,190,255,.22);
+  border-radius:13px;
+  background:rgba(3,22,41,.86);
+  backdrop-filter:blur(12px);
+  box-shadow:0 15px 35px rgba(0,0,0,.20);
+}
+
+.qs-home-ribbon-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:0;
+}
+
+.qs-home-ribbon-item strong{
+  display:block;
+  color:#edf8ff;
+  font-size:12px;
+}
+
+.qs-home-ribbon-item small{
+  display:block;
+  color:#8da8ba;
+  font-size:9px;
+  margin-top:2px;
+}
+
+.qs-home-ribbon-icon{
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  font:800 11px var(--mono);
+}
+
+.qs-home-ribbon-icon.blue{
+  background:rgba(18,191,245,.10);
+  color:#4bd5ff;
+  border:1px solid rgba(18,191,245,.35);
+}
+.qs-home-ribbon-icon.purple{
+  background:rgba(123,76,226,.12);
+  color:#c193ff;
+  border:1px solid rgba(123,76,226,.35);
+}
+.qs-home-ribbon-icon.orange{
+  background:rgba(245,154,35,.12);
+  color:#ffc477;
+  border:1px solid rgba(245,154,35,.35);
+}
+.qs-home-ribbon-icon.green{
+  background:rgba(24,166,111,.12);
+  color:#64e5ae;
+  border:1px solid rgba(24,166,111,.35);
+}
+
+.qs-home-ribbon-line{
+  width:32px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#4abff0,transparent);
+}
+
+/* Capability cards */
+.home-section{
+  padding:34px 4% 42px !important;
+}
+
+.home-section-head{
+  max-width:1180px !important;
+  margin-bottom:23px !important;
+  font-size:18px !important;
+}
+
+.home-cards{
+  width:min(1320px,100%) !important;
+  gap:16px !important;
+}
+
+.home-card{
+  min-height:215px !important;
+  padding:24px 22px !important;
+  border-radius:13px !important;
+  border:1px solid rgba(73,182,235,.26) !important;
+}
+
+.home-card h3{
+  font-size:15px !important;
+}
+
+.home-card p{
+  max-width:330px !important;
+  font-size:12px !important;
+  line-height:1.7 !important;
+}
+
+/* Existing About block */
+.home-about{
+  width:min(1320px,100%) !important;
+  margin:0 auto !important;
+  padding:26px 30px !important;
+  border-radius:13px !important;
+}
+
+.home-about h2{
+  font-size:21px !important;
+}
+
+.home-about p{
+  font-size:12px !important;
+  line-height:1.75 !important;
+}
+
+/* New trust section */
+.qs-home-trust{
+  position:relative;
+  z-index:4;
+  padding:0 4% 38px;
+  background:#eef4f9;
+}
+
+.qs-home-trust-inner{
+  width:min(1320px,100%);
+  margin:auto;
+  padding:24px 28px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:28px;
+  align-items:center;
+  border:1px solid #d5e2ed;
+  border-radius:13px;
+  background:#fff;
+  box-shadow:0 9px 25px rgba(12,43,70,.07);
+}
+
+.qs-home-trust-kicker{
+  color:#087bd1;
+  font:800 9px var(--mono);
+  letter-spacing:1.4px;
+}
+
+.qs-home-trust h2{
+  margin:7px 0 7px;
+  color:#15324e;
+  font-size:22px;
+}
+
+.qs-home-trust h2 span{
+  color:#087bd1;
+}
+
+.qs-home-trust p{
+  margin:0;
+  max-width:690px;
+  color:#61778d;
+  font-size:12px;
+  line-height:1.7;
+}
+
+.qs-home-trust-badges{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+}
+
+.qs-home-trust-badges > div{
+  padding:11px 8px;
+  border:1px solid #dde7ef;
+  border-radius:8px;
+  background:#f7fafd;
+  text-align:center;
+}
+
+.qs-home-trust-badges strong{
+  display:block;
+  color:#173653;
+  font:800 14px var(--mono);
+}
+
+.qs-home-trust-badges small{
+  color:#71879c;
+  font-size:9px;
+}
+
+.home-footer-bar{
+  position:relative;
+  z-index:4;
+  min-height:64px;
+  padding:16px 4% !important;
+  background:#082843 !important;
+  border-top:1px solid rgba(255,255,255,.12) !important;
+}
+
+/* Responsive */
+@media(max-width:1080px){
+  .home-nav{
+    grid-template-columns:1fr auto !important;
+  }
+  .home-nav-links{
+    grid-column:1 / -1;
+    grid-row:2;
+    justify-content:flex-start !important;
+  }
+  .home-hero-inner{
+    grid-template-columns:1fr !important;
+  }
+  .home-visual{
+    min-height:320px !important;
+  }
+  .qs-home-ribbon-inner{
+    grid-template-columns:1fr 1fr !important;
+  }
+  .qs-home-ribbon-line{
+    display:none;
+  }
+  .qs-home-trust-inner{
+    grid-template-columns:1fr !important;
+  }
+}
+
+@media(max-width:720px){
+  .home-hero{
+    padding:42px 5% 30px !important;
+  }
+  .home-title{
+    font-size:48px !important;
+    letter-spacing:-2px !important;
+  }
+  .home-platform{
+    font-size:14px !important;
+    letter-spacing:2px !important;
+  }
+  .home-description{
+    font-size:13px !important;
+  }
+  .home-visual{
+    display:none !important;
+  }
+  .qs-home-ribbon{
+    padding:0 4% 22px;
+  }
+  .qs-home-ribbon-inner{
+    grid-template-columns:1fr !important;
+    gap:12px !important;
+    margin-top:-8px !important;
+  }
+  .qs-home-trust{
+    padding-bottom:24px;
+  }
+  .qs-home-trust-badges{
+    grid-template-columns:1fr 1fr;
+  }
+  .home-footer-bar{
+    text-align:center;
+    flex-direction:column;
+  }
+}
+
+
+
+/* =========================================================
+   STEP 16 — LOGIN 100% VIEWPORT FIT
+   Prevent modal clipping at normal laptop zoom.
+   ========================================================= */
+
+.qs-login-overlay{
+  position:fixed !important;
+  inset:0 !important;
+  box-sizing:border-box !important;
+  padding:12px !important;
+  align-items:flex-start !important;
+  justify-content:center !important;
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+}
+
+.qs-login-modal{
+  width:min(500px,calc(100vw - 24px)) !important;
+  max-height:calc(100vh - 24px) !important;
+  min-height:0 !important;
+  margin:auto 0 !important;
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+  box-sizing:border-box !important;
+}
+
+.qs-login-body{
+  padding:28px 30px !important;
+}
+
+.qs-login-brand{
+  margin-bottom:18px !important;
+}
+
+.qs-login-subtitle{
+  margin:-6px 0 18px !important;
+}
+
+.qs-login-field{
+  margin-bottom:12px !important;
+}
+
+.qs-login-input{
+  min-height:46px !important;
+}
+
+.qs-login-row{
+  margin:4px 0 15px !important;
+}
+
+.qs-login-submit{
+  min-height:47px !important;
+}
+
+.qs-login-demo-note{
+  margin-top:16px !important;
+}
+
+/* At standard laptop widths, keep the login card comfortably inside
+   the browser viewport without requiring page zoom changes. */
+@media(min-width:900px) and (max-height:850px){
+  .qs-login-body{
+    padding:22px 28px !important;
+  }
+
+  .qs-login-brand{
+    margin-bottom:14px !important;
+  }
+
+  .qs-login-brand h2{
+    font-size:23px !important;
+  }
+
+  .qs-login-subtitle{
+    font-size:13px !important;
+    margin:-4px 0 15px !important;
+  }
+
+  .qs-login-field{
+    margin-bottom:10px !important;
+  }
+
+  .qs-login-input{
+    min-height:43px !important;
+  }
+
+  .qs-login-submit{
+    min-height:44px !important;
+  }
+
+  .qs-login-demo-note{
+    margin-top:12px !important;
+    padding:9px 11px !important;
+  }
+}
+
+@media(max-width:600px){
+  .qs-login-overlay{
+    padding:8px !important;
+  }
+
+  .qs-login-modal{
+    width:calc(100vw - 16px) !important;
+    max-height:calc(100vh - 16px) !important;
+  }
+
+  .qs-login-body{
+    padding:22px 19px !important;
+  }
+}
+
+/* Keep the login card visually anchored and never cut by the viewport. */
+body:has(.qs-login-overlay.open){
+  overflow:hidden !important;
+}
+
 </style>
 </head>
 <body>
@@ -1012,6 +5831,31 @@ body.qs-auth-required .qs-login-overlay{
       </div>
     </section>
 
+    <!-- HOME INTELLIGENCE RIBBON -->
+    <section class="qs-home-ribbon">
+      <div class="qs-home-ribbon-inner">
+        <div class="qs-home-ribbon-item">
+          <span class="qs-home-ribbon-icon blue">01</span>
+          <div><strong>Capture</strong><small>Safety reports</small></div>
+        </div>
+        <div class="qs-home-ribbon-line"></div>
+        <div class="qs-home-ribbon-item">
+          <span class="qs-home-ribbon-icon purple">02</span>
+          <div><strong>Analyze</strong><small>AI / NLP signals</small></div>
+        </div>
+        <div class="qs-home-ribbon-line"></div>
+        <div class="qs-home-ribbon-item">
+          <span class="qs-home-ribbon-icon orange">03</span>
+          <div><strong>Prioritize</strong><small>SIF exposure</small></div>
+        </div>
+        <div class="qs-home-ribbon-line"></div>
+        <div class="qs-home-ribbon-item">
+          <span class="qs-home-ribbon-icon green">04</span>
+          <div><strong>Act</strong><small>HSE review guidance</small></div>
+        </div>
+      </div>
+    </section>
+
     <section class="home-section">
       <div class="home-section-head">WHAT QUANTUMSAFE AI DOES</div>
       <div class="home-cards">
@@ -1047,6 +5891,22 @@ body.qs-auth-required .qs-login-overlay{
           <div class="home-pillar"><div class="home-pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2 2.3 3 5 3 8s-1 5.7-3 8c-2-2.3-3-5-3-8s1-5.7 3-8Z"/></svg></div>Better Tomorrow</div>
         </div>
         <div class="home-quote">“Safety isn't just a priority, it's a responsibility.”<small>— QuantumSafe AI</small></div>
+      </div>
+    </section>
+
+    <section class="qs-home-trust">
+      <div class="qs-home-trust-inner">
+        <div>
+          <div class="qs-home-trust-kicker">DESIGNED FOR HSE DECISION SUPPORT</div>
+          <h2>From narrative reports to <span>actionable safety intelligence.</span></h2>
+          <p>Built around the SIH26165 challenge with a clear human-in-the-loop approach: AI helps surface signals, while qualified HSE teams make the final decisions.</p>
+        </div>
+        <div class="qs-home-trust-badges">
+          <div><strong>AI / NLP</strong><small>Report intelligence</small></div>
+          <div><strong>SIF</strong><small>Potential detection</small></div>
+          <div><strong>LSR</strong><small>Safety mapping</small></div>
+          <div><strong>HSE</strong><small>Human review</small></div>
+        </div>
       </div>
     </section>
 
@@ -1099,10 +5959,62 @@ body.qs-auth-required .qs-login-overlay{
 
   <div class="main">
 
+    <!-- QUANTUMSAFE ENTERPRISE TOPBAR -->
+    <header class="qs-topbar">
+      <div class="qs-topbar-brand">
+        <div class="qs-topbar-line"></div>
+        <div>
+          <div>Safer People</div>
+          <div>Stronger Operations</div>
+          <div>Sustainable Tomorrow</div>
+        </div>
+      </div>
+
+      <nav class="qs-topnav" aria-label="Primary navigation">
+        <button type="button" class="qs-topnav-link" data-page="home">Home</button>
+        <button type="button" class="qs-topnav-link" data-page="dashboard">Dashboard</button>
+        <button type="button" class="qs-topnav-link" data-page="analyze">Analyze</button>
+        <button type="button" class="qs-topnav-link" data-page="reports">Reports</button>
+        <button type="button" class="qs-topnav-link" data-page="patterns">Patterns</button>
+      </nav>
+
+      <div class="qs-topbar-right">
+        <div class="qs-global-search">
+          <span>⌕</span>
+          <input id="qsGlobalSearch" type="search" placeholder="Search reports, hazards, locations..." aria-label="Global search">
+        </div>
+        <button type="button" class="qs-icon-btn qs-alert-trigger" id="qsAlertTrigger" title="Critical safety alerts" aria-label="Critical safety alerts">
+          <span class="qs-alert-bell">●</span>
+          <span class="qs-alert-badge" id="qsAlertBadge">0</span>
+        </button>
+        <button type="button" class="qs-avatar-btn qs-user-trigger" id="qsTopProfileBtn" title="Account & access" aria-label="Account & access">AI</button>
+      </div>
+    </header>
+
     <!-- DASHBOARD -->
     <div class="page active" id="page-dashboard">
-      <h1>HSE Safety Intelligence Dashboard</h1>
-      <div class="page-sub">Decision-support overview — not a substitute for qualified HSE review.</div>
+      <section class="qs-command-hero">
+        <div class="qs-hero-overlay"></div>
+        <div class="qs-hero-content">
+          <div class="qs-hero-status"><span></span> HSE SAFETY INTELLIGENCE ACTIVE</div>
+          <h1>Safety Intelligence<br><strong>Command Center</strong></h1>
+          <p>AI-assisted detection of SIF precursors, recurring hazards and failed safety barriers across HSE reports.</p>
+          <div class="qs-hero-points">
+            <span>◉ Detect Emerging Risks</span>
+            <span>▥ Identify Patterns</span>
+            <span>◇ Prevent Serious Incidents</span>
+            <span>✓ Strengthen Operations</span>
+          </div>
+        </div>
+        <div class="qs-hero-side">
+          <div class="qs-hero-side-title">QUANTUMSAFE AI</div>
+          <div class="qs-hero-side-main">Safer People<br>Stronger Operations<br><em>Sustainable Tomorrow</em></div>
+        </div>
+      </section>
+      <div class="qs-page-intro">
+        <h1>HSE Safety Intelligence Dashboard</h1>
+        <div class="page-sub">Decision-support overview — not a substitute for qualified HSE review.</div>
+      </div>
       <div class="kpi-row" id="kpiRow">
         <div class="kpi"><div class="kpi-label">Total Reports</div><div class="kpi-value">—</div></div>
         <div class="kpi sif"><div class="kpi-label">SIF Potential</div><div class="kpi-value">—</div></div>
@@ -1127,7 +6039,40 @@ body.qs-auth-required .qs-login-overlay{
           <div id="topBarriers"></div>
         </div>
       </div>
+<!-- AI SAFETY INTELLIGENCE -->
+<div class="ai-intelligence-panel">
 
+  <div class="ai-intelligence-header">
+
+    <div class="ai-intelligence-title-wrap">
+
+      <div class="ai-intelligence-icon">✦</div>
+
+      <div>
+        <div class="ai-intelligence-title">
+          AI Safety Intelligence
+        </div>
+
+        <div class="ai-intelligence-subtitle">
+          Highest-priority recurring precursor detected across reports
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ai-live-badge">
+      PATTERN ENGINE
+    </div>
+
+  </div>
+
+  <div id="aiSafetyIntelligence">
+    <div class="ai-empty">
+      Analyzing recurring safety patterns...
+    </div>
+  </div>
+
+</div>
       <div class="grid-2">
         <div class="panel">
           <div class="panel-title">Top Hazards</div>
@@ -1238,32 +6183,79 @@ body.qs-auth-required .qs-login-overlay{
 
     <!-- PATTERNS -->
     <div class="page" id="page-patterns">
-      <h1>Emerging SIF Patterns</h1>
-      <div class="page-sub">
-        <div class="pattern-controls">
-  <input
-    type="text"
-    id="patternSearch"
-    placeholder="Search hazard, location, barrier..."
-  >
 
-  <select id="patternRiskFilter">
-    <option value="ALL">All Risk Levels</option>
-    <option value="CRITICAL">Critical</option>
-    <option value="HIGH">High</option>
-    <option value="MEDIUM">Medium</option>
-    <option value="LOW">Low</option>
-  </select>
+      <section class="qs-command-hero qs-pattern-hero">
+        <div class="qs-hero-overlay"></div>
+        <div class="qs-hero-content">
+          <div class="qs-hero-status"><span></span> PATTERN ENGINE ACTIVE</div>
+          <h1>SIF Precursor<br><strong>Intelligence Center</strong></h1>
+          <p>AI-derived recurring safety signals across saved HSE reports.</p>
+          <div class="qs-hero-points">
+            <span>◉ Detect Risks</span>
+            <span>▥ Identify Recurring Patterns</span>
+            <span>◇ Prevent Serious Incidents</span>
+            <span>✓ Build Safer Tomorrow</span>
+          </div>
+        </div>
+        <div class="qs-hero-side">
+          <div class="qs-hero-side-main">Safer People<br>Stronger Operations<br><em>Sustainable Tomorrow</em></div>
+        </div>
+      </section>
 
-  <div class="pattern-count" id="patternCount">
-    0 patterns
-  </div>
-</div></div>
+      <div class="qs-page-intro qs-pattern-intro">
+        <h1>Emerging SIF Patterns</h1>
+        <div class="page-sub">Recurring precursor signals derived from saved HSE reports.</div>
+      </div>
+
+      <section class="qs-pattern-kpis" aria-label="Pattern summary">
+        <div class="qs-pattern-kpi blue">
+          <div class="qs-kpi-icon">⌁</div>
+          <div><span>ACTIVE PATTERNS</span><strong id="qsActivePatterns">0</strong><small>Recurring precursor signals</small></div>
+        </div>
+        <div class="qs-pattern-kpi red">
+          <div class="qs-kpi-icon">!</div>
+          <div><span>CRITICAL PATTERNS</span><strong id="qsCriticalPatterns">0</strong><small>Highest HSE priority</small></div>
+        </div>
+        <div class="qs-pattern-kpi orange">
+          <div class="qs-kpi-icon">↻</div>
+          <div><span>PERSISTENT / RECURRING</span><strong id="qsRecurringPatterns">0</strong><small>Repeated precursor signals</small></div>
+        </div>
+        <div class="qs-pattern-kpi purple">
+          <div class="qs-kpi-icon">◇</div>
+          <div><span>SIF EXPOSURES</span><strong id="qsSifExposures">0</strong><small>Across detected patterns</small></div>
+        </div>
+      </section>
+
+      <div class="pattern-controls qs-pattern-controls">
+        <div class="qs-search-control">
+          <span>⌕</span>
+          <input type="text" id="patternSearch" placeholder="Search hazard, location, barrier, activity...">
+        </div>
+        <select id="patternRiskFilter">
+          <option value="ALL">All Risk Levels</option>
+          <option value="CRITICAL">Critical</option>
+          <option value="HIGH">High</option>
+          <option value="MEDIUM">Medium</option>
+          <option value="LOW">Low</option>
+        </select>
+        <div class="pattern-count" id="patternCount">0 patterns</div>
+      </div>
+
       <div id="patternsList"></div>
       <div class="empty-state" id="patternsEmpty" style="display:none;">Not enough saved reports yet to detect a recurring pattern (needs 3+ matching reports).</div>
     </div>
 
   </div>
+
+  <footer class="qs-app-footer">
+    <div>“Technology for Safer Workplaces and Stronger Operations.”</div>
+    <div class="qs-footer-pillars">
+      <span>◉ Safer People</span>
+      <span>⚙ Stronger Operations</span>
+      <span>◆ Sustainable Tomorrow</span>
+    </div>
+    <strong>QuantumSafe AI</strong>
+  </footer>
 </div>
 
 <div class="modal-backdrop" id="reportModal">
@@ -1348,6 +6340,7 @@ document.querySelectorAll('.nav-item').forEach(item => {
 
     item.classList.add('active');
     document.getElementById('page-' + target)?.classList.add('active');
+    if (typeof syncQuantumTopNav === 'function') syncQuantumTopNav(target);
 
     if (target === 'dashboard') loadDashboard();
     if (target === 'reports') loadReports();
@@ -1355,6 +6348,26 @@ document.querySelectorAll('.nav-item').forEach(item => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
+
+// ---- Enterprise top navigation ----
+document.querySelectorAll('.qs-topnav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    const target = link.dataset.page;
+    const sidebarItem = document.querySelector(`.nav-item[data-page="${target}"]`);
+    if (sidebarItem) {
+      sidebarItem.click();
+      document.querySelectorAll('.qs-topnav-link').forEach(x => x.classList.remove('active'));
+      link.classList.add('active');
+    }
+  });
+});
+
+// Keep top navigation synchronized with the sidebar.
+function syncQuantumTopNav(target) {
+  document.querySelectorAll('.qs-topnav-link').forEach(x => {
+    x.classList.toggle('active', x.dataset.page === target);
+  });
+}
 
 // ---- Example buttons ----
 document.querySelectorAll('.example-chip').forEach(chip => {
@@ -1438,7 +6451,12 @@ function renderResult(data) {
   const riskScore = Number(data.risk_score) || 0;
   const confidence = Number(data.confidence) || 0;
   const failedBarriers = Array.isArray(data.failed_barriers) ? data.failed_barriers : [];
-  const explanation = Array.isArray(data.explanation) ? data.explanation : [];
+ const explanation =
+  Array.isArray(data.explanation)
+    ? data.explanation
+    : data.explanation
+      ? [data.explanation]
+      : [];
 
   document.getElementById('resultPanel').classList.add('show');
 
@@ -1448,9 +6466,17 @@ function renderResult(data) {
   document.getElementById('sifVerdict').style.color =
     sif ? 'var(--critical)' : 'var(--low)';
 
-  document.getElementById('confVerdict').textContent =
-    'Model confidence: ' + (confidence * 100).toFixed(1) +
-    '% (' + (data.classification_method || 'unknown') + ')';
+  const method = data.classification_method || 'AI/NLP';
+
+document.getElementById('confVerdict').innerHTML =
+  '<span style="color:var(--text);font-weight:700;">' +
+  'AI Confidence: ' +
+  (confidence * 100).toFixed(1) +
+  '%' +
+  '</span>' +
+  '<span style="display:block;margin-top:5px;">' +
+  escapeHtml(method) +
+  '</span>';
 
   const circumference = 264;
   const safeScore = Math.max(0, Math.min(100, riskScore));
@@ -1634,7 +6660,7 @@ async function loadDashboard() {
       ? `<div class="alert-card"><div class="alert-title">⚠ Critical safety exposure detected</div><div class="alert-sub">${d.critical} critical report(s) are currently in the dataset. Prioritize qualified HSE review.</div></div>`
       : '';
     document.getElementById('criticalAlerts').innerHTML = alerts;
-
+    await loadAISafetyIntelligence();
     const recent = d.recent_reports || [];
     document.getElementById('recentReports').innerHTML = recent.length
       ? recent.map(r => `
@@ -1649,7 +6675,249 @@ async function loadDashboard() {
     console.warn('Dashboard load failed:', e);
   }
 }
+// ---- AI Safety Intelligence ----
+async function loadAISafetyIntelligence() {
+  const container = document.getElementById('aiSafetyIntelligence');
 
+  if (!container) return;
+
+  try {
+    const rawPatterns = await apiJson(API + '/api/patterns?min_reports=3');
+
+    if (!Array.isArray(rawPatterns) || rawPatterns.length === 0) {
+      container.innerHTML = `
+        <div class="ai-empty">
+          No recurring precursor pattern has reached the current intelligence threshold.
+        </div>
+      `;
+      return;
+    }
+
+    // Deduplicate patterns using the same logic as the Patterns page
+    const patternMap = new Map();
+
+    rawPatterns.forEach(p => {
+
+      const key = [
+        String(p.hazard || '').trim().toLowerCase(),
+        String(p.location || '').trim().toLowerCase(),
+        String(p.failed_barrier || '').trim().toLowerCase()
+      ].join('|');
+
+      if (!patternMap.has(key)) {
+
+        patternMap.set(key, {
+          ...p,
+          report_ids: Array.isArray(p.report_ids)
+            ? [...p.report_ids]
+            : []
+        });
+
+      } else {
+
+        const existing = patternMap.get(key);
+
+        existing.report_count = Math.max(
+          Number(existing.report_count) || 0,
+          Number(p.report_count) || 0
+        );
+
+        existing.sif_count = Math.max(
+          Number(existing.sif_count) || 0,
+          Number(p.sif_count) || 0
+        );
+
+        existing.sif_ratio = existing.report_count
+          ? existing.sif_count / existing.report_count
+          : 0;
+
+        existing.priority_score = Math.max(
+          Number(existing.priority_score) || 0,
+          Number(p.priority_score) || 0
+        );
+
+        if (p.recurrence) {
+          existing.recurrence = p.recurrence;
+        }
+
+        if (p.explanation) {
+          existing.explanation = p.explanation;
+        }
+
+        if (p.recommended_action) {
+          existing.recommended_action = p.recommended_action;
+        }
+
+        existing.report_ids = [
+          ...new Set([
+            ...(existing.report_ids || []),
+            ...(p.report_ids || [])
+          ])
+        ];
+      }
+    });
+
+    const patterns = [...patternMap.values()];
+
+    // Highest priority first
+    patterns.sort(
+      (a, b) =>
+        (Number(b.priority_score) || 0) -
+        (Number(a.priority_score) || 0)
+    );
+
+    const p = patterns[0];
+
+    const hazard =
+      p.hazard || 'Unclassified Safety Exposure';
+
+    const location =
+      p.location || 'Unspecified';
+
+    const barrier =
+      p.failed_barrier || 'Barrier failure not specified';
+
+    const reportCount =
+      Number(p.report_count) || 0;
+
+    const sifCount =
+      Number(p.sif_count) || 0;
+
+    const sifRate =
+  reportCount > 0
+    ? Math.round((sifCount / reportCount) * 100)
+    : 0;
+
+    const priority =
+      Number(p.priority_score) || 0;
+
+    const recurrence =
+      p.recurrence || 'EMERGING';
+
+    const explanation =
+      p.explanation ||
+      `${reportCount} reports show a recurring ${hazard} exposure.`;
+
+    const action =
+      p.recommended_action ||
+      'Review this recurring safety pattern with qualified HSE personnel.';
+
+    container.innerHTML = `
+
+      <div class="ai-intelligence-grid">
+
+        <!-- Highest concern -->
+        <div class="ai-concern-card">
+
+          <div class="ai-concern-label">
+            ⚠ Highest Concern
+          </div>
+
+          <div class="ai-concern-hazard">
+            ${escapeHtml(hazard)}
+          </div>
+
+          <div class="ai-concern-meta">
+
+            <div class="ai-chip">
+              LOCATION:
+              <strong>${escapeHtml(location)}</strong>
+            </div>
+
+            <div class="ai-chip">
+              FAILED BARRIER:
+              <strong>${escapeHtml(barrier)}</strong>
+            </div>
+
+            <div class="ai-chip">
+              RECURRENCE:
+              <strong>${escapeHtml(recurrence)}</strong>
+            </div>
+
+          </div>
+
+          <div class="ai-priority">
+
+            <span class="ai-priority-label">
+              PRIORITY SCORE
+            </span>
+
+            <span class="ai-priority-score">
+              ${priority}
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- Why / Action -->
+        <div class="ai-reason-card">
+
+          <div class="ai-info-block">
+
+            <div class="ai-info-label">
+              Why This Matters
+            </div>
+
+            <div class="ai-info-text">
+              ${escapeHtml(explanation)}
+            </div>
+
+          </div>
+
+
+          <div class="ai-info-block ai-action-block">
+
+            <div class="ai-info-label">
+              Recommended Action
+            </div>
+
+            <div class="ai-action-text">
+              ${escapeHtml(action)}
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="ai-intelligence-footer">
+
+        <div class="ai-footer-note">
+
+          ${reportCount} related reports ·
+          ${sifCount} SIF-potential ·
+          ${sifRate}% SIF rate
+
+        </div>
+
+        <button
+          class="ai-view-btn"
+          onclick="document.querySelector('.nav-item[data-page=&quot;patterns&quot;]')?.click()"
+        >
+          VIEW PATTERN INTELLIGENCE →
+        </button>
+
+      </div>
+    `;
+
+  } catch (e) {
+
+    console.warn(
+      'AI Safety Intelligence load failed:',
+      e
+    );
+
+    container.innerHTML = `
+      <div class="ai-empty">
+        Pattern intelligence is temporarily unavailable.
+      </div>
+    `;
+  }
+}
 function renderBars(elId, items, key) {
   const el = document.getElementById(elId);
   if (!items || items.length === 0) {
@@ -1765,156 +7033,259 @@ async function openReport(reportId) {
       .split(/[;,]/).map(x => x.trim()).filter(Boolean);
 
     content.innerHTML = `
+
+  <!-- INVESTIGATION HERO -->
+  <div class="investigation-hero">
+
+    <div>
+
+      <div class="investigation-eyebrow">
+        HSE Investigation • AI Prioritization
+      </div>
+
+      <div class="investigation-headline">
+        ${escapeHtml(r.hazard || 'Unclassified Safety Exposure')}
+      </div>
+
+      <div class="investigation-context">
+        ${escapeHtml(r.location || 'Unspecified')}
+        ·
+        ${escapeHtml(r.activity || 'Unclassified activity')}
+        ·
+        ${escapeHtml(r.report_id || '')}
+      </div>
+
+    </div>
+
+    <div class="investigation-risk">
+
+      <div class="investigation-risk-score">
+        ${Number(r.risk_score) || 0}
+      </div>
+
+      <div class="investigation-risk-label">
+        ${escapeHtml(r.risk_level || 'UNKNOWN')} RISK
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- STATUS -->
+  <div class="investigation-status-strip">
+
+    <div class="investigation-status-label">
+      INVESTIGATION STATUS
+    </div>
+
+    <div class="investigation-status-value">
+      ${escapeHtml(r.status || 'Open')}
+    </div>
+
+  </div>
+
+
+  <!-- CORE ASSESSMENT -->
   <div class="detail-grid">
 
     <div class="detail-box">
-      <div class="detail-label">Risk</div>
-      <div class="detail-value">
-        <span class="risk-pill ${escapeHtml(r.risk_level || '')}">
-          ${escapeHtml(r.risk_level || 'UNKNOWN')} · ${Number(r.risk_score) || 0}
-        </span>
+
+      <div class="detail-label">
+        SIF Potential
       </div>
+
+      <div
+        class="detail-value"
+        style="color:${r.sif_potential
+          ? 'var(--critical)'
+          : 'var(--low)'};"
+      >
+        ${r.sif_potential ? 'YES — REVIEW REQUIRED' : 'NO'}
+      </div>
+
     </div>
 
-    <div class="detail-box">
-      <div class="detail-label">SIF Potential</div>
-      <div class="detail-value">
-        ${r.sif_potential ? 'YES' : 'NO'}
-      </div>
-    </div>
 
     <div class="detail-box">
-      <div class="detail-label">Hazard</div>
-      <div class="detail-value">
-        ${escapeHtml(r.hazard || 'Unclassified')}
-      </div>
-    </div>
 
-    <div class="detail-box">
-      <div class="detail-label">Confidence</div>
+      <div class="detail-label">
+        AI Confidence
+      </div>
+
       <div class="detail-value">
         ${((Number(r.confidence) || 0) * 100).toFixed(1)}%
       </div>
+
     </div>
 
+
     <div class="detail-box">
-      <div class="detail-label">Life-Saving Rule</div>
+
+      <div class="detail-label">
+        Life-Saving Rule
+      </div>
+
       <div class="detail-value">
         ${escapeHtml(r.life_saving_rule || '—')}
       </div>
+
     </div>
 
-    <div class="detail-section">
-  <h3>Investigation Status</h3>
-  <div class="detail-box">
-    ${escapeHtml(r.investigation_status || r.status || 'Open')}
-  </div>
-</div>
+
+    <div class="detail-box">
+
+      <div class="detail-label">
+        Hazard
+      </div>
+
+      <div class="detail-value">
+        ${escapeHtml(r.hazard || 'Unclassified')}
+      </div>
+
+    </div>
+
+
+    <div class="detail-box">
+
+      <div class="detail-label">
+        Activity
+      </div>
+
+      <div class="detail-value">
+        ${escapeHtml(r.activity || '—')}
+      </div>
+
+    </div>
+
+
+    <div class="detail-box">
+
+      <div class="detail-label">
+        Location
+      </div>
+
+      <div class="detail-value">
+        ${escapeHtml(r.location || 'Unspecified')}
+      </div>
+
+    </div>
 
   </div>
 
 
+  <!-- ORIGINAL REPORT -->
   <div class="detail-section">
+
     <h3>Original Report</h3>
+
     <div class="report-text-box">
-      ${escapeHtml(r.report_text || 'No report text available.')}
+      ${escapeHtml(r.report_text || '')}
     </div>
+
   </div>
 
 
+  <!-- FAILED BARRIERS -->
   <div class="detail-section">
-    <h3>Failed Barriers</h3>
+
+    <h3>Failed Safety Barriers</h3>
+
     <div class="tag-row">
+
       ${
         barriers.length
-          ? barriers.map(b =>
-              `<span class="tag barrier">${escapeHtml(b)}</span>`
-            ).join('')
+          ? barriers.map(b => `
+              <span class="tag barrier">
+                ${escapeHtml(b)}
+              </span>
+            `).join('')
           : '<span class="tag">None identified</span>'
       }
+
     </div>
+
   </div>
 
 
-  <div class="detail-section">
-  <h3>Why It Was Flagged</h3>
-  <div class="detail-box">
-    ${escapeHtml(
-      r.why_flagged ||
-      'No specific explanation was provided by the backend.'
-    )}
-  </div>
-</div>
+  <!-- AI INTELLIGENCE -->
+  <div class="investigation-intelligence">
 
+    <div class="investigation-intel-box">
 
-  <div class="detail-section">
-  <h3>Recommended Immediate Action</h3>
-  <div class="detail-box">
-    ${escapeHtml(
-      r.recommended_action ||
-      'No immediate action recommendation was provided.'
-    )}
-  </div>
-</div>
-
-
-  <div class="detail-section">
-    <h3>Investigation Summary</h3>
-
-    <div class="detail-grid">
-
-      <div class="detail-box">
-        <div class="detail-label">Risk Score</div>
-        <div class="detail-value">
-          ${Number(r.risk_score) || 0}
-        </div>
+      <div class="investigation-intel-label">
+        WHY THIS WAS FLAGGED
       </div>
 
-      <div class="detail-box">
-        <div class="detail-label">SIF Assessment</div>
-        <div class="detail-value">
-          ${r.sif_potential ? 'Potential SIF' : 'No SIF Potential'}
-        </div>
-      </div>
-
-      <div class="detail-box">
-        <div class="detail-label">Activity</div>
-        <div class="detail-value">
-          ${escapeHtml(r.activity || 'Unclassified activity')}
-        </div>
-      </div>
-
-      <div class="detail-box">
-        <div class="detail-label">Location</div>
-        <div class="detail-value">
-          ${escapeHtml(r.location || 'Unspecified')}
-        </div>
+      <div class="investigation-intel-text">
+        ${escapeHtml(
+          r.why_flagged ||
+          r.explanation ||
+          'The AI identified safety indicators requiring qualified HSE review.'
+        )}
       </div>
 
     </div>
-  </div>
 
 
-  <div class="detail-section">
-  <h3>Recurring Pattern Signal</h3>
-  <div class="detail-box">
-    ${escapeHtml(
-      r.pattern_signal ||
-      'No recurring pattern signal was generated.'
-    )}
-  </div>
-</div>
+    <div class="investigation-intel-box action">
 
+      <div class="investigation-intel-label">
+        RECOMMENDED IMMEDIATE ACTION
+      </div>
 
-  <div class="detail-section">
-    <h3>Review Guidance</h3>
-    <div class="report-text-box">
-      ${
-        r.review_guidance ||
-        'Use this assessment as decision-support and confirm findings through qualified HSE investigation.'
-      }
+      <div class="investigation-intel-text">
+        ${escapeHtml(
+          r.recommended_action ||
+          r.recommendation ||
+          'Review the identified exposure and verify required controls before work continues.'
+        )}
+      </div>
+
     </div>
+
   </div>
+
+
+  <!-- PATTERN SIGNAL -->
+  ${
+    r.pattern_signal
+      ? `
+        <div class="pattern-signal">
+
+          <div class="pattern-signal-label">
+            RECURRING PATTERN SIGNAL
+          </div>
+
+          <div class="pattern-signal-text">
+            ${escapeHtml(r.pattern_signal)}
+          </div>
+
+        </div>
+      `
+      : ''
+  }
+
+
+  <!-- REVIEW GUIDANCE -->
+  ${
+    r.review_guidance
+      ? `
+        <div class="review-guidance">
+
+          <div class="review-guidance-label">
+            HSE REVIEW GUIDANCE
+          </div>
+
+          <div class="review-guidance-text">
+            ${escapeHtml(r.review_guidance)}
+          </div>
+
+        </div>
+      `
+      : ''
+  }
+
 `;
   } catch (e) {
     content.innerHTML = `<div class="empty-state">Unable to load report: ${escapeHtml(e.message)}</div>`;
@@ -2011,6 +7382,19 @@ async function loadPatterns() {
     // Store patterns for filtering
     window.quantumPatterns = patterns;
 
+    const activeEl = document.getElementById('qsActivePatterns');
+    const criticalEl = document.getElementById('qsCriticalPatterns');
+    const recurringEl = document.getElementById('qsRecurringPatterns');
+    const sifExposureEl = document.getElementById('qsSifExposures');
+
+    if (activeEl) activeEl.textContent = patterns.length;
+    if (criticalEl) criticalEl.textContent =
+      patterns.filter(p => String(p.risk || '').toUpperCase() === 'CRITICAL').length;
+    if (recurringEl) recurringEl.textContent =
+      patterns.filter(p => ['PERSISTENT','RECURRING'].includes(String(p.recurrence || '').toUpperCase())).length;
+    if (sifExposureEl) sifExposureEl.textContent =
+      patterns.reduce((sum, p) => sum + (Number(p.sif_count) || 0), 0);
+
     renderPatternList(patterns);
 
   } catch (e) {
@@ -2025,13 +7409,12 @@ function renderPatternList(patterns) {
   const count = document.getElementById('patternCount');
 
   if (count) {
-    count.textContent =
-      `${patterns.length} pattern${patterns.length === 1 ? '' : 's'}`;
+    count.textContent = `${patterns.length} pattern${patterns.length === 1 ? '' : 's'}`;
   }
 
   if (!patterns.length) {
     list.innerHTML = `
-      <div class="empty-state">
+      <div class="empty-state qs-empty-pattern">
         No patterns match the current filters.
       </div>
     `;
@@ -2039,163 +7422,113 @@ function renderPatternList(patterns) {
   }
 
   list.innerHTML = patterns.map(p => {
-
-    const risk = p.risk || 'LOW';
-
-    const reportCount =
-      Number(p.report_count) || 0;
-
-    const sifCount =
-      Number(p.sif_count) || 0;
-
-    const sifRatio =
-      Number(p.sif_ratio) || (
-        reportCount
-          ? sifCount / reportCount
-          : 0
-      );
-
-    const priority =
-      Number(p.priority_score) || 0;
-
-    const recurrence =
-      p.recurrence || 'EMERGING';
-
-    const explanation =
-      p.explanation ||
+    const risk = String(p.risk || 'LOW').toUpperCase();
+    const reportCount = Number(p.report_count) || 0;
+    const sifCount = Number(p.sif_count) || 0;
+    const sifRatio = Number(p.sif_ratio) || (reportCount ? sifCount / reportCount : 0);
+    const sifPercent = Math.round(sifRatio * 100);
+    const priority = Number(p.priority_score) || 0;
+    const recurrence = p.recurrence || 'EMERGING';
+    const explanation = p.explanation ||
       `${reportCount} reports involve ${p.hazard || 'this hazard'} at ${p.location || 'Unspecified'}.`;
-
-    const action =
-      p.recommended_action ||
+    const action = p.recommended_action ||
       'Review this recurring safety pattern with qualified HSE personnel.';
+    const reportIds = Array.isArray(p.report_ids) ? p.report_ids : [];
 
-    const reportIds =
-      Array.isArray(p.report_ids)
-        ? p.report_ids
-        : [];
+    const priorityWidth = Math.max(4, Math.min(100, priority));
+    const sifWidth = Math.max(4, Math.min(100, sifPercent));
+    const recurrenceClass = String(recurrence).toLowerCase();
 
     return `
-      <div class="pattern-card ${escapeHtml(risk)}">
+      <article class="pattern-card qs-pattern-card ${escapeHtml(risk)}">
 
-        <div class="pattern-top">
-          <div class="pattern-title">
-            ${escapeHtml(p.hazard || 'Unknown Hazard')}
-          </div>
-
-          <span class="risk-pill ${escapeHtml(risk)}">
-            ${escapeHtml(risk)}
-          </span>
-        </div>
-
-        <div class="pattern-meta">
-          Location:
-          ${escapeHtml(p.location || 'Unspecified')}
-          · Failed barrier:
-          ${escapeHtml(p.failed_barrier || 'None identified')}
-        </div>
-
-        <div class="pattern-stats">
-          ${reportCount} reports ·
-          ${sifCount} SIF ·
-          ${(sifRatio * 100).toFixed(0)}% SIF rate
-        </div>
-
-        <div class="pattern-intelligence">
-
-          <div class="pattern-metric">
-            <div class="pattern-metric-label">
-              PRIORITY
-            </div>
-            <div class="pattern-metric-value">
-              ${priority}
+        <div class="qs-pattern-head">
+          <div class="qs-pattern-heading">
+            <div class="qs-pattern-icon">!</div>
+            <div>
+              <h2>${escapeHtml(p.hazard || 'Unknown Hazard')}</h2>
+              <div class="pattern-meta">
+                <span>⌖ ${escapeHtml(p.location || 'Unspecified')}</span>
+                <span>▣ ${escapeHtml(p.failed_barrier || 'None identified')}</span>
+              </div>
             </div>
           </div>
+          <span class="risk-pill ${escapeHtml(risk)} qs-risk-badge">${escapeHtml(risk)}</span>
+        </div>
 
-          <div class="pattern-metric">
-            <div class="pattern-metric-label">
-              RECURRENCE
-            </div>
-            <div class="pattern-metric-value">
-              ${escapeHtml(recurrence)}
-            </div>
+        <div class="pattern-stats qs-pattern-summary">
+          <strong>${reportCount}</strong> reports
+          <span>•</span>
+          <strong>${sifCount}</strong> SIF
+          <span>•</span>
+          <strong>${sifPercent}%</strong> SIF rate
+        </div>
+
+        <div class="pattern-intelligence qs-pattern-metrics">
+
+          <div class="pattern-metric qs-metric-priority">
+            <div class="pattern-metric-label">PRIORITY SCORE</div>
+            <div class="pattern-metric-value">${priority}</div>
+            <div class="qs-progress"><i style="width:${priorityWidth}%"></i></div>
+          </div>
+
+          <div class="pattern-metric qs-metric-recurrence">
+            <div class="pattern-metric-label">RECURRENCE</div>
+            <div class="pattern-metric-value ${recurrenceClass}">${escapeHtml(recurrence)}</div>
+            <div class="qs-progress"><i style="width:${recurrenceClass === 'persistent' ? 100 : recurrenceClass === 'recurring' ? 80 : 45}%"></i></div>
           </div>
 
           <div class="pattern-metric">
-            <div class="pattern-metric-label">
-              REPORTS
-            </div>
-            <div class="pattern-metric-value">
-              ${reportCount}
-            </div>
+            <div class="pattern-metric-label">REPORTS</div>
+            <div class="pattern-metric-value">${reportCount}</div>
+            <div class="qs-progress"><i style="width:${Math.max(8, Math.min(100, reportCount * 12.5))}%"></i></div>
           </div>
 
-          <div class="pattern-metric">
-            <div class="pattern-metric-label">
-              SIF RATE
-            </div>
-            <div class="pattern-metric-value">
-              ${(sifRatio * 100).toFixed(0)}%
-            </div>
+          <div class="pattern-metric qs-metric-sif">
+            <div class="pattern-metric-label">SIF RATE</div>
+            <div class="pattern-metric-value">${sifPercent}%</div>
+            <div class="qs-progress"><i style="width:${sifWidth}%"></i></div>
           </div>
 
         </div>
 
-        <div class="pattern-section">
-
-          <div class="pattern-section-title">
-            WHY THIS MATTERS
+        <div class="pattern-section qs-info-strip">
+          <div class="qs-info-icon">▤</div>
+          <div>
+            <div class="pattern-section-title">WHY THIS MATTERS</div>
+            <div class="pattern-explanation">${escapeHtml(explanation)}</div>
           </div>
-
-          <div class="pattern-explanation">
-            ${escapeHtml(explanation)}
-          </div>
-
         </div>
 
-        <div class="pattern-action">
-
-          <div class="pattern-section-title">
-            RECOMMENDED ACTION
+        <div class="pattern-action qs-action-strip">
+          <div class="qs-info-icon">✓</div>
+          <div>
+            <div class="pattern-section-title">RECOMMENDED ACTION</div>
+            <div class="pattern-action-text">${escapeHtml(action)}</div>
           </div>
-
-          <div class="pattern-action-text">
-            ${escapeHtml(action)}
-          </div>
-
         </div>
 
         ${
           reportIds.length
             ? `
-              <div class="pattern-section">
-
-                <div class="pattern-section-title">
-                  RELATED REPORTS
-                </div>
-
+              <div class="pattern-section qs-related">
+                <div class="pattern-section-title">RELATED REPORTS (${reportIds.length})</div>
                 <div class="pattern-report-list">
-
                   ${reportIds.map(id => `
-  <button
-    type="button"
-    class="pattern-report-id"
-    data-report-id="${escapeHtml(id)}"
-  >
-    ${escapeHtml(id)}
-  </button>
-`).join('')}
+                    <button type="button" class="pattern-report-id qs-report-chip" data-report-id="${escapeHtml(id)}">
+                      ${escapeHtml(id)}
+                    </button>
+                  `).join('')}
                 </div>
-
               </div>
             `
             : ''
         }
 
-      </div>
+      </article>
     `;
   }).join('');
 }
-
 
 // ---- Pattern Filters ----
 function filterPatterns() {
@@ -2431,7 +7764,11 @@ setInterval(checkConnection, 8000);
     trigger.addEventListener('click', (event) => {
       event.preventDefault();
       event.stopPropagation();
-      openLogin();
+      if (qsAuth.getToken()) {
+        profileMenu?.classList.toggle('open');
+      } else {
+        openLogin();
+      }
     }, true);
   }
 
@@ -2629,14 +7966,65 @@ setInterval(checkConnection, 8000);
 
 <div class="qs-profile-menu" id="qsProfileMenu">
   <div class="qs-profile-head">
+    <div class="qs-account-kicker">ACCOUNT &amp; ACCESS</div>
     <strong id="qsProfileName">HSE User</strong>
     <span id="qsProfileEmail">Not signed in</span>
   </div>
+
+  <div class="qs-access-status">
+    <span class="qs-access-dot"></span>
+    <div>
+      <strong>Platform access</strong>
+      <small id="qsAccessStatusText">Authenticated session</small>
+    </div>
+  </div>
+
   <button class="qs-profile-item" id="qsProfileAccount" type="button">
-    <span class="qs-profile-badge">U</span><span>Account &amp; access</span>
+    <span class="qs-profile-badge">U</span>
+    <span>
+      <strong>Account &amp; access</strong>
+      <small>Profile, role &amp; session</small>
+    </span>
   </button>
-  <button class="qs-profile-item" id="qsProfileLogout" type="button">
-    <span class="qs-profile-badge">↪</span><span>Sign out</span>
+
+  <button class="qs-profile-item danger" id="qsProfileLogout" type="button">
+    <span class="qs-profile-badge">↪</span>
+    <span>
+      <strong>Sign out</strong>
+      <small>End this session</small>
+    </span>
+  </button>
+</div>
+
+<div class="qs-alert-panel" id="qsAlertPanel" role="dialog" aria-modal="false" aria-label="Critical safety alerts">
+  <div class="qs-alert-panel-head">
+    <div>
+      <div class="qs-alert-kicker">SAFETY ALERTS</div>
+      <strong id="qsAlertTitle">Critical safety exposure</strong>
+    </div>
+    <button type="button" id="qsAlertClose" class="qs-alert-close" aria-label="Close alerts">×</button>
+  </div>
+
+  <div class="qs-alert-main">
+    <div class="qs-alert-big" id="qsAlertCount">0</div>
+    <div>
+      <div class="qs-alert-main-title">Critical reports requiring HSE attention</div>
+      <div class="qs-alert-main-sub" id="qsAlertSub">
+        No critical alerts are currently detected.
+      </div>
+    </div>
+  </div>
+
+  <div class="qs-alert-info">
+    <div class="qs-alert-info-title">What the red indicator means</div>
+    <div class="qs-alert-info-text">
+      The indicator reflects the current number of CRITICAL-risk reports in the safety dataset.
+      It is a prioritization signal for qualified HSE review, not an autonomous safety decision.
+    </div>
+  </div>
+
+  <button type="button" class="qs-alert-action" id="qsViewCriticalReports">
+    VIEW CRITICAL REPORTS →
   </button>
 </div>
 
@@ -3035,6 +8423,146 @@ setInterval(checkConnection, 8000);
   setTimeout(()=>{
     if(!token()) lock();
   },50);
+})();
+</script>
+
+
+<script>
+/* STEP 13: keep the profile dropdown visually separated from hero content */
+(function(){
+  const menu = document.querySelector('.qs-profile-menu');
+  if(!menu) return;
+
+  const syncProfileState = () => {
+    document.body.classList.toggle(
+      'qs-profile-open',
+      menu.classList.contains('open')
+    );
+  };
+
+  const observer = new MutationObserver(syncProfileState);
+  observer.observe(menu, {attributes:true, attributeFilter:['class']});
+  syncProfileState();
+})();
+</script>
+
+
+<script>
+/* ===== STEP 14: Functional Safety Alerts + Account & Access ===== */
+(function initQuantumSafetyAlerts(){
+  const alertBtn = document.getElementById('qsAlertTrigger');
+  const alertPanel = document.getElementById('qsAlertPanel');
+  const alertBadge = document.getElementById('qsAlertBadge');
+  const alertCount = document.getElementById('qsAlertCount');
+  const alertSub = document.getElementById('qsAlertSub');
+  const alertClose = document.getElementById('qsAlertClose');
+  const viewCritical = document.getElementById('qsViewCriticalReports');
+  const profileBtn = document.getElementById('qsTopProfileBtn');
+  const profileMenu = document.getElementById('qsProfileMenu');
+  const accessText = document.getElementById('qsAccessStatusText');
+
+  function setAlerts(count){
+    const n = Math.max(0, Number(count) || 0);
+
+    if(alertCount) alertCount.textContent = n;
+    if(alertBadge){
+      alertBadge.textContent = n > 99 ? '99+' : String(n);
+      alertBadge.classList.toggle('visible', n > 0);
+    }
+
+    if(alertSub){
+      alertSub.textContent = n > 0
+        ? `${n} CRITICAL report${n === 1 ? '' : 's'} currently require prioritised qualified HSE review.`
+        : 'No critical alerts are currently detected.';
+    }
+  }
+
+  async function refreshAlerts(){
+    try{
+      const data = await apiJson(
+        API + '/api/dashboard/summary'
+      );
+      setAlerts(data?.critical || 0);
+    }catch(err){
+      console.warn('Safety alert refresh failed:', err);
+    }
+  }
+
+  alertBtn?.addEventListener('click', async e => {
+    e.preventDefault();
+    e.stopPropagation();
+    profileMenu?.classList.remove('open');
+    alertPanel?.classList.toggle('open');
+    if(alertPanel?.classList.contains('open')){
+      await refreshAlerts();
+    }
+  });
+
+  alertClose?.addEventListener('click', e => {
+    e.preventDefault();
+    alertPanel?.classList.remove('open');
+  });
+
+  viewCritical?.addEventListener('click', e => {
+    e.preventDefault();
+    alertPanel?.classList.remove('open');
+
+    const nav = document.querySelector('.nav-item[data-page="reports"]');
+    if(nav) nav.click();
+
+    setTimeout(() => {
+      const risk = document.getElementById('reportRisk');
+      if(risk){
+        risk.value = 'CRITICAL';
+        risk.dispatchEvent(new Event('change', {bubbles:true}));
+      }
+    }, 180);
+  });
+
+  /* Dedicated, reliable topbar profile behavior */
+  profileBtn?.addEventListener('click', e => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const tokenExists =
+      typeof qsAuth !== 'undefined' &&
+      !!qsAuth.getToken();
+
+    alertPanel?.classList.remove('open');
+
+    if(!tokenExists){
+      window.openQuantumSafeLogin?.();
+      return;
+    }
+
+    profileMenu?.classList.toggle('open');
+
+    if(accessText){
+      accessText.textContent = 'Authenticated session';
+    }
+  }, true);
+
+  document.addEventListener('click', e => {
+    if(
+      alertPanel?.classList.contains('open') &&
+      !e.target.closest('#qsAlertPanel') &&
+      !e.target.closest('#qsAlertTrigger')
+    ){
+      alertPanel.classList.remove('open');
+    }
+
+    if(
+      profileMenu?.classList.contains('open') &&
+      !e.target.closest('#qsProfileMenu') &&
+      !e.target.closest('#qsTopProfileBtn') &&
+      !e.target.closest('.home-profile')
+    ){
+      profileMenu.classList.remove('open');
+    }
+  }, true);
+
+  refreshAlerts();
+  setInterval(refreshAlerts, 15000);
 })();
 </script>
 

@@ -5,10 +5,10 @@ Phase 1 (analyze) + Phase 2 (persistence/reports) + Phase 3 (dashboard
 summary) + Phase 4 (pattern detection) endpoints.
 
 Run:
-    uvicorn app.main:app --reload --port 8000
+    python -m uvicorn app.main:app --port 8000
 
 Then open:
-    http://localhost:8000/docs
+    http://localhost:8000
 """
 
 import csv
@@ -34,18 +34,17 @@ from app.services.pattern_detection import detect_patterns
 DB_PATH = os.path.join(
     os.path.dirname(__file__),
     "data",
-    "quantumsafe.db"
+    "quantumsafe.db",
 )
 
 MAX_CSV_BYTES = 5 * 1024 * 1024
 MAX_REPORT_LENGTH = 10000
-
-APP_VERSION = "2.0.0"
+APP_VERSION = "2.0.1"
 
 app = FastAPI(
     title="QuantumSafe AI",
     version=APP_VERSION,
-    description="AI-assisted HSE safety intelligence and SIF pattern detection."
+    description="AI-assisted HSE safety intelligence and SIF pattern detection.",
 )
 
 
@@ -53,37 +52,53 @@ app = FastAPI(
 # CORS
 # ---------------------------------------------------------------------------
 
+def get_cors_origins() -> list[str]:
+    raw = os.getenv(
+        "CORS_ALLOW_ORIGINS",
+        "http://127.0.0.1:8000,http://localhost:8000",
+    )
+    return [
+        origin.strip().rstrip("/")
+        for origin in raw.split(",")
+        if origin.strip()
+    ]
+
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=get_cors_origins(),
+    allow_methods=["GET", "POST", "PATCH", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type"],
+    allow_credentials=False,
 )
 
 
 # ---------------------------------------------------------------------------
-# DB setup
+# DB helpers
 # ---------------------------------------------------------------------------
 
 @contextmanager
 def get_db():
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
-
     try:
         yield conn
     finally:
         conn.close()
 
 
-
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
+
 def hash_password(password: str) -> str:
     salt = secrets.token_bytes(16)
-    digest = hashlib.pbkdf2_hmac("sha256", password.encode("utf-8"), salt, 210_000)
+    digest = hashlib.pbkdf2_hmac(
+        "sha256", password.encode("utf-8"), salt, 210_000
+    )
     return f"pbkdf2_sha256$210000${salt.hex()}${digest.hex()}"
+
 
 def verify_password(password: str, stored: str) -> bool:
     try:
@@ -91,15 +106,19 @@ def verify_password(password: str, stored: str) -> bool:
         if algorithm != "pbkdf2_sha256":
             return False
         digest = hashlib.pbkdf2_hmac(
-            "sha256", password.encode("utf-8"),
-            bytes.fromhex(salt_hex), int(rounds)
+            "sha256",
+            password.encode("utf-8"),
+            bytes.fromhex(salt_hex),
+            int(rounds),
         )
         return hmac.compare_digest(digest.hex(), digest_hex)
     except (ValueError, TypeError):
         return False
 
+
 def cleanup_sessions(conn):
     conn.execute("DELETE FROM sessions WHERE expires_at <= ?", (utc_now(),))
+
 
 def create_session(conn, user_id: str) -> str:
     cleanup_sessions(conn)
@@ -109,28 +128,44 @@ def create_session(conn, user_id: str) -> str:
     expires = now + timedelta(hours=12)
     conn.execute(
         "INSERT INTO sessions(token_hash,user_id,created_at,expires_at) VALUES(?,?,?,?)",
-        (token_hash, user_id, now.isoformat(), expires.isoformat())
+        (token_hash, user_id, now.isoformat(), expires.isoformat()),
     )
     return token
+
 
 def get_current_user(authorization: Optional[str]):
     if not authorization or not authorization.lower().startswith("bearer "):
         raise HTTPException(status_code=401, detail="Authentication required")
+
     token = authorization.split(" ", 1)[1].strip()
     if not token:
         raise HTTPException(status_code=401, detail="Invalid authentication token")
+
     token_hash = hashlib.sha256(token.encode("utf-8")).hexdigest()
+
     with get_db() as conn:
         cleanup_sessions(conn)
         row = conn.execute(
             """SELECT u.user_id,u.name,u.email,u.role,u.is_active
                FROM sessions s JOIN users u ON u.user_id=s.user_id
                WHERE s.token_hash=? AND u.is_active=1""",
-            (token_hash,)
+            (token_hash,),
         ).fetchone()
+
         if not row:
             raise HTTPException(status_code=401, detail="Session expired or invalid")
+
         return dict(row)
+
+
+def ensure_column(conn, table: str, column: str, column_type: str):
+    columns = {
+        row["name"]
+        for row in conn.execute(f"PRAGMA table_info({table})").fetchall()
+    }
+    if column not in columns:
+        conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {column_type}")
+
 
 def init_db():
     with get_db() as conn:
@@ -153,10 +188,10 @@ def init_db():
             )
         """)
 
-
-        report_columns = {row["name"] for row in conn.execute("PRAGMA table_info(reports)").fetchall()}
-        if "created_by" not in report_columns:
-            conn.execute("ALTER TABLE reports ADD COLUMN created_by TEXT")
+        # Backward-compatible migrations. Existing reports are preserved.
+        ensure_column(conn, "reports", "created_by", "TEXT")
+        ensure_column(conn, "reports", "recommendation", "TEXT")
+        ensure_column(conn, "reports", "explanation", "TEXT")
 
         conn.execute("""
             CREATE TABLE IF NOT EXISTS users (
@@ -170,6 +205,7 @@ def init_db():
                 last_login TEXT
             )
         """)
+
         conn.execute("""
             CREATE TABLE IF NOT EXISTS sessions (
                 token_hash TEXT PRIMARY KEY,
@@ -179,8 +215,8 @@ def init_db():
                 FOREIGN KEY(user_id) REFERENCES users(user_id)
             )
         """)
+
         # Always ensure the SIH demo administrator exists with the known demo password.
-        # This also repairs a demo account left behind by an earlier test run.
         conn.execute("""
             INSERT INTO users
             (user_id,name,email,password_hash,role,is_active,created_at)
@@ -196,7 +232,7 @@ def init_db():
             "admin@quantumsafe.ai",
             hash_password("QuantumSafe@123"),
             "HSE Administrator",
-            utc_now()
+            utc_now(),
         ))
 
         conn.commit()
@@ -222,13 +258,17 @@ class SaveReportRequest(BaseModel):
     location: Optional[str] = "Unspecified"
 
 
-
 class LoginRequest(BaseModel):
     email: str
     password: str
 
+
 class LogoutRequest(BaseModel):
     token: str
+
+
+class StatusUpdateRequest(BaseModel):
+    status: str
 
 
 # ---------------------------------------------------------------------------
@@ -246,16 +286,20 @@ def login(req: LoginRequest):
         user = conn.execute(
             """SELECT user_id,name,email,password_hash,role,is_active
                FROM users WHERE lower(email)=?""",
-            (email,)
+            (email,),
         ).fetchone()
 
-        if not user or not user["is_active"] or not verify_password(req.password, user["password_hash"]):
+        if (
+            not user
+            or not user["is_active"]
+            or not verify_password(req.password, user["password_hash"])
+        ):
             raise HTTPException(status_code=401, detail="Invalid email or password")
 
         token = create_session(conn, user["user_id"])
         conn.execute(
             "UPDATE users SET last_login=? WHERE user_id=?",
-            (utc_now(), user["user_id"])
+            (utc_now(), user["user_id"]),
         )
         conn.commit()
 
@@ -267,13 +311,15 @@ def login(req: LoginRequest):
                 "user_id": user["user_id"],
                 "name": user["name"],
                 "email": user["email"],
-                "role": user["role"]
-            }
+                "role": user["role"],
+            },
         }
+
 
 @app.get("/api/auth/me")
 def me(authorization: Optional[str] = Header(default=None)):
     return {"user": get_current_user(authorization)}
+
 
 @app.post("/api/auth/logout")
 def logout(req: LogoutRequest):
@@ -283,30 +329,28 @@ def logout(req: LogoutRequest):
         conn.commit()
     return {"status": "signed_out"}
 
+
 # ---------------------------------------------------------------------------
 # Phase 1: Analyze
 # ---------------------------------------------------------------------------
 
 @app.post("/api/reports/analyze")
-def analyze(req: AnalyzeRequest, authorization: Optional[str] = Header(default=None)):
+def analyze(
+    req: AnalyzeRequest,
+    authorization: Optional[str] = Header(default=None),
+):
     get_current_user(authorization)
 
     text = req.report_text.strip()
-
     if not text:
-        raise HTTPException(
-            status_code=400,
-            detail="report_text must not be empty"
-        )
-
+        raise HTTPException(status_code=400, detail="report_text must not be empty")
     if len(text) > MAX_REPORT_LENGTH:
         raise HTTPException(
             status_code=400,
-            detail=f"report_text exceeds the {MAX_REPORT_LENGTH} character limit"
+            detail=f"report_text exceeds the {MAX_REPORT_LENGTH} character limit",
         )
 
     result = analyze_report(text)
-
     return result.to_dict()
 
 
@@ -317,7 +361,7 @@ def analyze(req: AnalyzeRequest, authorization: Optional[str] = Header(default=N
 @app.post("/api/reports")
 def save_report(
     req: SaveReportRequest,
-    authorization: Optional[str] = Header(default=None)
+    authorization: Optional[str] = Header(default=None),
 ):
     current_user = get_current_user(authorization)
 
@@ -327,11 +371,15 @@ def save_report(
     if len(text) > MAX_REPORT_LENGTH:
         raise HTTPException(
             status_code=400,
-            detail=f"report_text exceeds the {MAX_REPORT_LENGTH} character limit"
+            detail=f"report_text exceeds the {MAX_REPORT_LENGTH} character limit",
         )
 
     result = analyze_report(text)
     report_id = f"R{uuid.uuid4().hex[:8].upper()}"
+
+    # Keep the explanation human-readable in SQLite so the investigation view
+    # can display it directly without requiring a JSON parser in the frontend.
+    explanation_text = "\n".join(str(item) for item in (result.explanation or []))
 
     with get_db() as conn:
         conn.execute("""
@@ -339,9 +387,10 @@ def save_report(
             (
                 report_id, report_text, report_type, date, location,
                 activity, hazard, sif_potential, confidence, risk_score,
-                risk_level, life_saving_rule, barrier_failure, status, created_by
+                risk_level, life_saving_rule, barrier_failure,
+                recommendation, explanation, status, created_by
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Open', ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Open', ?)
         """, (
             report_id,
             text,
@@ -355,14 +404,16 @@ def save_report(
             result.risk_score,
             result.risk_level,
             result.life_saving_rule,
-            ",".join(result.failed_barriers),
-            current_user["user_id"]
+            ";".join(result.failed_barriers),
+            result.recommendation,
+            explanation_text,
+            current_user["user_id"],
         ))
         conn.commit()
 
     return {
         "report_id": report_id,
-        **result.to_dict()
+        **result.to_dict(),
     }
 
 
@@ -381,7 +432,7 @@ def list_reports(
     sort: str = "newest",
     limit: int = 100,
     offset: int = 0,
-    authorization: Optional[str] = Header(default=None)
+    authorization: Optional[str] = Header(default=None),
 ):
     get_current_user(authorization)
     limit = max(1, min(limit, 500))
@@ -431,57 +482,80 @@ def list_reports(
 
 
 # ---------------------------------------------------------------------------
-# Get Single Report
+# Get Single Report / Investigation
 # ---------------------------------------------------------------------------
 
 @app.get("/api/reports/{report_id}")
-def get_report(report_id: str, authorization: Optional[str] = Header(default=None)):
+def get_report(
+    report_id: str,
+    authorization: Optional[str] = Header(default=None),
+):
     get_current_user(authorization)
 
     with get_db() as conn:
-
         row = conn.execute(
             "SELECT * FROM reports WHERE report_id = ?",
-            (report_id,)
+            (report_id,),
         ).fetchone()
 
-        if not row:
-            raise HTTPException(
-                status_code=404,
-                detail="Report not found"
-            )
+    if not row:
+        raise HTTPException(status_code=404, detail="Report not found")
 
-        return dict(row)
+    report = dict(row)
 
+    # Compatibility aliases for the current investigation UI.
+    report["why_flagged"] = report.get("explanation") or "No specific explanation was provided by the backend."
+    report["recommended_action"] = report.get("recommendation") or "No immediate action recommendation was provided."
+    report["pattern_signal"] = (
+        "Pattern intelligence is evaluated across recurring saved reports "
+        "using hazard, location and failed-barrier combinations."
+    )
+    report["review_guidance"] = (
+        "Use this assessment as decision-support and confirm findings through "
+        "qualified HSE investigation."
+    )
+    report["investigation_status"] = report.get("status") or "Open"
+
+    return report
 
 
 # ---------------------------------------------------------------------------
 # Investigation status
 # ---------------------------------------------------------------------------
 
-class StatusUpdateRequest(BaseModel):
-    status: str
-
 @app.patch("/api/reports/{report_id}/status")
 def update_report_status(
     report_id: str,
     req: StatusUpdateRequest,
-    authorization: Optional[str] = Header(default=None)
+    authorization: Optional[str] = Header(default=None),
 ):
     current_user = get_current_user(authorization)
     allowed = {"Open", "Under Review", "Investigation", "Action Required", "Resolved"}
     status = req.status.strip()
+
     if status not in allowed:
         raise HTTPException(status_code=400, detail="Invalid investigation status")
 
     with get_db() as conn:
-        row = conn.execute("SELECT report_id FROM reports WHERE report_id=?", (report_id,)).fetchone()
+        row = conn.execute(
+            "SELECT report_id FROM reports WHERE report_id=?",
+            (report_id,),
+        ).fetchone()
         if not row:
             raise HTTPException(status_code=404, detail="Report not found")
-        conn.execute("UPDATE reports SET status=? WHERE report_id=?", (status, report_id))
+
+        conn.execute(
+            "UPDATE reports SET status=? WHERE report_id=?",
+            (status, report_id),
+        )
         conn.commit()
 
-    return {"report_id": report_id, "status": status, "updated_by": current_user["user_id"]}
+    return {
+        "report_id": report_id,
+        "status": status,
+        "updated_by": current_user["user_id"],
+    }
+
 
 # ---------------------------------------------------------------------------
 # CSV Upload
@@ -494,44 +568,37 @@ async def upload_csv(
     auth_token: Optional[str] = Form(default=None),
     auth_token_query: Optional[str] = Query(default=None, alias="auth_token"),
 ):
-    # Browsers opening the frontend as file:// can block a custom
-    # Authorization header during multipart uploads because of CORS
-    # preflight. Accept the same session token in the multipart form body
-    # as a compatibility fallback while preserving the normal Bearer header.
+    # Compatibility fallback for browsers/file:// multipart requests.
     effective_auth = authorization
     if not effective_auth and auth_token:
         effective_auth = "Bearer " + auth_token.strip()
     if not effective_auth and auth_token_query:
         effective_auth = "Bearer " + auth_token_query.strip()
-    get_current_user(effective_auth)
+
+    current_user = get_current_user(effective_auth)
+
     if not file.filename:
         raise HTTPException(status_code=400, detail="No file selected")
-
     if not file.filename.lower().endswith(".csv"):
         raise HTTPException(status_code=400, detail="Please upload a CSV file")
 
     content = await file.read()
-
     if len(content) > MAX_CSV_BYTES:
         raise HTTPException(
             status_code=413,
-            detail=f"CSV exceeds the {MAX_CSV_BYTES // (1024 * 1024)} MB upload limit"
+            detail=f"CSV exceeds {MAX_CSV_BYTES // (1024 * 1024)} MB upload limit",
         )
 
     try:
         decoded = content.decode("utf-8-sig")
     except UnicodeDecodeError:
-        raise HTTPException(
-            status_code=400,
-            detail="CSV must be UTF-8 encoded"
-        )
+        raise HTTPException(status_code=400, detail="CSV must be UTF-8 encoded")
 
     reader = csv.DictReader(decoded.splitlines())
-
     if not reader.fieldnames or "report_text" not in reader.fieldnames:
         raise HTTPException(
             status_code=400,
-            detail="CSV must contain a 'report_text' column"
+            detail="CSV must contain a 'report_text' column",
         )
 
     saved = 0
@@ -545,40 +612,38 @@ async def upload_csv(
 
             if not text:
                 skipped += 1
-                invalid_rows.append({
-                    "row": row_number,
-                    "reason": "Missing report_text"
-                })
+                invalid_rows.append({"row": row_number, "reason": "Missing report_text"})
                 continue
 
             if len(text) > MAX_REPORT_LENGTH:
                 skipped += 1
                 invalid_rows.append({
                     "row": row_number,
-                    "reason": f"report_text exceeds {MAX_REPORT_LENGTH} characters"
+                    "reason": f"report_text exceeds {MAX_REPORT_LENGTH} characters",
                 })
                 continue
 
             existing = conn.execute(
                 "SELECT report_id FROM reports WHERE report_text = ? LIMIT 1",
-                (text,)
+                (text,),
             ).fetchone()
-
             if existing:
                 duplicates += 1
                 continue
 
             result = analyze_report(text)
             report_id = f"R{uuid.uuid4().hex[:8].upper()}"
+            explanation_text = "\n".join(str(item) for item in (result.explanation or []))
 
             conn.execute("""
                 INSERT INTO reports
                 (
                     report_id, report_text, report_type, date, location,
                     activity, hazard, sif_potential, confidence, risk_score,
-                    risk_level, life_saving_rule, barrier_failure, status
+                    risk_level, life_saving_rule, barrier_failure,
+                    recommendation, explanation, status, created_by
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Open')
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Open', ?)
             """, (
                 report_id,
                 text,
@@ -593,8 +658,10 @@ async def upload_csv(
                 result.risk_level,
                 result.life_saving_rule,
                 ";".join(result.failed_barriers),
+                result.recommendation,
+                explanation_text,
+                current_user["user_id"],
             ))
-
             saved += 1
 
         conn.commit()
@@ -615,65 +682,35 @@ async def upload_csv(
 @app.get("/api/dashboard/summary")
 def dashboard_summary(authorization: Optional[str] = Header(default=None)):
     get_current_user(authorization)
+
     with get_db() as conn:
-        total = conn.execute(
-            "SELECT COUNT(*) c FROM reports"
-        ).fetchone()["c"]
-
-        sif = conn.execute(
-            "SELECT COUNT(*) c FROM reports WHERE sif_potential = 1"
-        ).fetchone()["c"]
-
-        critical = conn.execute(
-            "SELECT COUNT(*) c FROM reports WHERE risk_level = 'CRITICAL'"
-        ).fetchone()["c"]
-
-        high = conn.execute(
-            "SELECT COUNT(*) c FROM reports WHERE risk_level = 'HIGH'"
-        ).fetchone()["c"]
-
-        medium = conn.execute(
-            "SELECT COUNT(*) c FROM reports WHERE risk_level = 'MEDIUM'"
-        ).fetchone()["c"]
-
-        low = conn.execute(
-            "SELECT COUNT(*) c FROM reports WHERE risk_level = 'LOW'"
-        ).fetchone()["c"]
-
-        near_miss = conn.execute(
-            "SELECT COUNT(*) c FROM reports WHERE report_type = 'NEAR_MISS'"
-        ).fetchone()["c"]
+        total = conn.execute("SELECT COUNT(*) c FROM reports").fetchone()["c"]
+        sif = conn.execute("SELECT COUNT(*) c FROM reports WHERE sif_potential = 1").fetchone()["c"]
+        critical = conn.execute("SELECT COUNT(*) c FROM reports WHERE risk_level = 'CRITICAL'").fetchone()["c"]
+        high = conn.execute("SELECT COUNT(*) c FROM reports WHERE risk_level = 'HIGH'").fetchone()["c"]
+        medium = conn.execute("SELECT COUNT(*) c FROM reports WHERE risk_level = 'MEDIUM'").fetchone()["c"]
+        low = conn.execute("SELECT COUNT(*) c FROM reports WHERE risk_level = 'LOW'").fetchone()["c"]
+        near_miss = conn.execute("SELECT COUNT(*) c FROM reports WHERE report_type = 'NEAR_MISS'").fetchone()["c"]
 
         top_hazards = conn.execute("""
             SELECT COALESCE(hazard, 'Unclassified') hazard, COUNT(*) c
-            FROM reports
-            GROUP BY hazard
-            ORDER BY c DESC
-            LIMIT 5
+            FROM reports GROUP BY hazard ORDER BY c DESC LIMIT 5
         """).fetchall()
 
         top_locations = conn.execute("""
             SELECT COALESCE(location, 'Unspecified') location, COUNT(*) c
-            FROM reports
-            WHERE sif_potential = 1
-            GROUP BY location
-            ORDER BY c DESC
-            LIMIT 5
+            FROM reports WHERE sif_potential = 1
+            GROUP BY location ORDER BY c DESC LIMIT 5
         """).fetchall()
 
         top_rules = conn.execute("""
             SELECT COALESCE(life_saving_rule, 'Unclassified') life_saving_rule, COUNT(*) c
-            FROM reports
-            GROUP BY life_saving_rule
-            ORDER BY c DESC
-            LIMIT 5
+            FROM reports GROUP BY life_saving_rule ORDER BY c DESC LIMIT 5
         """).fetchall()
 
         barrier_rows = conn.execute("""
-            SELECT barrier_failure
-            FROM reports
-            WHERE barrier_failure IS NOT NULL
-              AND barrier_failure != ''
+            SELECT barrier_failure FROM reports
+            WHERE barrier_failure IS NOT NULL AND barrier_failure != ''
         """).fetchall()
 
         barrier_counts = {}
@@ -686,18 +723,14 @@ def dashboard_summary(authorization: Optional[str] = Header(default=None)):
         top_barriers = [
             {"barrier": name, "c": count}
             for name, count in sorted(
-                barrier_counts.items(),
-                key=lambda x: x[1],
-                reverse=True
+                barrier_counts.items(), key=lambda x: x[1], reverse=True
             )[:5]
         ]
 
         recent = conn.execute("""
             SELECT report_id, location, hazard, risk_level, risk_score,
                    sif_potential, status, rowid
-            FROM reports
-            ORDER BY rowid DESC
-            LIMIT 8
+            FROM reports ORDER BY rowid DESC LIMIT 8
         """).fetchall()
 
     return {
@@ -726,9 +759,7 @@ def dashboard_summary(authorization: Optional[str] = Header(default=None)):
 @app.get("/api/health")
 def health():
     with get_db() as conn:
-        report_count = conn.execute(
-            "SELECT COUNT(*) c FROM reports"
-        ).fetchone()["c"]
+        report_count = conn.execute("SELECT COUNT(*) c FROM reports").fetchone()["c"]
 
     return {
         "status": "ok",
@@ -736,6 +767,7 @@ def health():
         "version": APP_VERSION,
         "database": "connected",
         "report_count": report_count,
+        "cors_configured": bool(get_cors_origins()),
     }
 
 
@@ -744,21 +776,17 @@ def health():
 # ---------------------------------------------------------------------------
 
 @app.get("/api/patterns")
-def get_patterns(min_reports: int = 3, authorization: Optional[str] = Header(default=None)):
+def get_patterns(
+    min_reports: int = Query(default=3, ge=1, le=100),
+    authorization: Optional[str] = Header(default=None),
+):
     get_current_user(authorization)
 
     with get_db() as conn:
-
-        rows = conn.execute(
-            "SELECT * FROM reports"
-        ).fetchall()
-
+        rows = conn.execute("SELECT * FROM reports").fetchall()
         reports = [dict(row) for row in rows]
 
-    patterns = detect_patterns(
-        reports,
-        min_reports=min_reports
-    )
+    patterns = detect_patterns(reports, min_reports=min_reports)
 
     return [
         {
@@ -768,7 +796,12 @@ def get_patterns(min_reports: int = 3, authorization: Optional[str] = Header(def
             "report_count": p.report_count,
             "sif_count": p.sif_count,
             "sif_ratio": round(p.sif_ratio, 2),
+            "sif_percentage": p.sif_percentage,
             "risk": p.risk,
+            "priority_score": p.priority_score,
+            "recurrence": p.recurrence,
+            "explanation": p.explanation,
+            "recommended_action": p.recommended_action,
             "report_ids": p.report_ids,
         }
         for p in patterns
@@ -781,10 +814,9 @@ def get_patterns(min_reports: int = 3, authorization: Optional[str] = Header(def
 
 @app.get("/")
 def root():
-    frontend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "index.html"))
+    frontend_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "index.html")
+    )
     if os.path.exists(frontend_path):
         return FileResponse(frontend_path, media_type="text/html")
-    return {
-        "status": "ok",
-        "service": "QuantumSafe AI backend"
-    }
+    return {"status": "ok", "service": "QuantumSafe AI backend"}
